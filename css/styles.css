@@ -1,8 +1,15 @@
-img {
-    width: 100px;
-    height: 100px;
+.iconbox {
+    height: 128px;
+    padding: 20px;
+    display: inline;
 }
 
-figcaption {
-    display: inline;
+.captionbox {
+    text-align: center;
+    width: 128px;
+    display: inline-block;
+}
+
+.captionbox img {
+    width: 128px;
 }
