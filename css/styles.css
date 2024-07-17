@@ -3,3 +3,7 @@ img {
     height: 100px;
     display: inline-block;
 }
+
+figcaption {
+    display: inline-block;
+}
