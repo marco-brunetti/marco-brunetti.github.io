@@ -1,8 +1,5 @@
 img {
     width: 100px;
     height: 100px;
-}
-
-figcaption {
-    display: inline-block;
+    display: inline;
 }
