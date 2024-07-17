@@ -11,5 +11,6 @@
 }
 
 .captionbox img {
+    display: inline-block;
     width: 128px;
 }
