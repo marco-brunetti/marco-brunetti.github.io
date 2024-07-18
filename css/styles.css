@@ -1,19 +1,28 @@
 @media screen and (max-width: 1080px) {
     
     .upperbar {
-        justify-content: center;
-        align-items: center;
         text-align: center;
-        padding-block-end: 50px;
+        min-width: 91.5%;
+        max-width: 91.5%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        margin-top: 2.5%;
     }
 
-    .name {
+    .upperbar .name {
         font-size: xxx-large;
+        margin-top: 4%;
+        margin-bottom: 8%;
     }
 
     .upperbar .role {
-        margin-top: -30px;
+        margin-top: -10%;
         font-size: xx-large;
+    }
+
+    .upperbar .normallink {
+        padding-inline: 2%;
     }
     
     .captionbox {
@@ -34,7 +43,7 @@
 
 @media screen and (min-width: 1081px) {
     
-    .name {
+    .upperbar .name {
         display: inline-block;
         padding-right: 10%;
         font-size: xx-large;
@@ -46,7 +55,6 @@
 
     .upperbar a {
         display: inline-block;
-        padding: 10px;
         margin-right: 10%;
     }
 
@@ -60,6 +68,12 @@
     }
 }
 
+.upperbar {
+    background-color: rgb(63, 63, 63);
+    padding-top: 1%;
+    padding-bottom: 5%;
+}
+
 body {
     background-color: #202020;
 }
@@ -70,7 +84,7 @@ body {
     font-weight: bold;
 }
 
-.name {
+.upperbar .name {
     color: white;
     font-family: sans-serif, Verdana, Geneva, Tahoma;
 }
@@ -82,7 +96,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 1.8%;
 }
 
 .captionbox {
@@ -101,26 +115,34 @@ body {
     color: white;
     padding: 0px;
     font-family: sans-serif, Verdana, Geneva, Tahoma;
+    text-align: justify;
+    text-align-last: center;
     margin-top: 8px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .captionbox .gametitle {
     font-weight: bold;
 }
 
-.captionbox .upperlink {
-    margin-top: -11px;
+.normallink {
+    text-decoration: underline;
+    color: white;
+}
+
+.captionbox .normallink {
+    margin-bottom: 20px;
 }
 
 .captionbox a:link {
     font-style: italic;
-    text-decoration: underline;
     padding-block: 5px;
-    color: white;
 }
 
-.captionbox a:visited {
-    color: white;
+.captionbox .upperlink {
+    margin-bottom: 10px;
 }
 
 .imagecontainer {
