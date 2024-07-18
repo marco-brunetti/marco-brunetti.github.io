@@ -4,6 +4,10 @@
     display: inline;
 }
 
+.captionbox p {
+    height: 50px;
+}
+
 .captionbox {
     text-align: center;
     width: 128px;
