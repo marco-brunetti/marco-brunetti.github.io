@@ -1,3 +1,50 @@
+@media screen and (max-width: 480px) {
+        
+    .upperbar .name {
+        font-size: xx-large;
+    }
+    
+    .upperbar .role {
+        font-size: x-large;
+    }
+
+    .upperbar .normallink {
+        font-size: x-large;
+    }
+
+    .captionbox a {
+        font-size: x-large;
+    }
+
+    .captionbox p {
+        font-size: x-large;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1080px) {
+    
+    .upperbar .name {
+        font-size: xxx-large;
+    }
+    
+    .upperbar .role {
+        font-size: xx-large;
+    }
+
+    .upperbar .normallink {
+        font-size: xx-large;
+    }
+
+    .captionbox a {
+        font-size: xx-large;
+    }
+
+    .captionbox p {
+        font-size: xx-large;
+    }
+}
+
+
 @media screen and (max-width: 1080px) {
     
     .upperbar {
@@ -33,7 +80,6 @@
 
     .captionbox a {
         display: inline-block;
-        font-family: sans-serif, Verdana, Geneva, Tahoma;
         padding-inline: 1%;
         font-size: xx-large;
     }
@@ -70,12 +116,15 @@
 
     .captionbox a {
         display: block;
-        font-family: sans-serif, Verdana, Geneva, Tahoma;
     }
 
     .normalborderradius {
         border-radius: 3% / 3%;
     }
+}
+
+.captionbox a {
+    font-family: sans-serif, Verdana, Geneva, Tahoma;
 }
 
 .upperbar {
