@@ -9,6 +9,7 @@
 }
 
 .captionbox {
+    vertical-align: top;
     text-align: center;
     width: 200px;
     display: inline-block;
