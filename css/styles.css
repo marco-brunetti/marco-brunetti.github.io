@@ -1,9 +1,9 @@
 @media screen and (max-width: 480px) {
-        
+
     .upperbar .name {
         font-size: x-large;
     }
-    
+
     .upperbar .role {
         font-size: large;
     }
@@ -23,11 +23,11 @@
 }
 
 @media screen and (min-width: 481px) and (max-width: 1080px) {
-    
+
     .upperbar .name {
         font-size: xxx-large;
     }
-    
+
     .upperbar .role {
         font-size: xx-large;
     }
@@ -46,7 +46,7 @@
 }
 
 @media screen and (max-width: 1080px) {
-    
+
     .upperbar {
         text-align: center;
         min-width: 91.8%;
@@ -70,7 +70,7 @@
     .upperbar .normallink {
         padding-inline: 2%;
     }
-    
+
     .captionbox {
         min-width: 90%;
         margin-top: 3%;
@@ -87,7 +87,7 @@
 }
 
 @media screen and (min-width: 1081px) {
-    
+
     .upperbar .name {
         display: inline-block;
         padding-right: 10%;
@@ -220,7 +220,7 @@ body {
 }
 
 .gameimageoverlay {
-    position:absolute;
+    position: absolute;
     left: 4%;
     right: 4%;
     opacity: 0;
