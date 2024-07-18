@@ -1,24 +1,73 @@
+@media screen and (max-width: 1080px) {
+    
+    .upperbar {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-block-end: 50px;
+    }
+
+    .upperbar .role {
+        margin-top: -30px;
+    }
+
+    .iconbox {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 30px;
+    }
+    
+    .captionbox {
+        min-width: 80%;
+    }
+
+    .captionbox a {
+        display: inline-block;
+        font-family: sans-serif, Verdana, Geneva, Tahoma;
+        padding-inline: 1%;
+    }
+}
+
+@media screen and (min-width: 1081px) {
+    
+    .upperbar h1 {
+        display: inline-block;
+        padding-right: 10%;
+    }
+
+    .upperbar .role {
+        margin-top: -15px;
+    }
+
+    .upperbar a {
+        display: inline-block;
+        padding: 10px;
+        margin-right: 10%;
+    }
+    
+    .captionbox {
+        min-width: 400px;
+    }
+
+    .captionbox a {
+        display: block;
+        font-family: sans-serif, Verdana, Geneva, Tahoma;
+    }
+}
+
 body {
     background-color: #111111;
 }
 
 .upperbar h1 {
     font-size: xx-large;
-    display: inline-block;
-    padding-right: 10%;
 }
 
 .upperbar .role {
     color: white;
     font-family: sans-serif, Verdana, Geneva, Tahoma;
     font-weight: bold;
-    margin-top: -15px;
-}
-
-.upperbar a {
-    display: inline-block;
-    padding: 10px;
-    margin-right: 10%;
 }
 
 .name {
@@ -37,7 +86,6 @@ body {
     width: 20%;
     height: 25%;
     display: inline-block;
-    min-width: 400px;
 }
 
 .captionbox img {
@@ -53,11 +101,6 @@ body {
 
 .captionbox .gametitle {
     font-weight: bold;
-}
-
-.captionbox a {
-    display: block;
-    font-family: sans-serif, Verdana, Geneva, Tahoma;
 }
 
 .captionbox a:link {
