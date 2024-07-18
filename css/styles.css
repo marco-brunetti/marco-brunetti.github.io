@@ -15,13 +15,6 @@
         margin-top: -30px;
         font-size: xx-large;
     }
-
-    .iconbox {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin-top: 30px;
-    }
     
     .captionbox {
         min-width: 90%;
@@ -56,7 +49,7 @@
         padding: 10px;
         margin-right: 10%;
     }
-    
+
     .captionbox {
         min-width: 400px;
     }
@@ -70,8 +63,6 @@
 body {
     background-color: #111111;
 }
-
-
 
 .upperbar .role {
     color: white;
@@ -88,6 +79,10 @@ body {
     vertical-align: top;
     height: 20%;
     display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
 }
 
 .captionbox {
@@ -107,10 +102,15 @@ body {
     color: white;
     padding: 0px;
     font-family: sans-serif, Verdana, Geneva, Tahoma;
+    margin-top: 8px;
 }
 
 .captionbox .gametitle {
     font-weight: bold;
+}
+
+.captionbox .upperlink {
+    margin-top: -10px;
 }
 
 .captionbox a:link {
@@ -122,4 +122,38 @@ body {
 
 .captionbox a:visited {
     color: white;
+}
+
+.imagecontainer {
+    position: relative;
+}
+
+.imagecontainer {
+    border-radius: 10px;
+    display: inline-block;
+    width: 100%;
+}
+
+.imagecontainer img {
+    border-radius: 10px;
+    display: inline-block;
+    width: 100%;
+}
+
+.overlay {
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.overlay:hover {
+    opacity: 1;
 }
