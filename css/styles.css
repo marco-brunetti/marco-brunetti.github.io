@@ -7,8 +7,13 @@
         padding-block-end: 50px;
     }
 
+    .name {
+        font-size: xxx-large;
+    }
+
     .upperbar .role {
         margin-top: -30px;
+        font-size: xx-large;
     }
 
     .iconbox {
@@ -26,14 +31,20 @@
         display: inline-block;
         font-family: sans-serif, Verdana, Geneva, Tahoma;
         padding-inline: 1%;
+        font-size: xx-large;
+    }
+
+    .captionbox p {
+        font-size: xx-large;
     }
 }
 
 @media screen and (min-width: 1081px) {
     
-    .upperbar h1 {
+    .name {
         display: inline-block;
         padding-right: 10%;
+        font-size: xx-large;
     }
 
     .upperbar .role {
@@ -60,9 +71,7 @@ body {
     background-color: #111111;
 }
 
-.upperbar h1 {
-    font-size: xx-large;
-}
+
 
 .upperbar .role {
     color: white;
