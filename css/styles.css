@@ -1,24 +1,23 @@
 .iconbox {
     vertical-align: top;
-    height: 230px;
+    height: 400px;
     padding: 20px;
     display: inline;
 }
 
 .captionbox {
     vertical-align: top;
-    text-align: center;
-    width: 200px;
-    height: 230px;
+    width: 400px;
+    height: 430x;
     display: inline-block;
 }
 
 .captionbox img {
     display: inline-block;
-    width: 200px;
+    width: 400px;
 }
 
-.captionbox p {
-    vertical-align: middle;
-    text-align: center;
+.captionbox a:link {
+    font-style: italic;
+    text-decoration: none;
 }
