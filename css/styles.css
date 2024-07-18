@@ -6,7 +6,6 @@
 }
 
 .captionbox {
-    /*text-align: center;*/
     width: 200px;
     height: 230px;
     display: inline-block;
@@ -18,5 +17,6 @@
 }
 
 .captionbox p {
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
