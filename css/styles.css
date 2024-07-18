@@ -1,25 +1,28 @@
 body {
-    background-color: #181818;
+    background-color: #131313;
 }
 
-h1 {
+.name {
     color: white;
+    font-family: sans-serif, Verdana, Geneva, Tahoma;
 }
 
-p {
+.role {
     color: white;
+    font-family: sans-serif, Verdana, Geneva, Tahoma;
+    font-weight: bold;
 }
 
 .iconbox {
     vertical-align: top;
-    height: 400px;
+    height: 430px;
     display: inline;
 }
 
 .captionbox {
     vertical-align: top;
     width: 400px;
-    height: 430px;
+    height: 500px;
     display: inline-block;
 }
 
@@ -30,12 +33,24 @@ p {
 
 .captionbox p {
     color: white;
+    padding: 0px;
+    font-family: sans-serif, Verdana, Geneva, Tahoma;
+}
+
+.captionbox .gametitle {
+    font-weight: bold;
+}
+
+.captionbox a {
+    display: block;
+    font-family: sans-serif, Verdana, Geneva, Tahoma;
 }
 
 .captionbox a:link {
     font-style: italic;
-    font-weight: bold;
-    text-decoration: none;
+    text-decoration: underline;
+    padding-block: 5px;
+    color: white;
 }
 
 .captionbox a:visited {
