@@ -18,6 +18,7 @@
 
     .captionbox p {
         font-size: large;
+        text-align: center;
     }
 }
 
@@ -43,7 +44,6 @@
         font-size: xx-large;
     }
 }
-
 
 @media screen and (max-width: 1080px) {
     
@@ -113,6 +113,13 @@
 
     .normalborderradius {
         border-radius: 3% / 3%;
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .captionbox p {
+        text-align: justify;
+        text-align-last: center;
     }
 }
 
@@ -226,4 +233,3 @@ body {
 .gameimageoverlay:hover {
     opacity: 1;
 }
-
