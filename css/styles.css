@@ -97,13 +97,6 @@ body {
     margin: 10px;
 }
 
-.captionbox img {
-    padding-top: 5px;
-    border-radius: 10px;
-    display: inline-block;
-    width: 100%;
-}
-
 .captionbox p {
     color: white;
     padding: 0px;
@@ -140,25 +133,25 @@ body {
     width: 100%;
 }
 
-.imagecontainer img {
+.gameimage {
     border-radius: 10px;
     display: inline-block;
-    width: 100%;
+    margin-top: 5%;
+    width: 92%;
 }
 
-.overlay {
-    border-radius: 10px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 97.4%;
-    width: 97.4%;
+.gameimageoverlay {
+    position:absolute;
+    left: 4%;
+    right: 4%;
     opacity: 0;
     transition: .5s ease;
+    border-radius: 10px;
+    margin-top: 5%;
+    width: 92%;
+    height: 93%;
 }
 
-.overlay:hover {
+.gameimageoverlay:hover {
     opacity: 1;
 }
