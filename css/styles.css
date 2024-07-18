@@ -1,5 +1,24 @@
 body {
-    background-color: #131313;
+    background-color: #111111;
+}
+
+.upperbar h1 {
+    font-size: xx-large;
+    display: inline-block;
+    padding-right: 10%;
+}
+
+.upperbar .role {
+    color: white;
+    font-family: sans-serif, Verdana, Geneva, Tahoma;
+    font-weight: bold;
+    margin-top: -15px;
+}
+
+.upperbar a {
+    display: inline-block;
+    padding: 10px;
+    margin-right: 10%;
 }
 
 .name {
@@ -7,28 +26,23 @@ body {
     font-family: sans-serif, Verdana, Geneva, Tahoma;
 }
 
-.role {
-    color: white;
-    font-family: sans-serif, Verdana, Geneva, Tahoma;
-    font-weight: bold;
-}
-
 .iconbox {
     vertical-align: top;
-    height: 430px;
-    display: inline;
+    height: 20%;
+    display: inline-block;
 }
 
 .captionbox {
     vertical-align: top;
-    width: 400px;
-    height: 500px;
+    width: 20%;
+    height: 25%;
     display: inline-block;
+    min-width: 400px;
 }
 
 .captionbox img {
     display: inline-block;
-    width: 400px;
+    width: 100%;
 }
 
 .captionbox p {
@@ -56,4 +70,3 @@ body {
 .captionbox a:visited {
     color: white;
 }
-
