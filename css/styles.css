@@ -7,7 +7,7 @@
 .captionbox {
     vertical-align: top;
     width: 400px;
-    height: 430x;
+    height: 430px;
     display: inline-block;
 }
 
@@ -19,4 +19,12 @@
 .captionbox a:link {
     font-style: italic;
     text-decoration: none;
+}
+
+.captionbox a:visited {
+    color: white;
+}
+
+body {
+    background-color: #181818;
 }
