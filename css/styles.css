@@ -5,7 +5,7 @@
 }
 
 .captionbox p {
-    height: 50px;
+    vertical-align: top;
 }
 
 .captionbox {
