@@ -4,12 +4,7 @@
     display: inline;
 }
 
-.captionbox p {
-    vertical-align: top;
-}
-
 .captionbox {
-    vertical-align: top;
     text-align: center;
     width: 200px;
     display: inline-block;
@@ -17,5 +12,6 @@
 
 .captionbox img {
     display: inline-block;
+    line-height: 1;
     width: 200px;
 }
