@@ -16,6 +16,10 @@
     width: 400px;
 }
 
+.captionbox p {
+    color: white;
+}
+
 .captionbox a:link {
     font-style: italic;
     text-decoration: none;
