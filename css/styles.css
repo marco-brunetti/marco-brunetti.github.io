@@ -1,11 +1,12 @@
 .iconbox {
-    height: 200px;
+    height: 230px;
     padding: 20px;
     display: inline;
 }
 
 .captionbox {
-    text-align: center;
+    vertical-align: top;
+    /*text-align: center;*/
     width: 200px;
     height: 230px;
     display: inline-block;
