@@ -1,23 +1,23 @@
 @media screen and (max-width: 480px) {
         
     .upperbar .name {
-        font-size: xx-large;
+        font-size: x-large;
     }
     
     .upperbar .role {
-        font-size: x-large;
+        font-size: large;
     }
 
     .upperbar .normallink {
-        font-size: x-large;
+        font-size: large;
     }
 
     .captionbox a {
-        font-size: x-large;
+        font-size: large;
     }
 
     .captionbox p {
-        font-size: x-large;
+        font-size: large;
     }
 }
 
@@ -65,12 +65,10 @@
 
     .upperbar .role {
         margin-top: -13%;
-        font-size: xx-large;
     }
 
     .upperbar .normallink {
         padding-inline: 2%;
-        font-size: xx-large;
     }
     
     .captionbox {
@@ -81,11 +79,6 @@
     .captionbox a {
         display: inline-block;
         padding-inline: 1%;
-        font-size: xx-large;
-    }
-
-    .captionbox p {
-        font-size: xx-large;
     }
 
     .normalborderradius {
