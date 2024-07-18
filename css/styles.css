@@ -6,7 +6,7 @@
 }
 
 .captionbox {
-    text-align: center;
+    /*text-align: center;*/
     width: 200px;
     height: 230px;
     display: inline-block;
@@ -15,8 +15,4 @@
 .captionbox img {
     display: inline-block;
     width: 200px;
-}
-
-.captionbox p {
-    align-self: center;
 }
