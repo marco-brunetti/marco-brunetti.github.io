@@ -6,6 +6,8 @@
 }
 
 .captionbox {
+    margin-left: auto;
+    margin-right: auto;
     width: 200px;
     height: 230px;
     display: inline-block;
@@ -14,9 +16,4 @@
 .captionbox img {
     display: inline-block;
     width: 200px;
-}
-
-.captionbox p {
-    margin-left: auto;
-    margin-right: auto;
 }
