@@ -155,14 +155,18 @@ body {
         border-radius: 3% / 3%;
     }
 
-    .gameimage, .gameimageoverlay {
+    .gameimage {
         width: 390px;
+    }
+
+    .gameimage, .gameimageoverlay {
         margin-top: 20px;
     }
 
     .gameimageoverlay {
-        left: 1.1%;
-        right: 2%;
+        width: 391px;
+        left: 1%;
+        right: 1%;
     }
 
     /*hide overlay in large screens*/
