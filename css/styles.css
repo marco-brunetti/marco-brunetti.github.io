@@ -1,46 +1,60 @@
+/*---------------------------fonts------------------------------*/
+.upperbar .role, .upperbar .name, .captionbox p, .captionbox a {
+    font-family: sans-serif, Verdana, Geneva, Tahoma;
+}
+/*------------------------font colors--------------------------*/
+.upperbar .role, .upperbar .name, .captionbox p, .normallink {
+    color: white;
+}
+/*------------------------font weight--------------------------*/
+.upperbar .role, .captionbox .gametitle {
+    font-weight: bold;
+}
+/*---------------------background colors----------------------*/
+.upperbar, .captionbox {
+    background-color: rgb(63, 63, 63);
+}
+
+body {
+    background-color: #202020;
+}
+/*--------------------------display---------------------------*/
+.iconbox, .captionbox, .imagecontainer, .gameimage {
+    display: inline-block;
+}
+/*------------------------------------------------------------*/
+
+/*----------------small screen settings-----------------------*/
 @media screen and (max-width: 480px) {
 
     .upperbar .name {
         font-size: x-large;
     }
 
-    .upperbar .role {
-        font-size: large;
-    }
-
-    .upperbar .normallink {
-        font-size: large;
-    }
-
-    .captionbox a {
+    .upperbar .role, .upperbar .normallink, .upperbar a, .upperbar p {
         font-size: large;
     }
 
     .captionbox p {
-        font-size: large;
         text-align: center;
     }
 }
 
+@media screen and (min-width: 481px) {
+    .captionbox p {
+        text-align: justify;
+        text-align-last: center;
+    }
+}
+
+/*----------------mobile screen settings-----------------------*/
 @media screen and (min-width: 481px) and (max-width: 1080px) {
 
     .upperbar .name {
         font-size: xxx-large;
     }
 
-    .upperbar .role {
-        font-size: xx-large;
-    }
-
-    .upperbar .normallink {
-        font-size: xx-large;
-    }
-
-    .captionbox a {
-        font-size: xx-large;
-    }
-
-    .captionbox p {
+    .upperbar .role, .upperbar .normallink, .upperbar a, .upperbar p {
         font-size: xx-large;
     }
 }
@@ -73,6 +87,7 @@
 
     .captionbox {
         min-width: 90%;
+        max-width: 90%;
         margin-top: 3%;
     }
 
@@ -84,8 +99,19 @@
     .normalborderradius {
         border-radius: 5% / 3%;
     }
+    
+    .gameimage, .gameimageoverlay {
+        width: 92%;
+        margin-top: 5%;
+    }
+    
+    .gameimageoverlay {
+        left: 4%;
+        right: 4%;
+    }
 }
 
+/*----------------big screen settings-----------------------*/
 @media screen and (min-width: 1081px) {
 
     .upperbar .name {
@@ -105,6 +131,9 @@
 
     .captionbox {
         min-width: 400px;
+        max-width: 400px;
+        min-height: 550px;
+        max-height: 550px;
     }
 
     .captionbox a {
@@ -114,44 +143,27 @@
     .normalborderradius {
         border-radius: 3% / 3%;
     }
-}
 
-@media screen and (min-width: 481px) {
-    .captionbox p {
-        text-align: justify;
-        text-align-last: center;
+    .gameimage, .gameimageoverlay {
+        width: 390px;
+        margin-top: 20px;
+    }
+    
+    .gameimageoverlay {
+        left: 1.1%;
+        right: 2%;
     }
 }
-
-.captionbox a {
-    font-family: sans-serif, Verdana, Geneva, Tahoma;
-}
+/*------------------------------------------------------------*/
 
 .upperbar {
-    background-color: rgb(63, 63, 63);
     padding-top: 1%;
     padding-bottom: 5%;
 }
 
-body {
-    background-color: #202020;
-}
-
-.upperbar .role {
-    color: white;
-    font-family: sans-serif, Verdana, Geneva, Tahoma;
-    font-weight: bold;
-}
-
-.upperbar .name {
-    color: white;
-    font-family: sans-serif, Verdana, Geneva, Tahoma;
-}
-
 .iconbox {
     vertical-align: top;
-    height: 20%;
-    display: inline-block;
+    /*height: 20%;*/
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -161,19 +173,15 @@ body {
 .captionbox {
     vertical-align: top;
     width: 20%;
-    height: 30%;
-    display: inline-block;
+    /*height: 30%;*/
     padding-inline: 1%;
-    min-height: 550px;
-    background-color: rgb(63, 63, 63);
+    /*min-height: 550px;*/
     margin-inline: 0.5%;
     margin-bottom: 1.3%;
 }
 
 .captionbox p {
-    color: white;
     padding: 0px;
-    font-family: sans-serif, Verdana, Geneva, Tahoma;
     text-align: justify;
     text-align-last: center;
     margin-top: 8px;
@@ -182,13 +190,8 @@ body {
     margin-right: auto;
 }
 
-.captionbox .gametitle {
-    font-weight: bold;
-}
-
 .normallink {
     text-decoration: underline;
-    color: white;
 }
 
 .captionbox .normallink {
@@ -209,24 +212,13 @@ body {
 }
 
 .imagecontainer {
-    display: inline-block;
     width: 100%;
-}
-
-.gameimage {
-    display: inline-block;
-    margin-top: 5%;
-    width: 92%;
 }
 
 .gameimageoverlay {
     position: absolute;
-    left: 4%;
-    right: 4%;
     opacity: 0;
     transition: .5s ease;
-    margin-top: 5%;
-    width: 92%;
     height: 93%;
 }
 
