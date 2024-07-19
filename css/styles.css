@@ -31,7 +31,7 @@ body {
         font-size: x-large;
     }
 
-    .upperbar .role, .upperbar .normallink, .upperbar a, .upperbar p {
+    .upperbar .role, .normallink, .upperbar p, .captionbox p {
         font-size: large;
     }
 
@@ -54,7 +54,7 @@ body {
         font-size: xxx-large;
     }
 
-    .upperbar .role, .upperbar .normallink, .upperbar a, .upperbar p {
+    .upperbar .role, .normallink, .upperbar p, .captionbox p {
         font-size: xx-large;
     }
 }
@@ -91,8 +91,7 @@ body {
         margin-top: 3%;
     }
 
-    .captionbox a {
-        display: inline-block;
+    .captionbox .normallink {
         padding-inline: 1%;
     }
 
@@ -136,10 +135,6 @@ body {
         max-height: 550px;
     }
 
-    .captionbox a {
-        display: block;
-    }
-
     .normalborderradius {
         border-radius: 3% / 3%;
     }
@@ -159,6 +154,10 @@ body {
 .upperbar {
     padding-top: 1%;
     padding-bottom: 5%;
+}
+
+.upperbar .normallink {
+    display: inline-block;
 }
 
 .iconbox {
@@ -195,7 +194,8 @@ body {
 }
 
 .captionbox .normallink {
-    margin-bottom: 20px;
+    margin-bottom: 6%;
+    display: grid;
 }
 
 .captionbox a:link {
