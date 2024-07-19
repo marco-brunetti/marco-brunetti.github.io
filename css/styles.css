@@ -39,7 +39,7 @@ body {
         font-size: x-large;
     }
 
-    .upperbar .role, .normallink, .upperbar p, .captionbox p {
+    .upperbar .role, .normallink, .upperbar p, .captionbox p, .previewtext {
         font-size: large;
     }
 
@@ -67,7 +67,7 @@ body {
         font-size: xxx-large;
     }
 
-    .upperbar .role, .normallink, .upperbar p, .captionbox p {
+    .upperbar .role, .normallink, .upperbar p, .captionbox p, .previewtext {
         font-size: xx-large;
     }
 }
@@ -161,6 +161,7 @@ body {
         right: 2%;
     }
 
+    /*hide overlay in large screens*/
     .previewoverlay {
         opacity: 0;
     }
@@ -237,7 +238,6 @@ body {
 }
 
 .previewtext {
-    font-size: xx-large;
     text-align: center;
     transform: translate(0%, 50%);
 }
