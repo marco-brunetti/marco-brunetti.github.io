@@ -27,6 +27,10 @@ body {
 /*----------------small screen settings-----------------------*/
 @media screen and (max-width: 480px) {
 
+    .upperbar {
+        border-radius: 5% / 9%;
+    }
+
     .upperbar .name {
         font-size: x-large;
     }
@@ -41,6 +45,11 @@ body {
 }
 
 @media screen and (min-width: 481px) {
+
+    .upperbar {
+        border-radius: 5% / 20%;
+    }
+
     .captionbox p {
         text-align: justify;
         text-align-last: center;
@@ -67,19 +76,18 @@ body {
         max-width: 91.8%;
         margin-left: auto;
         margin-right: auto;
-        border-radius: 5% / 9%;
         margin-top: 2.5%;
     }
 
     .upperbar .name {
         font-size: xxx-large;
         margin-top: 4%;
-        margin-bottom: 8%;
+        margin-bottom: 2%;
     }
 
-    .upperbar .role {
+    /*.upperbar .role {
         margin-top: -13%;
-    }
+    }*/
 
     .upperbar .normallink {
         padding-inline: 2%;
