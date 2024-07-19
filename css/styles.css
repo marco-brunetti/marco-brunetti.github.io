@@ -2,14 +2,17 @@
 .upperbar .role, .upperbar .name, .captionbox p, .captionbox a, .previewtext {
     font-family: sans-serif, Verdana, Geneva, Tahoma;
 }
+
 /*------------------------font colors--------------------------*/
 .upperbar .role, .upperbar .name, .captionbox p, .normallink, .previewtext {
     color: white;
 }
+
 /*------------------------font weight--------------------------*/
 .upperbar .role, .captionbox .gametitle, .previewtext {
     font-weight: bold;
 }
+
 /*---------------------background colors----------------------*/
 .upperbar, .captionbox {
     background-color: rgb(63, 63, 63);
@@ -22,10 +25,12 @@
 body {
     background-color: #202020;
 }
+
 /*--------------------------display---------------------------*/
 .iconbox, .captionbox, .imagecontainer, .gameimage {
     display: inline-block;
 }
+
 /*------------------------------------------------------------*/
 
 /*----------------small screen settings-----------------------*/
@@ -84,7 +89,6 @@ body {
     }
 
     .upperbar .name {
-        font-size: xxx-large;
         margin-top: 4%;
         margin-bottom: 2%;
     }
@@ -106,15 +110,15 @@ body {
     .normalborderradius {
         border-radius: 5% / 3%;
     }
-    
+
     .gameimage, .gameimageoverlay {
         width: 92%;
         margin-top: 5%;
     }
-    
+
     .gameimageoverlay, .previewoverlay, .previewtext {
         left: 4%;
-        right: 4%;
+        right: 3.9%;
     }
 
     .previewoverlay {
@@ -155,7 +159,7 @@ body {
         width: 390px;
         margin-top: 20px;
     }
-    
+
     .gameimageoverlay {
         left: 1.1%;
         right: 2%;
@@ -166,6 +170,7 @@ body {
         opacity: 0;
     }
 }
+
 /*------------------------------------------------------------*/
 
 .upperbar {
