@@ -1,18 +1,22 @@
 /*---------------------------fonts------------------------------*/
-.upperbar .role, .upperbar .name, .captionbox p, .captionbox a {
+.upperbar .role, .upperbar .name, .captionbox p, .captionbox a, .previewtext {
     font-family: sans-serif, Verdana, Geneva, Tahoma;
 }
 /*------------------------font colors--------------------------*/
-.upperbar .role, .upperbar .name, .captionbox p, .normallink {
+.upperbar .role, .upperbar .name, .captionbox p, .normallink, .previewtext {
     color: white;
 }
 /*------------------------font weight--------------------------*/
-.upperbar .role, .captionbox .gametitle {
+.upperbar .role, .captionbox .gametitle, .previewtext {
     font-weight: bold;
 }
 /*---------------------background colors----------------------*/
 .upperbar, .captionbox {
     background-color: rgb(63, 63, 63);
+}
+
+.previewoverlay {
+    background-color: #000000;
 }
 
 body {
@@ -85,10 +89,6 @@ body {
         margin-bottom: 2%;
     }
 
-    /*.upperbar .role {
-        margin-top: -13%;
-    }*/
-
     .upperbar .normallink {
         padding-inline: 2%;
     }
@@ -112,9 +112,13 @@ body {
         margin-top: 5%;
     }
     
-    .gameimageoverlay {
+    .gameimageoverlay, .previewoverlay, .previewtext {
         left: 4%;
         right: 4%;
+    }
+
+    .previewoverlay {
+        opacity: 0.8;
     }
 }
 
@@ -155,6 +159,10 @@ body {
     .gameimageoverlay {
         left: 1.1%;
         right: 2%;
+    }
+
+    .previewoverlay {
+        opacity: 0;
     }
 }
 /*------------------------------------------------------------*/
@@ -218,11 +226,24 @@ body {
     width: 100%;
 }
 
-.gameimageoverlay {
+.gameimageoverlay, .previewoverlay, .previewtext {
     position: absolute;
-    opacity: 0;
     transition: .5s ease;
     height: 93%;
+}
+
+.previewoverlay {
+    transform: translate(0%, -100.7%);
+}
+
+.previewtext {
+    font-size: xx-large;
+    text-align: center;
+    transform: translate(0%, 50%);
+}
+
+.gameimageoverlay {
+    opacity: 0;
 }
 
 .gameimageoverlay:hover {
