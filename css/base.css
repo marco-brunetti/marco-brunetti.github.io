@@ -1,7 +1,12 @@
 /**********************basic layout******************************/
-
 body {
     background-color: #0f0f0f;
+    width: 100%;
+    height: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
 }
 
 .upperbar .role, .namecontainer .name, .upperbar .normallink {
