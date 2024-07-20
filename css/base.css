@@ -1,0 +1,122 @@
+/**********************basic layout******************************/
+
+body {
+    background-color: #0f0f0f;
+}
+
+.upperbar .role, .namecontainer .name, .upperbar .normallink {
+    color: white;
+}
+
+.namecontainer .role, .namecontainer .name, .upperbar .normallink {
+    font-family: sans-serif, Verdana, Geneva, Tahoma;
+}
+
+.namecontainer .role {
+    font-weight: bold;
+}
+
+.upperbar .normallink {
+    text-decoration: underline;
+}
+
+.upperbar {
+    background-color: rgb(20, 35, 56);
+}
+
+@media screen and (max-width: 480px) {
+    .namecontainer .name {
+        font-size: xx-large;
+    }
+
+    .namecontainer .role, .upperbar .normallink, .upperbar p {
+        font-size: large;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1080px) {
+    .namecontainer .name {
+        font-size: xxx-large;
+    }
+
+    .namecontainer .role, .upperbar .normallink, .upperbar p {
+        font-size: xx-large;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+
+    .upperbar {
+        width: 100%;
+        padding-bottom: 5%;
+        flex-wrap: wrap;
+        display:flex;
+        justify-content: center;
+    }
+
+    .upperbar .normallink {
+        padding-inline: 3%;
+        padding-top: 5%;
+    }
+
+    .namecontainer {
+        width: 100%;
+        display: grid;
+        justify-items: center;
+    }
+
+    .namecontainer .name {
+        margin-top: 4%;
+        margin-bottom: 1%;
+    }
+    .namecontainer .role {
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+}
+
+@media screen and (min-width: 1081px) {
+    .upperbar {
+        display:flex;
+        position: fixed;
+        z-index: 3000;
+        width: 100%;
+        opacity: 0.95;
+        background-color: rgb(28, 47, 73);
+    }
+
+    .upperbar .normallink {
+        font-size: large;
+        position: relative;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 0%;
+        margin-right: 5%;
+    }
+
+    .upperbar #firstlink {
+        margin-left: auto;
+    }
+
+    .upperbar #lastlink {
+        margin-right: 5%;
+    }
+
+    .upperbar .namecontainer {
+        min-width: 350px;
+        padding-left: 1%;
+        display: block;
+    }
+
+    .namecontainer .name {
+        font-size: xx-large;
+    }
+
+    .namecontainer .role {
+        font-size: x-large;
+        margin-top: -4%;
+        margin-left: -0.4%;
+    }
+}
+
+/****************************************************************/
