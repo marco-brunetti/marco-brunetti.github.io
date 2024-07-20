@@ -309,18 +309,14 @@ body {
 
 .tappreviewtext, .hoverpreviewtext {
     position: absolute;
-}
-
-.tappreviewtext {
     text-align: center;
-    height: 90%;
-    transform: translate(0%, 50%);
+    height: 8%;
+    transform: translate(-4%, 600%);
+    width: 100%;
 }
 
 .hoverpreviewtext {
-    height: 100%;
-    width: 100%;
-    transform: translate(0%, 50%);
+    transform: translate(0%, 600%);
 }
 
 .gameimageoverlay {
