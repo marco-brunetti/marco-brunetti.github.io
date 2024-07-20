@@ -110,10 +110,20 @@ body {
         max-width: 90%;
         margin-top: 3%;
         margin-bottom: 5%;
+        min-height: fit-content;
+    }
+
+    .captionbox p {
+        margin-top: 30px;
     }
 
     .captionbox .normallink {
         padding-inline: 1%;
+        margin-bottom: 3%;
+    }
+
+    .captionbox .upperlink {
+        margin-bottom: 20px;
     }
 
     .normalborderradius {
@@ -194,11 +204,28 @@ body {
     .captionbox {
         min-width: 400px;
         max-width: 400px;
-        min-height: 550px;
-        max-height: 550px;
+        min-height: 560px;
+        max-height: 560px;
         padding-inline: 1%;
         margin-inline: 0.5%;
         margin-bottom: 1.3%;
+        background-color: rgb(31, 53, 87);
+    }
+
+    .captionbox .gametitle {
+        font-size: x-large;
+    }
+
+    .captionbox .upperlink {
+        margin-bottom: 10px;
+    }
+    
+    .captionbox .normallink {
+        margin-bottom: 1%;
+    }
+
+    .captionbox p {
+        margin-top: 10px;
     }
 
     .normalborderradius {
@@ -244,10 +271,6 @@ body {
     .upperbar {
         background-color: rgb(20, 35, 56);
     }
-    
-    .captionbox {
-        background-color: rgb(31, 53, 87);
-    }
 }
 
 /*------------------------------------------------------------*/
@@ -273,24 +296,23 @@ body {
 
 .captionbox p {
     padding: 0px;
-    margin-top: 8px;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
 
+.captionbox .gametitle {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
 .captionbox .normallink {
-    margin-bottom: 6%;
     display: grid;
 }
 
 .captionbox a:link {
     font-style: italic;
     padding-block: 5px;
-}
-
-.captionbox .upperlink {
-    margin-bottom: 10px;
 }
 
 .imagecontainer {
