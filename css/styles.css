@@ -1,21 +1,27 @@
 /*---------------------------fonts------------------------------*/
-.upperbar .role, .upperbar .name, .captionbox p, .captionbox a, .previewtext {
+.namecontainer .role, .namecontainer .name, .captionbox p, .captionbox a, .previewtext {
     font-family: sans-serif, Verdana, Geneva, Tahoma;
 }
 
 /*------------------------font colors--------------------------*/
-.upperbar .role, .upperbar .name, .captionbox p, .normallink, .previewtext {
+.upperbar .role, .namecontainer .name, .captionbox p, .normallink, .previewtext {
     color: white;
 }
 
 /*------------------------font weight--------------------------*/
-.upperbar .role, .captionbox .gametitle, .previewtext {
+.namecontainer .role, .captionbox .gametitle, .previewtext {
     font-weight: bold;
+}
+
+/*-----------------------text decoration-----------------------*/
+.normallink {
+    text-decoration: underline;
 }
 
 /*---------------------background colors----------------------*/
 .upperbar, .captionbox {
-    background-color: rgb(63, 63, 63);
+    background-color: rgb(30, 53, 87);
+    /*    background-color: rgb(63, 63, 63);*/
 }
 
 .previewoverlay {
@@ -23,7 +29,7 @@
 }
 
 body {
-    background-color: #202020;
+    background-color: #0f0f0f;
 }
 
 /*--------------------------display---------------------------*/
@@ -40,11 +46,11 @@ body {
         border-radius: 5% / 9%;
     }
 
-    .upperbar .name {
-        font-size: x-large;
+    .namecontainer .name {
+        font-size: xx-large;
     }
 
-    .upperbar .role, .normallink, .upperbar p, .captionbox p, .previewtext {
+    .namecontainer .role, .normallink, .upperbar p, .captionbox p, .previewtext {
         font-size: large;
     }
 
@@ -54,11 +60,6 @@ body {
 }
 
 @media screen and (min-width: 481px) {
-
-    .upperbar {
-        border-radius: 5% / 20%;
-    }
-
     .captionbox p {
         text-align: justify;
         text-align-last: center;
@@ -68,11 +69,15 @@ body {
 /*----------------mobile screen settings-----------------------*/
 @media screen and (min-width: 481px) and (max-width: 1080px) {
 
-    .upperbar .name {
+    .upperbar {
+        border-radius: 5% / 20%;
+    }
+
+    .namecontainer .name {
         font-size: xxx-large;
     }
 
-    .upperbar .role, .normallink, .upperbar p, .captionbox p, .previewtext {
+    .namecontainer .role, .normallink, .upperbar p, .captionbox p, .previewtext {
         font-size: xx-large;
     }
 }
@@ -86,9 +91,15 @@ body {
         margin-left: auto;
         margin-right: auto;
         margin-top: 2.5%;
+        padding-top: 1%;
+        padding-bottom: 5%;
     }
 
-    .upperbar .name {
+    .namecontainer .role {
+        margin-top: 0%;
+    }
+
+    .namecontainer .name {
         margin-top: 4%;
         margin-bottom: 2%;
     }
@@ -124,24 +135,52 @@ body {
     .previewoverlay {
         opacity: 0.8;
     }
+    
 }
 
 /*----------------big screen settings-----------------------*/
 @media screen and (min-width: 1081px) {
 
-    .upperbar .name {
-        display: inline-block;
-        padding-right: 10%;
+    body {
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 0%;
+    }
+
+    .upperbar {
+        display:flex;
+    }
+
+    .upperbar .namecontainer {
+        min-width: 350px;
+        padding-left: 1%;
+        display: block;
+    }
+
+    .namecontainer .name {
         font-size: xx-large;
     }
 
-    .upperbar .role {
-        margin-top: -15px;
+    .namecontainer .role {
+        font-size: x-large;
+        margin-top: -4%;
+        margin-left: -0.4%;
+    }
+    
+    .upperbar .normallink {
+        position: relative;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 0%;
+        margin-right: 5%;
     }
 
-    .upperbar a {
-        display: inline-block;
-        margin-right: 10%;
+    #firstlink {
+        margin-left: auto;
+    }
+
+    #lastlink {
+        margin-right: 5%;
     }
 
     .captionbox {
@@ -177,15 +216,6 @@ body {
 
 /*------------------------------------------------------------*/
 
-.upperbar {
-    padding-top: 1%;
-    padding-bottom: 5%;
-}
-
-.upperbar .normallink {
-    display: inline-block;
-}
-
 .iconbox {
     vertical-align: top;
     justify-content: center;
@@ -208,10 +238,6 @@ body {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-}
-
-.normallink {
-    text-decoration: underline;
 }
 
 .captionbox .normallink {
