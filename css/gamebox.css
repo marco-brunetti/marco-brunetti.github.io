@@ -22,6 +22,7 @@
 
 .gamebox {
     text-align: center;
+    margin-bottom: 1.3%;
 }
 
 .gamebox p {
@@ -38,62 +39,57 @@
 .imagecontainer {
     position: relative;
     width: 100%;
-    text-align: center;
+    height: 55%;
+    margin-top: 4%;
 }
 
-.imagecontainer .gameimageoverlay, .imagecontainer .previewoverlay {
+.gameimage, .previewoverlay, .gameimageoverlay, .tappreviewtext, .hoverpreviewtext {
     position: absolute;
-    transition: .5s ease;
-    height: 93%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
-.imagecontainer .gameimageoverlay {
-    opacity: 0;
-}
-
-.imagecontainer .gameimageoverlay:hover {
-    opacity: 1;
-}
-
-.imagecontainer .previewoverlay {
+.previewoverlay {
     background-color: #000000;
     opacity: 0.7;
 }
 
-.previewoverlay .tappreviewtext, .previewoverlay .hoverpreviewtext {
-    position: absolute;
-    text-align: center;
-    height: 8%;
-    transform: translate(-4%, 600%);
-    width: 100%;
+.tappreviewtext, .hoverpreviewtext {
+    align-content: center;
 }
 
-.previewoverlay .hoverpreviewtext {
-    transform: translate(0%, 600%);
+.gameimageoverlay, .tappreviewtext {
+    opacity: 0;
 }
 
-@media screen and (max-width: 480px) {
-
-    .normallink, .upperbar p, .gamebox p, .tappreviewtext, .hoverpreviewtext {
-        font-size: large;
-    }
+.gameimageoverlay:hover, .hoverpreviewtext {
+    opacity: 1;
 }
 
-@media screen and (min-width: 481px) and (max-width: 1080px) {
+.gameimageoverlay, .previewoverlay {
+    transition: .5s ease;
+}
 
-    .normallink, .gamebox p, .tappreviewtext, .hoverpreviewtext {
-        font-size: xx-large;
-    }
+.normalborderradius {
+    border-radius: 3% / 4%;
+}
+
+.gamebox {
+    border-radius: 4% / 3%;
 }
 
 @media screen and (max-width: 1080px) {
 
     .gamebox {
-        min-width: 90%;
-        max-width: 90%;
-        margin-top: 3%;
-        margin-bottom: 5%;
-        min-height: fit-content;
+        width: 100%;
+        margin: 3%;
+        padding-left: 3%;
+        padding-right: 3%;
+        min-height: calc(100vw * 1.15);
         background-color: rgb(20, 35, 56);
     }
 
@@ -110,88 +106,53 @@
         margin-bottom: 20px;
     }
 
-    .normalborderradius {
-        border-radius: 5% / 3%;
-    }
-
-    .gameimage, .gameimageoverlay {
-        width: 92%;
-        margin-top: 5%;
-    }
-
-    .gameimageoverlay, .previewoverlay, .tappreviewtext, .hoverpreviewtext {
-        left: 4%;
-        right: 3.9%;
-    }
-
-    .previewoverlay {
-        transform: translate(0%, -100.7%);
-    }
-
     .tappreviewtext {
         opacity: 1;
     }
     
     .hoverpreviewtext {
         opacity: 0;
-        size: 0px;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    p, a {
+        font-size: small;
+    }
+}
+
+@media screen and (min-width: 566px) and (max-width: 675px) {
+
+    .normallink, .gamebox p, .tappreviewtext, .hoverpreviewtext {
+        font-size: large;
+    }
+}
+
+@media screen and (min-width: 676px) and (max-width: 830px) {
+
+    .normallink, .gamebox p, .tappreviewtext, .hoverpreviewtext {
+        font-size: x-large;
+    }
+}
+
+@media screen and (min-width: 831px) and (max-width: 1080px) {
+
+    .normallink, .gamebox p, .tappreviewtext, .hoverpreviewtext {
+        font-size: xx-large;
     }
 }
 
 @media screen and (min-width: 1081px) {
 
     .gamebox {
-        min-width: 400px;
-        max-width: 400px;
-        min-height: 560px;
-        max-height: 560px;
-        padding-inline: 1%;
+        width: 400px;
+        height: 560px;
+        padding-inline: 0.8%;
         margin-inline: 0.5%;
-        margin-bottom: 1.3%;
         background-color: rgb(31, 53, 87);
     }
 
     .gamebox .gametitle {
         font-size: x-large;
-    }
-
-    .gamebox .upperlink {
-        margin-bottom: 10px;
-    }
-    
-    .gamebox .normallink {
-        margin-bottom: 1%;
-    }
-
-    .normalborderradius {
-        border-radius: 3% / 3%;
-    }
-
-    .gameimage {
-        width: 390px;
-    }
-
-    .gameimage, .gameimageoverlay {
-        margin-top: 20px;
-    }
-
-    .gameimageoverlay, .previewoverlay {
-        width: 391px;
-        left: 1%;
-        right: 1%;
-    }
-
-    .previewoverlay {
-        width: 390px;
-        transform: translate(0.2%, -101.1%);
-    }
-
-    .tappreviewtext {
-        opacity: 0;
-        size: 0px;
-    }
-    
-    .hoverpreviewtext {
-        opacity: 1;
     }
 }
