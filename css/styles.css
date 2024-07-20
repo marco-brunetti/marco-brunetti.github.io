@@ -44,11 +44,6 @@ body {
 
 /*----------------small screen settings-----------------------*/
 @media screen and (max-width: 480px) {
-
-    .upperbar {
-        border-radius: 5% / 9%;
-    }
-
     .namecontainer .name {
         font-size: xx-large;
     }
@@ -71,11 +66,6 @@ body {
 
 /*----------------mobile screen settings-----------------------*/
 @media screen and (min-width: 481px) and (max-width: 1080px) {
-
-    .upperbar {
-        border-radius: 5% / 20%;
-    }
-
     .namecontainer .name {
         font-size: xxx-large;
     }
@@ -88,12 +78,7 @@ body {
 @media screen and (max-width: 1080px) {
 
     .upperbar {
-        min-width: 91.8%;
-        max-width: 91.8%;
-        margin-left: 3.5%;
-        margin-right: 3.5%;
-        margin-top: 2.5%;
-        padding-top: 1%;
+        width: 100%;
         padding-bottom: 5%;
         flex-wrap: wrap;
         display:flex;
@@ -106,13 +91,13 @@ body {
         justify-items: center;
     }
 
-    .namecontainer .role {
-        margin-top: 0%;
-    }
-
     .namecontainer .name {
         margin-top: 4%;
-        margin-bottom: 2%;
+        margin-bottom: 1%;
+    }
+    .namecontainer .role {
+        margin-top: 0%;
+        margin-bottom: 0%;
     }
 
     .upperbar .normallink {
