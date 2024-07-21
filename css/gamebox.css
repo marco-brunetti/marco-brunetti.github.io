@@ -189,11 +189,20 @@
 @media screen and (min-width: 1081px) {
 
     .gamebox {
-        width: 400px;
-        height: 560px;
+        width: 100%;
+        height: calc(100vw * 1.15);
+        max-width: 400px;
+        max-height: 560px;
         padding-inline: 0.8%;
         margin-inline: 0.5%;
         background-color: rgb(31, 53, 87);
+
+
+        /*width: 400px;
+        height: 560px;
+        padding-inline: 0.8%;
+        margin-inline: 0.5%;
+        background-color: rgb(31, 53, 87);*/
     }
 
     .gametitle {
