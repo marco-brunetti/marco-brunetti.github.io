@@ -1,9 +1,4 @@
-
-
-
-
 @media screen and (max-width: 1080px) {
-
     .sidecontainer {
         display: none;
     }
@@ -32,9 +27,12 @@
         background-color: #0f0f0f;
         display:flex;
         flex-wrap: wrap;
+        margin-top: 140px;
+        border-radius: 0.5%;
     }
     
     .sidecontainer {
+        padding-inline: 10px;
         right: 0;
         margin-left: auto;
         margin-right: 0;
@@ -56,20 +54,21 @@
         margin-left: 2.5%;
         margin-right: auto;
         width: 65%;
-        display:inline-block;
-        justify-content: center;
+        display:inline-flexbox;
+        justify-items: center;
         color: white;
         font-family: sans-serif, Verdana, Geneva, Tahoma;
         text-align: left;
     }
 
-    .blogcontent {
-        margin-top: 140px;
-        border-radius: 0.5%;
-    }
-
-    .sidecontainer {
-        padding-inline: 10px;
+    .gametrailer {
+        width: 80%;
+        height: calc(100vw * 0.5 * 0.3);
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 4%;
+        margin-bottom: 2%;
+        border-radius: 4% / 3%;
     }
 }
 
@@ -143,7 +142,7 @@
     .imagecontainer {
         position: relative;
         width: 96%;
-        height: 47%;
+        height: 45%;
         margin-top: 3%;
         margin-left: auto;
         margin-right: auto;
@@ -168,12 +167,20 @@
 
 @media screen and (min-width: 1081px) and (max-width: 1305px) {
     .gamebox {
-        height: calc(165vw * 0.5 * 0.3);
+        height: calc(153vw * 0.5 * 0.3);
+    }
+
+    .imagecontainer {
+        height: 42%;
     }
 }
 
 @media screen and (min-width: 1306px) {
     .gamebox {
-        height: calc(150vw * 0.5 * 0.3);
+        height: calc(145vw * 0.5 * 0.3);
+    }
+
+    .imagecontainer {
+        height: 45%;
     }
 }
