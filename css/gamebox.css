@@ -4,20 +4,19 @@
     margin-bottom: 1.3%;
 }
 
-.gamebox p, .gamebox .normallink, .tappreviewtext, .hoverpreviewtext {
+.gametitle, .gamedescription, .gamebox .normallink, .tappreviewtext, .hoverpreviewtext {
     font-family: sans-serif, Verdana, Geneva, Tahoma;
 }
 
-.gamebox p, .gamebox .normallink, .tappreviewtext, .hoverpreviewtext {
+.gametitle, .gamedescription, .gamebox .normallink, .tappreviewtext, .hoverpreviewtext {
     color: white;
 }
 
-.gamebox .gametitle, .tappreviewtext, .hoverpreviewtext {
+.gametitle, .tappreviewtext, .hoverpreviewtext {
     font-weight: bold;
 }
 
-.gamebox .gametitle {
-    margin-top: 10px;
+.gametitle {
     margin-bottom: 15px;
 }
 
@@ -26,7 +25,7 @@
     text-decoration: underline;
 }
 
-.gamebox p {
+.gametitle, .gamedescription {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -94,19 +93,6 @@
         background-color: rgb(20, 35, 56);
     }
 
-    .gamebox p {
-        margin-top: 30px;
-    }
-
-    .gamebox .normallink {
-        padding-inline: 1%;
-        margin-bottom: 3%;
-    }
-
-    .gamebox .upperlink {
-        margin-bottom: 20px;
-    }
-
     .tappreviewtext {
         opacity: 1;
     }
@@ -117,29 +103,74 @@
 }
 
 @media screen and (max-width: 565px) {
-    .gamebox p , .gamebox a {
-        font-size: small;
+    
+    .gametitle {
+        font-size: 18px;
+        margin-top: 2%;
+    }
+
+    .gamedescription {
+        font-size: 14px;
+        margin-top: 5%;
+    }
+    
+    .gamebox .normallink {
+        font-size: 16px;
+        margin-bottom: 3%;
     }
 }
 
 @media screen and (min-width: 566px) and (max-width: 675px) {
 
-    .gamebox .normallink, .gamebox p, .tappreviewtext, .hoverpreviewtext {
-        font-size: large;
+    .gametitle {
+        font-size: 24px;
+        margin-top: 2%;
+    }
+
+    .gamedescription {
+        font-size: 20px;
+        margin-top: 5%;
+    }
+    
+    .gamebox .normallink {
+        font-size: 20px;
+        margin-bottom: 2%;
     }
 }
 
 @media screen and (min-width: 676px) and (max-width: 830px) {
 
-    .gamebox .normallink, .gamebox p, .tappreviewtext, .hoverpreviewtext {
-        font-size: x-large;
+    .gametitle {
+        font-size: 28px;
+        margin-top: 2%;
+    }
+
+    .gamedescription {
+        font-size: 24px;
+        margin-top: 5%;
+    }
+    
+    .gamebox .normallink {
+        font-size: 24px;
+        margin-bottom: 2%;
     }
 }
 
 @media screen and (min-width: 831px) and (max-width: 1080px) {
 
-    .gamebox .normallink, .gamebox p, .tappreviewtext, .hoverpreviewtext {
-        font-size: xx-large;
+    .gametitle {
+        font-size: 32px;
+        margin-top: 2%;
+    }
+
+    .gamedescription {
+        font-size: 28px;
+        margin-top: 5%;
+    }
+    
+    .gamebox .normallink {
+        font-size: 28px;
+        margin-bottom: 4%;
     }
 }
 
@@ -153,7 +184,18 @@
         background-color: rgb(31, 53, 87);
     }
 
-    .gamebox .gametitle {
-        font-size: x-large;
+    .gametitle {
+        font-size: 24px;
+        margin-top: 2%;
+    }
+
+    .gamedescription {
+        font-size: 16px;
+        margin-top: 5%;
+    }
+    
+    .gamebox .normallink {
+        font-size: 16px;
+        margin-bottom: 2%;
     }
 }
