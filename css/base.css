@@ -8,15 +8,20 @@ body {
     margin-bottom: 0%;
 }
 
-.upperbar .role, .namecontainer .name, .upperbar .normallink {
+.upperbar {
+    position: relative;
+    width: 100%;
+}
+
+.profession, .fullname, .upperbar .normallink {
     color: white;
 }
 
-.namecontainer .role, .namecontainer .name, .upperbar .normallink {
+.profession, .fullname, .upperbar .normallink {
     font-family: sans-serif, Verdana, Geneva, Tahoma;
 }
 
-.namecontainer .role {
+.profession {
     font-weight: bold;
 }
 
@@ -28,22 +33,44 @@ body {
     background-color: rgb(20, 35, 56);
 }
 
-@media screen and (max-width: 480px) {
-    .namecontainer .name {
+@media screen and (max-width: 565px) {
+    .fullname {
+        font-size: x-large;
+    }
+    .upperbar .normallink, .profession {
+        font-size: small;
+    }
+}
+
+@media screen and (min-width: 566px) and (max-width: 675px) {
+
+    .fullname {
         font-size: xx-large;
     }
 
-    .namecontainer .role, .upperbar .normallink, .upperbar p {
+    .upperbar .normallink, .profession {
         font-size: large;
     }
 }
 
-@media screen and (min-width: 481px) and (max-width: 1080px) {
-    .namecontainer .name {
+@media screen and (min-width: 676px) and (max-width: 830px) {
+
+    .fullname {
+        font-size: xx-large;
+    }
+
+    .upperbar .normallink, .profession {
+        font-size: x-large;
+    }
+}
+
+@media screen and (min-width: 831px) and (max-width: 1080px) {
+
+    .fullname {
         font-size: xxx-large;
     }
 
-    .namecontainer .role, .upperbar .normallink, .upperbar p {
+    .upperbar .normallink, .profession {
         font-size: xx-large;
     }
 }
@@ -51,7 +78,6 @@ body {
 @media screen and (max-width: 1080px) {
 
     .upperbar {
-        width: 100%;
         padding-bottom: 5%;
         flex-wrap: wrap;
         display:flex;
@@ -64,16 +90,20 @@ body {
     }
 
     .namecontainer {
-        width: 100%;
-        display: grid;
-        justify-items: center;
+        height: 100%;
     }
 
-    .namecontainer .name {
+    .namecontainer, .fullname, .profession {
+        width: 100%;
+    }
+
+    .fullname {
+        text-align: center;
         margin-top: 4%;
         margin-bottom: 1%;
     }
-    .namecontainer .role {
+    .profession {
+        text-align: center;
         margin-top: 0%;
         margin-bottom: 0%;
     }
@@ -84,7 +114,6 @@ body {
         display:flex;
         position: fixed;
         z-index: 3000;
-        width: 100%;
         opacity: 0.95;
         background-color: rgb(28, 47, 73);
     }
@@ -112,11 +141,11 @@ body {
         display: block;
     }
 
-    .namecontainer .name {
+    .fullname {
         font-size: xx-large;
     }
 
-    .namecontainer .role {
+    .profession {
         font-size: x-large;
         margin-top: -4%;
         margin-left: -0.4%;

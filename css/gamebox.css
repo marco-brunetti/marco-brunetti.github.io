@@ -1,8 +1,14 @@
-.gamebox p, .gamebox a, .tappreviewtext, .hoverpreviewtext, .normallink {
+.gamebox {
+    position: relative;
+    text-align: center;
+    margin-bottom: 1.3%;
+}
+
+.gamebox p, .gamebox .normallink, .tappreviewtext, .hoverpreviewtext {
     font-family: sans-serif, Verdana, Geneva, Tahoma;
 }
 
-.gamebox p, .normallink, .tappreviewtext, .hoverpreviewtext {
+.gamebox p, .gamebox .normallink, .tappreviewtext, .hoverpreviewtext {
     color: white;
 }
 
@@ -18,11 +24,6 @@
 .gamebox .normallink {
     display: grid;
     text-decoration: underline;
-}
-
-.gamebox {
-    text-align: center;
-    margin-bottom: 1.3%;
 }
 
 .gamebox p {
@@ -116,28 +117,28 @@
 }
 
 @media screen and (max-width: 565px) {
-    p, a {
+    .gamebox p , .gamebox a {
         font-size: small;
     }
 }
 
 @media screen and (min-width: 566px) and (max-width: 675px) {
 
-    .normallink, .gamebox p, .tappreviewtext, .hoverpreviewtext {
+    .gamebox .normallink, .gamebox p, .tappreviewtext, .hoverpreviewtext {
         font-size: large;
     }
 }
 
 @media screen and (min-width: 676px) and (max-width: 830px) {
 
-    .normallink, .gamebox p, .tappreviewtext, .hoverpreviewtext {
+    .gamebox .normallink, .gamebox p, .tappreviewtext, .hoverpreviewtext {
         font-size: x-large;
     }
 }
 
 @media screen and (min-width: 831px) and (max-width: 1080px) {
 
-    .normallink, .gamebox p, .tappreviewtext, .hoverpreviewtext {
+    .gamebox .normallink, .gamebox p, .tappreviewtext, .hoverpreviewtext {
         font-size: xx-large;
     }
 }
