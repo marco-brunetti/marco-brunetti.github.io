@@ -105,8 +105,11 @@
 @media screen and (max-width: 565px) {
     
     .gametitle {
-        font-size: 18px;
         margin-top: 2%;
+    }
+
+    .gametitle, .tappreviewtext {
+        font-size: 18px;
     }
 
     .gamedescription {
@@ -123,8 +126,11 @@
 @media screen and (min-width: 566px) and (max-width: 675px) {
 
     .gametitle {
-        font-size: 24px;
         margin-top: 2%;
+    }
+
+    .gametitle, .tappreviewtext {
+        font-size: 24px;
     }
 
     .gamedescription {
@@ -141,8 +147,11 @@
 @media screen and (min-width: 676px) and (max-width: 830px) {
 
     .gametitle {
-        font-size: 28px;
         margin-top: 2%;
+    }
+
+    .gametitle, .tappreviewtext {
+        font-size: 28px;
     }
 
     .gamedescription {
@@ -159,8 +168,11 @@
 @media screen and (min-width: 831px) and (max-width: 1080px) {
 
     .gametitle {
-        font-size: 32px;
         margin-top: 2%;
+    }
+
+    .gametitle, .tappreviewtext {
+        font-size: 32px;
     }
 
     .gamedescription {
