@@ -9,6 +9,25 @@
     <link rel="stylesheet" href="/css/scrollbar.css">
 </head>
 
+<!---------------------blogcontent.css overrides--------------------->
+<style>
+    body {
+        background-image: url("/images/backgrounds/mini_tanks.png");
+    }
+
+    @media screen and (max-width: 1080px) {
+        .backgroundmask {
+            background-color: rgba(0, 0, 0, 0.85);
+        }
+    }
+
+    @media screen and (min-width: 1081px) {
+        .backgroundmask {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    }
+</style>
+
 <body>
     <div class="upperbar">
         <div class="namecontainer">
@@ -25,6 +44,8 @@
         <a class="normallink" id="lastlink" href="https://www.youtube.com/@snowhorsegames" target="_blank">Contact</a>
        
     </div>
+
+        <div class="backgroundmask"><!--backgroundmask-->
 
     <div class="blogcontent">
 
@@ -86,6 +107,6 @@
 
     </div>
 
-</body>
+</div><!--backgroundmask--></body>
 
 </html>
