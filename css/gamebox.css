@@ -196,7 +196,7 @@
 
     .gamebox {
         width: 100%;
-        height: calc(30vw);
+        height: calc(100vw * 1.15);
         max-width: 400px;
         max-height: 560px;
         padding-inline: 0.8%;

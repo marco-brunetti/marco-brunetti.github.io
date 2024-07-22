@@ -9,6 +9,23 @@
     <link rel="stylesheet" href="/css/scrollbar.css">
 </head>
 
+<!---------------------blogcontent.css overrides--------------------->
+<style>
+    body {
+        background-image: url("/images/backgrounds/mini_tanks.png");
+    }
+
+    .backgroundmask {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    @media screen and (max-width: 1080px) {
+        .backgroundmask {
+            background-color: rgba(0, 0, 0, 1);
+        }
+    }
+</style>
+
 <body><div class="backgroundmask">
     <div class="upperbar">
         <div class="namecontainer">
@@ -26,8 +43,9 @@
        
     </div>
 
-    <div class="blogcontent">
+    <div class="backgroundmask"><!--backgroundmask-->
 
+    <div class="blogcontent">
         <div class="blogbody">
 <!---------------------------------------------------------------PUT CONTENT HERE----------------------------------------------------------------------------->
 

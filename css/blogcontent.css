@@ -1,14 +1,5 @@
-body {
-    height: 100%;
-}
-
 .blogbody > p {
     white-space: pre-line;
-}
-
-.blogbody > h2 {
-    margin-top: 5%;
-    margin-bottom: 0%;
 }
 
 .liheading {
@@ -18,6 +9,8 @@ body {
 .blogbody > p, .blogbody > ul {
     line-height: 1.8;
 }
+
+
 
 @media screen and (max-width: 1080px) {
     .sidecontainer {
@@ -40,6 +33,11 @@ body {
 }
 
 @media screen and (min-width: 1081px) {
+    
+    /*check html for overrides*/
+    .backgroundmask {
+        height: 100%;
+    }
     
     .blogcontent {
         position: relative;
@@ -80,6 +78,11 @@ body {
         color: white;
         font-family: sans-serif, Verdana, Geneva, Tahoma;
         text-align: left;
+    }
+
+    .blogbody > h2 {
+        margin-top: 5%;
+        margin-bottom: 0%;
     }
 
     .gametrailer {
@@ -131,21 +134,26 @@ body {
 
 /**************base.css overrides**************/
 
+/*background image set in html*/
+body {
+    background-position:left;
+    background-repeat:repeat-x;
+    background-size:auto;
+    background-attachment: fixed;
+}
+
+@media screen and (max-width: 1080px) {
+    .upperbar .normallink {
+        padding-inline: 3%;
+        padding-top: 2%;
+    }
+
+    .namecontainer {
+        height: 80%;
+    }
+}
+
 @media screen and (min-width: 1081px) {
-
-    /*background image set in html*/
-    body {
-        background-position:left;
-        background-repeat:repeat-x;
-        background-size:auto;
-        background-attachment: fixed;
-    }
-
-    /*check html for overrides*/
-    .backgroundmask {
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-    }
 
     .upperbar {
         opacity: 1;
