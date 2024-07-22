@@ -2,6 +2,14 @@
     white-space: pre-line;
 }
 
+.liheading {
+    font-weight: bold;
+}
+
+.blogbody > p, .blogbody > ul {
+    line-height: 1.8;
+}
+
 @media screen and (max-width: 1080px) {
     .sidecontainer {
         display: none;
