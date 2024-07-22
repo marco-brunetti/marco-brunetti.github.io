@@ -1,5 +1,14 @@
-.blogbody p {
+body {
+    height: 100%;
+}
+
+.blogbody > p {
     white-space: pre-line;
+}
+
+.blogbody > h2 {
+    margin-top: 5%;
+    margin-bottom: 0%;
 }
 
 .liheading {
@@ -51,7 +60,7 @@
         display:flex;
         flex-wrap: wrap;
         justify-content: center;
-    
+        align-content: flex-start;
     }
 
     .sidecontainer p:first-child {
@@ -124,12 +133,18 @@
 
 @media screen and (min-width: 1081px) {
 
+    /*background image set in html*/
     body {
-        background-image: url("/images/cs_christmas_icon.png");
         background-position:left;
         background-repeat:repeat-x;
-        background-size:contain;
+        background-size:auto;
         background-attachment: fixed;
+    }
+
+    /*check html for overrides*/
+    .backgroundmask {
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
     }
 
     .upperbar {
