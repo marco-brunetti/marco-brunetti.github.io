@@ -12,7 +12,11 @@
 <!---------------------blogcontent.css overrides--------------------->
 <style>
     body {
-        background-image: url("/images/backgrounds/mini_tanks.png");
+        background-image: url("/images/backgrounds/reflections_abyss.png");
+
+        /*remove after final images added*/
+        background-attachment: fixed;
+        background-size:cover;
     }
 
     @media screen and (max-width: 1080px) {
@@ -53,9 +57,21 @@
         <div class="blogbody">
 <!---------------------------------------------------------------PUT CONTENT HERE----------------------------------------------------------------------------->
 
+            <h2 style="text-align: center;">Reflection from the Abyss (2023)</h2>
+
             <iframe class="gametrailer" src="//www.youtube.com/embed/liy6bBsiOZg" frameborder="0" allowfullscreen=""></iframe> <!--VIDEO TRAILER-->
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Why do we use it? It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). Where does it come from? Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
-            
+
+            <p>
+                This game was made in 72 hours for the IGDA PY Game Jam. For this project, I teamed up with a 2D and a 3D artist to create an abstract escape room inspired by Narcissus, a character from Greek mythology. We needed to develop modular code rapidly so that we didn’t have to create many interactable objects. We also needed some kind of inventory system. Although this wasn’t my first team jam, it helped me improve my communication and planning with artists.
+            </p>
+
+            <h3>Breakthroughs:</h3>
+            <ul>
+                <li><span class="liheading">Inventory: </span>I created a simple but effective inventory system rapidly, thanks to the lessons learned from creating Cursed Silence.</li>
+                <li><span class="liheading">Art: </span>I learned how to combine 2D and 3D art in the same scene.</li>
+                <li><span class="liheading">Mirrors: </span>I learned how to create mirrors using texturing and cameras.</li>
+                <li><span class="liheading">Modular code: </span>It was the first jam where I tested how to create modular and generic code rapidly.</li>
+            </ul>
 <!---------------------------------------------------------------------END------------------------------------------------------------------------------------>
         </div>
 
@@ -65,42 +81,39 @@
 
 <!--------------------------------------------------------------PUT OTHER GAMES HERE-------------------------------------------------------------------------->
 
-            <div class="gamebox normalborderradius">
-                <div class="imagecontainer">
-                    <img src="\images\cs_christmas_icon.png" alt="CS: Christmas icon"
-                        class="gameimage normalborderradius" />
-                    <div class="previewoverlay normalborderradius">
-                        <div class="tappreviewtext">Tap to preview</div>
-                        <div class="hoverpreviewtext">Hover to preview</div>
-                    </div>
-                    <img src="\gif\cc_christmas.gif" alt="cc_christmas.gif" class="gameimageoverlay  normalborderradius">
+            <!-------MINI TANKS------->
+        <div class="gamebox normalborderradius">
+            <div class="imagecontainer">
+                <img src="\images\mini_tanks_icon.png" alt="Mini Tanks icon" class="gameimage normalborderradius" />
+                <div class="previewoverlay normalborderradius">
+                    <div class="tappreviewtext">Tap to preview</div>
+                    <div class="hoverpreviewtext">Hover to preview</div>
                 </div>
-                <p class="gametitle">Cursed Silence: Christmas</p>
-                <a class="normallink"
-                    href="https://snowhorse-entertainment.itch.io/cursed-silence-christmas/download/eyJpZCI6MjM5OTg1OCwiZXhwaXJlcyI6MTcyMTI4NjM4OH0%3d%2eBDZ%2fWW%2f0w1AJOg1eu2cy9Vsq8RI%3d"
-                    target="_blank">Download</a>
-                <a class="normallink" href="/blogtemplate.html">Devlog</a>
-                <a class="normallink" href="https://www.youtube.com/watch?v=SHEM9u6gHWs&list=PLOGaHuyhRW_MzWR8HJq7dWDTVzLO81mfN" target="_blank">YouTube Gameplays</a>
-                <p class="gamedescription">A short first person walking simulator, with clues that help you uncover the main character's mental
-                    struggles.</p>
+                <img src="\gif\mini_tanks.gif" alt="mini_tanks.gif" class="gameimageoverlay normalborderradius">
             </div>
+            <p class="gametitle">Mini Tanks</p>
+            <a class="normallink" href="devlogs/mini-tanks.html">Devlog</a>
+            <a class="normallink" href="https://html-classic.itch.zone/html/2591994/index.html" target="_blank">Play</a>
+            <p class="gamedescription">An epic survival battle between toy war tanks, with nice visuals and plenty of powerups.</p>
+        </div>
     
-            <div class="gamebox normalborderradius">
-                <div class="imagecontainer">
-                    <img src="\images\cc_racer_icon.png" alt="CC Racer icon" class="gameimage normalborderradius" />
-                    <div class="previewoverlay normalborderradius">
-                        <div class="tappreviewtext">Tap to preview</div>
-                        <div class="hoverpreviewtext">Hover to preview</div>
-                    </div>
-                    <img src="\gif\cc_racer.gif" alt="cc_racer.gif" class="gameimageoverlay normalborderradius">
+        <!-------CURSED SILENCE: DEMO------->
+        <div class="gamebox normalborderradius">
+            <div class="imagecontainer">
+                <img src="\images\cs_demo_icon.png" alt="CS: Demo icon" class="gameimage normalborderradius" />
+                <div class="previewoverlay normalborderradius">
+                    <div class="tappreviewtext">Tap to preview</div>
+                    <div class="hoverpreviewtext">Hover to preview</div>
                 </div>
-                <p class="gametitle">Crosscountry Racer</p>
-                <a class="normallink"
-                    href="https://snowhorse-entertainment.itch.io/crosscountry-racer/download/eyJleHBpcmVzIjoxNzIxMjg2NDMzLCJpZCI6NjkwNjEwfQ%3d%3d%2e1mYOBvId0HrOqf6%2fQSEfWVnygmM%3d"
-                    target="_blank">Download</a>
-                <a class="normallink" href="/blogtemplate.html">Devlog</a>
-                <p class="gamedescription">An infinite runner, with cars.</p>
+                <img src="\gif\cc_demo.gif" alt="cc_demo.gif" class="gameimageoverlay normalborderradius">
             </div>
+            <p class="gametitle">Cursed Silence</p>
+            <a class="normallink" href="/devlogs/cursed-silence-demo.html">Devlog</a>
+            <a class="normallink"
+                href="https://snowhorse-entertainment.itch.io/cursed-silence/download/eyJpZCI6MjI0NjM4NSwiZXhwaXJlcyI6MTcyMTI4NjM5NH0%3d%2egI%2bxxLj0%2bH0iuTITww9%2biYtJras%3d"
+                target="_blank">Download</a>
+            <p class="gamedescription">A short abstract horror demo. Explore two different worlds connected by mysterious forces.</p>
+        </div>
     
 <!---------------------------------------------------------------------END------------------------------------------------------------------------------------>
 
