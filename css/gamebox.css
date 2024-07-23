@@ -91,7 +91,7 @@
 @media screen and (max-width: 1080px) {
 
     .gamebox {
-        width: 100%;
+        width: 75%;
         margin: 3%;
         padding-left: 3%;
         padding-right: 3%;
@@ -197,7 +197,7 @@
     .gamebox {
         width: 100%;
         height: calc(100vw * 1.15);
-        max-width: 400px;
+        max-width: 350px;
         max-height: 560px;
         padding-inline: 0.8%;
         margin-inline: 0.5%;
