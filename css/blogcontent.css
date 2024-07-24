@@ -171,6 +171,7 @@ body {
     background-repeat: repeat-x;
     background-size: auto;
     background-attachment: fixed;
+    background-size: cover;
 }
 
 @media screen and (max-width: 1080px) {
