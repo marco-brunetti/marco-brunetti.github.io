@@ -1,19 +1,19 @@
 /* width */
 ::-webkit-scrollbar {
-    width: 5px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background-color: rgb(28, 47, 73);
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background-color: rgb(62, 88, 143);
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background-color: rgb(48, 80, 126);
-  }
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: rgb(28, 47, 73);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: rgb(62, 88, 143);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(48, 80, 126);
+}

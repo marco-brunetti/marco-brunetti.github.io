@@ -1,4 +1,4 @@
-.blogbody > p {
+.blogbody>p {
     white-space: pre-line;
 }
 
@@ -6,7 +6,7 @@
     font-weight: bold;
 }
 
-.blogbody > p, .blogbody > ul {
+.blogbody>p, .blogbody>ul {
     line-height: 1.8;
 }
 
@@ -59,29 +59,29 @@
 }
 
 @media screen and (min-width: 1081px) {
-    
+
     /*check html for overrides*/
     .backgroundmask {
         height: 100%;
     }
-    
+
     .blogcontent {
         position: relative;
         margin-left: auto;
         margin-right: auto;
         background-color: #0f0f0f;
-        display:flex;
+        display: flex;
         flex-wrap: wrap;
         margin-top: 140px;
         border-radius: 0.5%;
     }
-    
+
     .sidecontainer {
         padding-inline: 10px;
         right: 0;
         margin-left: auto;
         margin-right: 0;
-        display:flex;
+        display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-content: flex-start;
@@ -99,14 +99,14 @@
         margin-left: 2.5%;
         margin-right: auto;
         width: 65%;
-        display:inline-flexbox;
+        display: inline-flexbox;
         justify-items: center;
         color: white;
         font-family: sans-serif, Verdana, Geneva, Tahoma;
         text-align: left;
     }
 
-    .blogbody > h2 {
+    .blogbody>h2 {
         margin-top: 5%;
         margin-bottom: 0%;
     }
@@ -167,9 +167,9 @@
 
 /*background image set in html*/
 body {
-    background-position:left;
-    background-repeat:repeat-x;
-    background-size:auto;
+    background-position: left;
+    background-repeat: repeat-x;
+    background-size: auto;
     background-attachment: fixed;
 }
 

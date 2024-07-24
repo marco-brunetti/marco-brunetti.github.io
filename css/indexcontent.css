@@ -1,6 +1,6 @@
 .contentbox {
     width: 100%;
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
