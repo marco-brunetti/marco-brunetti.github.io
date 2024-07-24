@@ -10,7 +10,19 @@
     line-height: 1.8;
 }
 
+.youtubegameplays {
+    position: relative;
+    margin-top: 0%;
+    width: 100%;
+    display: grid;
+    text-align: center;
+}
 
+.youtubegameplays a {
+    color: white;
+    font-family: sans-serif, Verdana, Geneva, Tahoma;
+    font-weight: bold;
+}
 
 @media screen and (max-width: 1080px) {
     .sidecontainer {
@@ -38,6 +50,11 @@
         margin-right: auto;
         margin-bottom: -5%;
         border-radius: 1.7% / 3%;
+    }
+
+    .youtubegameplays {
+        margin-top: 9vw;
+        margin-bottom: -3vw;
     }
 }
 
@@ -102,6 +119,11 @@
         margin-top: 4%;
         margin-bottom: 2%;
         border-radius: 4% / 3%;
+    }
+
+    .youtubegameplays {
+        margin-top: 1vw;
+        margin-bottom: -0.5vw;
     }
 }
 
