@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursed Silence: Christmas - Development Blog | Marco Brunetti</title>
+    <meta name="description" content="Development blog for Cursed Silence: Christmas - Follow mysterious clues and discover the main character's mental struggles">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px 0;
+            border-bottom: 2px solid #333;
+        }
+        h1 {
+            color: #4285f4;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        .subtitle {
+            color: #aaa;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .game-info {
+            background: #2a2a2a;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .info-item {
+            background: #333;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .info-label {
+            font-weight: bold;
+            color: #4285f4;
+            margin-bottom: 5px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #4285f4;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+        }
+        .screenshot {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 8px;
+            margin: 20px 0;
+            border: 2px solid #333;
+        }
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        .feature-list li {
+            background: #2a2a2a;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #4285f4;
+        }
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .tech-tag {
+            background: #4285f4;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+        .back-link {
+            display: inline-block;
+            background: #4285f4;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        .back-link:hover {
+            background: #1a73e8;
+        }
+        .christmas-theme {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a1a1a 100%);
+            border-left: 4px solid #c41e3a;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Cursed Silence: Christmas</h1>
+            <p class="subtitle">Follow mysterious clues and discover the main character's mental struggles</p>
+        </header>
+
+        <div class="game-info">
+            <div class="info-grid">
+                <div class="info-item">
+                    <div class="info-label">Engine</div>
+                    <div>Unity 2022.3</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Platform</div>
+                    <div>PC (Windows)</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Genre</div>
+                    <div>Psychological Horror</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Development Time</div>
+                    <div>2 months</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Status</div>
+                    <div>Released</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Team Size</div>
+                    <div>Solo Developer</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Project Overview</h2>
+            <p>Cursed Silence: Christmas is a special holiday-themed entry in the Cursed Silence series. This psychological horror experience combines the festive atmosphere of Christmas with the dark, introspective themes that define the series.</p>
+            
+            <img src="/placeholder.svg?height=400&width=600" alt="Cursed Silence Christmas Screenshot" class="screenshot">
+            
+            <p>Players follow mysterious clues while exploring the protagonist's mental struggles during what should be the most joyful time of year. The contrast between Christmas cheer and psychological horror creates a uniquely unsettling atmosphere.</p>
+        </div>
+
+        <div class="section">
+            <h2>Key Features</h2>
+            <ul class="feature-list">
+                <li class="christmas-theme"><strong>Holiday Horror Atmosphere:</strong> Christmas decorations and festive music create an eerie contrast with dark themes</li>
+                <li><strong>Psychological Narrative:</strong> Deep exploration of mental health themes through environmental storytelling</li>
+                <li><strong>Mystery Elements:</strong> Cryptic clues and puzzles that reveal the protagonist's inner turmoil</li>
+                <li><strong>Atmospheric Audio:</strong> Distorted Christmas carols and ambient sounds enhance the unsettling mood</li>
+                <li><strong>Visual Symbolism:</strong> Christmas imagery used as metaphors for psychological concepts</li>
+                <li><strong>Multiple Endings:</strong> Different conclusions based on player choices and interpretation</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Christmas Horror Design</h2>
+            <p>The challenge was creating horror from traditionally comforting Christmas imagery. I used familiar holiday elements - twinkling lights, wrapped presents, Christmas trees - and subtly distorted them to create unease.</p>
+            
+            <div class="tech-stack">
+                <span class="tech-tag">Unity 2022.3</span>
+                <span class="tech-tag">C#</span>
+                <span class="tech-tag">Post-Processing</span>
+                <span class="tech-tag">Audio Mixer</span>
+                <span class="tech-tag">Particle Systems</span>
+                <span class="tech-tag">Timeline</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Narrative Design</h2>
+            <p>The story explores themes of isolation during the holidays, family expectations, and seasonal depression. The Christmas setting amplifies these themes - the contrast between societal expectations of joy and personal struggles creates natural tension.</p>
+            
+            <p>Environmental storytelling was crucial. Christmas cards with disturbing messages, family photos with faces obscured, and holiday decorations in states of decay all contribute to the narrative without explicit exposition.</p>
+        </div>
+
+        <div class="section">
+            <h2>Audio Design</h2>
+            <p>The audio design plays with familiar Christmas sounds. Traditional carols are slowed down, pitch-shifted, or played in minor keys. The sound of sleigh bells becomes ominous, and the crackling of a fireplace suggests something more sinister.</p>
+            
+            <p>Silence itself becomes a character - moments of complete quiet contrast sharply with the expected sounds of Christmas celebration, emphasizing the protagonist's isolation.</p>
+        </div>
+
+        <div class="section">
+            <h2>Visual Metaphors</h2>
+            <p>Christmas imagery serves as powerful metaphors throughout the game. A Christmas tree losing its needles represents deteriorating mental health. Wrapped presents that can't be opened symbolize unfulfilled expectations. Burnt-out Christmas lights reflect the protagonist's dimming hope.</p>
+            
+            <p>The color palette shifts from warm Christmas reds and greens to cold blues and grays as the player progresses, visually representing the emotional journey.</p>
+        </div>
+
+        <div class="section">
+            <h2>Development Challenges</h2>
+            <p>The main challenge was balancing respect for mental health themes with effective horror design. I researched seasonal affective disorder and holiday depression to ensure authentic representation while avoiding harmful stereotypes.</p>
+            
+            <p>Creating horror from Christmas imagery required careful consideration - the goal was psychological unease, not cheap scares or disrespect for the holiday's meaning to many people.</p>
+        </div>
+
+        <div class="section">
+            <h2>Player Reception</h2>
+            <p>Players appreciated the thoughtful approach to difficult themes and the unique take on holiday horror. Many commented on how the game made them reflect on their own holiday experiences and mental health.</p>
+            
+            <p>The game sparked discussions about seasonal depression and the pressure to be happy during holidays, achieving the goal of creating meaningful horror that resonates beyond the gaming experience.</p>
+        </div>
+
+        <div class="section">
+            <h2>Series Connection</h2>
+            <p>While standalone, Christmas connects to the broader Cursed Silence series through recurring themes and subtle narrative links. It serves as both an entry point for new players and a deeper exploration for series fans.</p>
+            
+            <p>The Christmas setting allowed exploration of how external expectations and seasonal pressures can amplify existing mental health struggles, adding new dimensions to the series' core themes.</p>
+        </div>
+
+        <a href="/" class="back-link">← Back to Portfolio</a>
+    </div>
+</body>
+</html>

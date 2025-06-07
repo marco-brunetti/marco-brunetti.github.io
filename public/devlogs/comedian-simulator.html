@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stand Up: Comedian Simulator - Development Blog | Marco Brunetti</title>
+    <meta name="description" content="Development blog for Stand Up: Comedian Simulator - Experience your first comedy gig">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px 0;
+            border-bottom: 2px solid #333;
+        }
+        h1 {
+            color: #4285f4;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        .subtitle {
+            color: #aaa;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .game-info {
+            background: #2a2a2a;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .info-item {
+            background: #333;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .info-label {
+            font-weight: bold;
+            color: #4285f4;
+            margin-bottom: 5px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #4285f4;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+        }
+        .screenshot {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 8px;
+            margin: 20px 0;
+            border: 2px solid #333;
+        }
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        .feature-list li {
+            background: #2a2a2a;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #4285f4;
+        }
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .tech-tag {
+            background: #4285f4;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+        .back-link {
+            display: inline-block;
+            background: #4285f4;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        .back-link:hover {
+            background: #1a73e8;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Stand Up: Comedian Simulator</h1>
+            <p class="subtitle">Experience your first comedy gig - do you have what it takes?</p>
+        </header>
+
+        <div class="game-info">
+            <div class="info-grid">
+                <div class="info-item">
+                    <div class="info-label">Engine</div>
+                    <div>Unity 2022.1</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Platform</div>
+                    <div>PC (Windows)</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Genre</div>
+                    <div>Simulation / Comedy</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Development Time</div>
+                    <div>5 months</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Status</div>
+                    <div>Released</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Team Size</div>
+                    <div>Solo Developer</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Project Overview</h2>
+            <p>Stand Up: Comedian Simulator puts players in the shoes of a nervous comedian about to perform their first gig. The game explores the anxiety, timing, and crowd dynamics of stand-up comedy through interactive gameplay.</p>
+            
+            <img src="/placeholder.svg?height=400&width=600" alt="Comedian Simulator Screenshot" class="screenshot">
+            
+            <p>Players must read the crowd, time their jokes perfectly, and handle hecklers while trying to deliver a successful comedy set. The game captures both the terror and exhilaration of performing live comedy.</p>
+        </div>
+
+        <div class="section">
+            <h2>Key Features</h2>
+            <ul class="feature-list">
+                <li><strong>Dynamic Crowd System:</strong> AI-driven audience that reacts realistically to different types of humor</li>
+                <li><strong>Timing-Based Gameplay:</strong> Success depends on comedic timing and reading the room</li>
+                <li><strong>Multiple Joke Categories:</strong> Various types of humor with different audience reactions</li>
+                <li><strong>Anxiety Mechanics:</strong> Stress system that affects performance and decision-making</li>
+                <li><strong>Heckler Interactions:</strong> Dynamic responses to audience disruptions</li>
+                <li><strong>Performance Metrics:</strong> Detailed feedback on timing, crowd engagement, and overall performance</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Crowd AI System</h2>
+            <p>The heart of the game is the crowd AI system. Each audience member has individual preferences for humor types, attention spans, and reaction thresholds. The collective mood of the crowd influences individual reactions, creating realistic audience dynamics.</p>
+            
+            <div class="tech-stack">
+                <span class="tech-tag">Unity 2022.1</span>
+                <span class="tech-tag">C#</span>
+                <span class="tech-tag">Behavior Trees</span>
+                <span class="tech-tag">Audio System</span>
+                <span class="tech-tag">Animation System</span>
+                <span class="tech-tag">UI Toolkit</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Comedy Research</h2>
+            <p>Developing this game required extensive research into comedy theory and stand-up performance. I studied timing, audience psychology, and the structure of jokes to create authentic gameplay mechanics.</p>
+            
+            <p>I interviewed local comedians and attended open mic nights to understand the real experience of performing stand-up comedy, which informed many of the game's systems and scenarios.</p>
+        </div>
+
+        <div class="section">
+            <h2>Anxiety and Performance</h2>
+            <p>The game includes a stress system that simulates performance anxiety. As stress increases, the player's options become more limited, and timing becomes more difficult - mirroring the real experience of stage fright.</p>
+            
+            <p>This creates a feedback loop where poor performance increases anxiety, making subsequent jokes harder to deliver, just like in real stand-up comedy.</p>
+        </div>
+
+        <div class="section">
+            <h2>Technical Implementation</h2>
+            <p>The crowd reaction system uses a combination of individual AI agents and collective mood tracking. Each audience member has personality traits that influence their reactions, while the overall energy of the room affects everyone's responses.</p>
+            
+            <p>Audio design was crucial - the game features realistic crowd sounds, individual reactions, and ambient club atmosphere that responds dynamically to the performance.</p>
+        </div>
+
+        <div class="section">
+            <h2>Lessons in Game Design</h2>
+            <p>This project taught me about designing systems that simulate real-world social dynamics. Balancing realism with fun gameplay required careful tuning of the crowd AI and feedback systems.</p>
+            
+            <p>I learned the importance of clear visual and audio feedback when dealing with timing-based mechanics - players needed immediate understanding of how their performance was being received.</p>
+        </div>
+
+        <a href="/" class="back-link">← Back to Portfolio</a>
+    </div>
+</body>
+</html>

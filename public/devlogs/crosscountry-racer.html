@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crosscountry Racer - Development Blog | Marco Brunetti</title>
+    <meta name="description" content="Development blog for Crosscountry Racer - High-speed racing across diverse terrains">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px 0;
+            border-bottom: 2px solid #333;
+        }
+        h1 {
+            color: #4285f4;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        .subtitle {
+            color: #aaa;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .game-info {
+            background: #2a2a2a;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .info-item {
+            background: #333;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .info-label {
+            font-weight: bold;
+            color: #4285f4;
+            margin-bottom: 5px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #4285f4;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+        }
+        .screenshot {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 8px;
+            margin: 20px 0;
+            border: 2px solid #333;
+        }
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        .feature-list li {
+            background: #2a2a2a;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #4285f4;
+        }
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .tech-tag {
+            background: #4285f4;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+        .back-link {
+            display: inline-block;
+            background: #4285f4;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        .back-link:hover {
+            background: #1a73e8;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Crosscountry Racer</h1>
+            <p class="subtitle">High-speed racing across diverse terrains and challenging tracks</p>
+        </header>
+
+        <div class="game-info">
+            <div class="info-grid">
+                <div class="info-item">
+                    <div class="info-label">Engine</div>
+                    <div>Unity 2022.2</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Platform</div>
+                    <div>PC (Windows)</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Genre</div>
+                    <div>Racing / Arcade</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Development Time</div>
+                    <div>4 months</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Status</div>
+                    <div>Released</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Team Size</div>
+                    <div>Solo Developer</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Project Overview</h2>
+            <p>Crosscountry Racer is an arcade-style racing game featuring diverse terrains and challenging tracks. Players race through forests, deserts, mountains, and urban environments, each with unique obstacles and weather conditions.</p>
+            
+            <img src="/placeholder.svg?height=400&width=600" alt="Crosscountry Racer Screenshot" class="screenshot">
+            
+            <p>The game emphasizes fun, accessible racing with responsive controls and exciting track design that rewards both speed and skillful navigation.</p>
+        </div>
+
+        <div class="section">
+            <h2>Key Features</h2>
+            <ul class="feature-list">
+                <li><strong>Diverse Environments:</strong> Race through forests, deserts, snow-covered mountains, and city streets</li>
+                <li><strong>Dynamic Weather:</strong> Weather conditions that affect vehicle handling and visibility</li>
+                <li><strong>Vehicle Customization:</strong> Upgrade and customize vehicles for different terrain types</li>
+                <li><strong>Time Trial Mode:</strong> Challenge yourself to beat your best times on each track</li>
+                <li><strong>Responsive Controls:</strong> Tight, arcade-style controls that feel satisfying and precise</li>
+                <li><strong>Visual Effects:</strong> Particle effects for dust, snow, and debris that enhance immersion</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Vehicle Physics</h2>
+            <p>The vehicle physics system balances realism with arcade fun. Cars feel weighty and responsive while still allowing for exciting, over-the-top racing moments that wouldn't be possible in a pure simulation.</p>
+            
+            <div class="tech-stack">
+                <span class="tech-tag">Unity 2022.2</span>
+                <span class="tech-tag">C#</span>
+                <span class="tech-tag">Physics System</span>
+                <span class="tech-tag">Particle Systems</span>
+                <span class="tech-tag">Terrain Tools</span>
+                <span class="tech-tag">Audio Mixer</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Track Design</h2>
+            <p>Each track was designed with a specific theme and challenge in mind. Forest tracks feature tight turns and elevation changes, while desert tracks emphasize high-speed sections with long sweeping curves.</p>
+            
+            <p>I used Unity's terrain tools extensively to create natural-looking environments that still served the gameplay needs. Each environment required different approaches to lighting and atmosphere.</p>
+        </div>
+
+        <div class="section">
+            <h2>Performance Optimization</h2>
+            <p>Racing games demand consistent high framerates, so optimization was crucial. I implemented LOD systems for vehicles and environment objects, and used occlusion culling to manage the large outdoor environments.</p>
+            
+            <p>The particle systems for dust, snow, and debris required careful optimization to maintain performance during intense racing moments with multiple effects on screen.</p>
+        </div>
+
+        <div class="section">
+            <h2>Audio Design</h2>
+            <p>Engine sounds were crucial for player feedback - different vehicle types have distinct audio profiles, and engine pitch changes dynamically based on speed and RPM. Environmental audio helps establish the atmosphere of each track.</p>
+            
+            <p>The audio system includes dynamic music that responds to race intensity, building excitement during close races and providing a more relaxed soundtrack during solo time trials.</p>
+        </div>
+
+        <div class="section">
+            <h2>Control Feel</h2>
+            <p>Achieving the right control feel required extensive iteration and playtesting. The goal was to make the cars feel fast and exciting while remaining controllable for players of all skill levels.</p>
+            
+            <p>I implemented subtle assists like automatic counter-steering and stability control that help newer players while still allowing experienced players to push the limits of vehicle performance.</p>
+        </div>
+
+        <div class="section">
+            <h2>Visual Polish</h2>
+            <p>The visual design emphasizes speed and excitement through dynamic camera work, motion blur, and particle effects. Each environment has its own visual identity while maintaining consistent art direction throughout the game.</p>
+            
+            <p>Post-processing effects like bloom and color grading help establish the mood for each environment, from the warm tones of desert tracks to the cool blues of mountain environments.</p>
+        </div>
+
+        <a href="/" class="back-link">← Back to Portfolio</a>
+    </div>
+</body>
+</html>
