@@ -63,48 +63,47 @@ export default function MarcoPortfolio() {
   },
   {
     name: "Game Design",
-    experience: "8+ years",
+    experience: "5+ years",
     description: "Systems design, progression, and player psychology",
     icon: <Palette className="w-5 h-5" />,
   },
   {
     name: "Level Design",
-    experience: "8+ years",
+    experience: "1+ year",
     description: "Engaging environments, pacing, and layout flow",
     icon: <Zap className="w-5 h-5" />,
   },
   {
-    name: "UI/UX Design",
-    experience: "6+ years",
+    name: "UI/UX Implementation",
+    experience: "3+ years",
     description: "Player-focused interfaces and responsive feedback",
     icon: <Palette className="w-5 h-5" />,
   },
   {
     name: "Performance Optimization",
-    experience: "5+ years",
+    experience: "3+ years",
     description: "Mid-tier device tuning and packaging speedups",
     icon: <Zap className="w-5 h-5" />,
   },
   {
-    name: "Zenject / VContainer",
-    experience: "5+ years",
+    name: "Zenject",
+    experience: "3+ years",
     description: "Dependency injection and clean, testable codebases",
     icon: <Code className="w-5 h-5" />,
   },
   {
     name: "Team Leadership",
-    experience: "6+ months",
-    description: "Managing and mentoring an 8-person engineering team",
+    experience: "1+ year",
+    description: "Led and mentored two teams (6-person and 8-person) in programming and engineering roles",
     icon: <GamepadIcon className="w-5 h-5" />,
   },
   {
     name: "Unreal Engine",
-    experience: "6+ months",
+    experience: "1+ year",
     description: "Blueprint scripting for gameplay and UI systems",
     icon: <Code className="w-5 h-5" />,
   },
 ]
-
 
   // State to track which card is being hovered
   const [hoveredCard, setHoveredCard] = useState<number | null>(null)
