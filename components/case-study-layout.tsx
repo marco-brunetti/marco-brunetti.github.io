@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button"
 import { ArrowLeft } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
+import { InfoGridItem } from "./case-study/info-grid-item"
+import { TechBadge } from "./case-study/tech-badge"
 
 interface TechTag {
   name: string
@@ -62,30 +64,12 @@ export default function CaseStudyLayout({
 
           {/* Game Info Grid */}
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-12">
-            <div className="bg-hugo-lighter border border-hugo-border rounded-lg p-4">
-              <div className="text-hugo-accent font-medium text-sm mb-1">Engine</div>
-              <div className="text-hugo-text">{gameInfo.engine}</div>
-            </div>
-            <div className="bg-hugo-lighter border border-hugo-border rounded-lg p-4">
-              <div className="text-hugo-accent font-medium text-sm mb-1">Platform</div>
-              <div className="text-hugo-text">{gameInfo.platform}</div>
-            </div>
-            <div className="bg-hugo-lighter border border-hugo-border rounded-lg p-4">
-              <div className="text-hugo-accent font-medium text-sm mb-1">Genre</div>
-              <div className="text-hugo-text">{gameInfo.genre}</div>
-            </div>
-            <div className="bg-hugo-lighter border border-hugo-border rounded-lg p-4">
-              <div className="text-hugo-accent font-medium text-sm mb-1">Development Time</div>
-              <div className="text-hugo-text">{gameInfo.developmentTime}</div>
-            </div>
-            <div className="bg-hugo-lighter border border-hugo-border rounded-lg p-4">
-              <div className="text-hugo-accent font-medium text-sm mb-1">Status</div>
-              <div className="text-hugo-text">{gameInfo.status}</div>
-            </div>
-            <div className="bg-hugo-lighter border border-hugo-border rounded-lg p-4">
-              <div className="text-hugo-accent font-medium text-sm mb-1">Team Size</div>
-              <div className="text-hugo-text">{gameInfo.teamSize}</div>
-            </div>
+            <InfoGridItem label="Engine" value={gameInfo.engine} />
+            <InfoGridItem label="Platform" value={gameInfo.platform} />
+            <InfoGridItem label="Genre" value={gameInfo.genre} />
+            <InfoGridItem label="Development Time" value={gameInfo.developmentTime} />
+            <InfoGridItem label="Status" value={gameInfo.status} />
+            <InfoGridItem label="Team Size" value={gameInfo.teamSize} />
           </div>
 
           {/* Cover Image */}
@@ -100,16 +84,16 @@ export default function CaseStudyLayout({
           </div>
 
           {/* Content */}
-          <div className="prose prose-invert max-w-none">{children}</div>
+          <div className="prose prose-invert max-w-none prose-headings:text-hugo-text prose-p:text-hugo-muted prose-p:leading-relaxed prose-li:text-hugo-muted prose-strong:text-hugo-text prose-strong:font-semibold">
+            {children}
+          </div>
 
           {/* Tech Stack */}
           <div className="mt-12">
             <h2 className="text-2xl font-bold text-hugo-text mb-4">Technologies Used</h2>
             <div className="flex flex-wrap gap-2">
               {techStack.map((tech, index) => (
-                <span key={index} className="bg-hugo-button-primary text-white px-3 py-1 rounded-full text-sm">
-                  {tech.name}
-                </span>
+                <TechBadge key={index} name={tech.name} />
               ))}
             </div>
           </div>
