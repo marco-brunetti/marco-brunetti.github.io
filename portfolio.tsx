@@ -49,67 +49,62 @@ export default function MarcoPortfolio() {
   ]
 
   const skills = [
-    {
-      name: "Unity",
-      experience: "8+ years",
-      description: "Lead developer on 12+ shipped titles",
-      icon: <GamepadIcon className="w-5 h-5" />,
-    },
-    {
-      name: "C#",
-      experience: "8+ years",
-      description: "Advanced patterns, performance optimization",
-      icon: <Code className="w-5 h-5" />,
-    },
-    {
-      name: "Game Design",
-      experience: "6+ years",
-      description: "Mechanics, balancing, player psychology",
-      icon: <Palette className="w-5 h-5" />,
-    },
-    {
-      name: "Team Leadership",
-      experience: "3+ years",
-      description: "Leading 8-person engineering team",
-      icon: <GamepadIcon className="w-5 h-5" />,
-    },
-    {
-      name: "Performance Optimization",
-      experience: "5+ years",
-      description: "Mobile games with 100k+ downloads",
-      icon: <Zap className="w-5 h-5" />,
-    },
-    {
-      name: "Zenject/VContainer",
-      experience: "4+ years",
-      description: "Dependency injection, clean architecture",
-      icon: <Code className="w-5 h-5" />,
-    },
-    {
-      name: "3D Modeling",
-      experience: "3+ years",
-      description: "Environment and prop creation",
-      icon: <Palette className="w-5 h-5" />,
-    },
-    {
-      name: "UI/UX Design",
-      experience: "4+ years",
-      description: "Player-focused interface design",
-      icon: <Palette className="w-5 h-5" />,
-    },
-    {
-      name: "Level Design",
-      experience: "5+ years",
-      description: "Engaging environments and pacing",
-      icon: <Zap className="w-5 h-5" />,
-    },
-    {
-      name: "Unreal Engine",
-      experience: "2+ years",
-      description: "Blueprints and C++ development",
-      icon: <Code className="w-5 h-5" />,
-    },
-  ]
+  {
+    name: "Unity",
+    experience: "8+ years",
+    description: "Lead developer on 12+ shipped PC and mobile titles",
+    icon: <GamepadIcon className="w-5 h-5" />,
+  },
+  {
+    name: "C#",
+    experience: "8+ years",
+    description: "Advanced patterns, tooling, and scalable architecture",
+    icon: <Code className="w-5 h-5" />,
+  },
+  {
+    name: "Game Design",
+    experience: "8+ years",
+    description: "Systems design, progression, and player psychology",
+    icon: <Palette className="w-5 h-5" />,
+  },
+  {
+    name: "Level Design",
+    experience: "8+ years",
+    description: "Engaging environments, pacing, and layout flow",
+    icon: <Zap className="w-5 h-5" />,
+  },
+  {
+    name: "UI/UX Design",
+    experience: "6+ years",
+    description: "Player-focused interfaces and responsive feedback",
+    icon: <Palette className="w-5 h-5" />,
+  },
+  {
+    name: "Performance Optimization",
+    experience: "5+ years",
+    description: "Mid-tier device tuning and packaging speedups",
+    icon: <Zap className="w-5 h-5" />,
+  },
+  {
+    name: "Zenject / VContainer",
+    experience: "5+ years",
+    description: "Dependency injection and clean, testable codebases",
+    icon: <Code className="w-5 h-5" />,
+  },
+  {
+    name: "Team Leadership",
+    experience: "6+ months",
+    description: "Managing and mentoring an 8-person engineering team",
+    icon: <GamepadIcon className="w-5 h-5" />,
+  },
+  {
+    name: "Unreal Engine",
+    experience: "6+ months",
+    description: "Blueprint scripting for gameplay and UI systems",
+    icon: <Code className="w-5 h-5" />,
+  },
+]
+
 
   // State to track which card is being hovered
   const [hoveredCard, setHoveredCard] = useState<number | null>(null)
