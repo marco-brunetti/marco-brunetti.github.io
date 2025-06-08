@@ -225,9 +225,9 @@ export default function MarcoPortfolio() {
       <section id="home" className="pt-28 sm:pt-36 pb-12 sm:pb-16 px-4 sm:px-6">
         <div className="container mx-auto text-center">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-hugo-text mb-6 sm:mb-8 leading-snug">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-hugo-text mb-6 sm:mb-8 leading-tight">
               Game Developer
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-gray-light to-gray-medium mt-2">
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-gray-light to-gray-medium mt-2 leading-[1.15]">
                 & Designer
               </span>
             </h2>
