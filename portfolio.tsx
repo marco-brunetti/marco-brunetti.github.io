@@ -87,16 +87,66 @@ export default function MarcoPortfolio() {
   ]
 
   const skills = [
-    { name: "Unity", level: 95, icon: <GamepadIcon className="w-5 h-5" /> },
-    { name: "C#", level: 90, icon: <Code className="w-5 h-5" /> },
-    { name: "Game Design", level: 88, icon: <Palette className="w-5 h-5" /> },
-    { name: "3D Modeling", level: 75, icon: <Palette className="w-5 h-5" /> },
-    { name: "Level Design", level: 85, icon: <Zap className="w-5 h-5" /> },
-    { name: "UI/UX Design", level: 80, icon: <Palette className="w-5 h-5" /> },
-    { name: "Zenject/VContainer", level: 85, icon: <Code className="w-5 h-5" /> },
-    { name: "Performance Optimization", level: 90, icon: <Zap className="w-5 h-5" /> },
-    { name: "Team Leadership", level: 88, icon: <GamepadIcon className="w-5 h-5" /> },
-    { name: "Unreal Engine", level: 75, icon: <Code className="w-5 h-5" /> },
+    {
+      name: "Unity",
+      experience: "8+ years",
+      description: "Lead developer on 12+ shipped titles",
+      icon: <GamepadIcon className="w-5 h-5" />,
+    },
+    {
+      name: "C#",
+      experience: "8+ years",
+      description: "Advanced patterns, performance optimization",
+      icon: <Code className="w-5 h-5" />,
+    },
+    {
+      name: "Game Design",
+      experience: "6+ years",
+      description: "Mechanics, balancing, player psychology",
+      icon: <Palette className="w-5 h-5" />,
+    },
+    {
+      name: "Team Leadership",
+      experience: "3+ years",
+      description: "Leading 8-person engineering team",
+      icon: <GamepadIcon className="w-5 h-5" />,
+    },
+    {
+      name: "Performance Optimization",
+      experience: "5+ years",
+      description: "Mobile games with 100k+ downloads",
+      icon: <Zap className="w-5 h-5" />,
+    },
+    {
+      name: "Zenject/VContainer",
+      experience: "4+ years",
+      description: "Dependency injection, clean architecture",
+      icon: <Code className="w-5 h-5" />,
+    },
+    {
+      name: "3D Modeling",
+      experience: "3+ years",
+      description: "Environment and prop creation",
+      icon: <Palette className="w-5 h-5" />,
+    },
+    {
+      name: "UI/UX Design",
+      experience: "4+ years",
+      description: "Player-focused interface design",
+      icon: <Palette className="w-5 h-5" />,
+    },
+    {
+      name: "Level Design",
+      experience: "5+ years",
+      description: "Engaging environments and pacing",
+      icon: <Zap className="w-5 h-5" />,
+    },
+    {
+      name: "Unreal Engine",
+      experience: "2+ years",
+      description: "Blueprints and C++ development",
+      icon: <Code className="w-5 h-5" />,
+    },
   ]
 
   // State to track which card is being hovered
@@ -476,19 +526,19 @@ export default function MarcoPortfolio() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
             {skills.map((skill, index) => (
-              <Card key={index} className="bg-hugo-lighter border-hugo-border border-2">
+              <Card
+                key={index}
+                className="bg-hugo-lighter border-hugo-border border-2 hover:border-hugo-accent/60 transition-all duration-300"
+              >
                 <CardContent className="p-5 sm:p-6">
-                  <div className="flex items-center mb-4 sm:mb-5">
+                  <div className="flex items-center mb-3">
                     <div className="text-hugo-accent mr-3">{skill.icon}</div>
                     <h3 className="text-hugo-text font-semibold text-sm sm:text-base">{skill.name}</h3>
                   </div>
-                  <div className="w-full bg-hugo-bg rounded-full h-2.5">
-                    <div
-                      className="bg-gradient-to-r from-hugo-button-primary to-hugo-accent h-2.5 rounded-full transition-all duration-1000"
-                      style={{ width: `${skill.level}%` }}
-                    ></div>
+                  <div className="mb-2">
+                    <span className="text-hugo-accent font-medium text-xs sm:text-sm">{skill.experience}</span>
                   </div>
-                  <p className="text-hugo-muted text-xs sm:text-sm mt-3">{skill.level}% Proficiency</p>
+                  <p className="text-hugo-muted text-xs sm:text-sm leading-relaxed">{skill.description}</p>
                 </CardContent>
               </Card>
             ))}
