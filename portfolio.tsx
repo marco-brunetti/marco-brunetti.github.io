@@ -1,20 +1,39 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useRef, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Github, Linkedin, Mail, Play, Download, GamepadIcon, Code, Palette, Zap, Youtube, MapPin } from "lucide-react"
 import Image from "next/image"
 
+// Preloader component to cache videos
+function VideoPreloader() {
+  useEffect(() => {
+    const videos = [
+      "/videos/rv_preview.mp4",
+      "/videos/cs_christmas_preview.mp4",
+      "/videos/comedian_simulator_preview.mp4"
+    ];
+    
+    videos.forEach(src => {
+      const video = document.createElement('video');
+      video.src = src;
+      video.preload = "auto";
+    });
+  }, []);
+
+  return null;
+}
+
 export default function MarcoPortfolio() {
-  // Games data with static images and GIF previews
+  // Games data with video previews
   const games = [
     {
       title: "Run, Veggies!",
       description: "A physics‑driven 3D puzzle-platformer about runaway veggies escaping a factory. As Programmer Lead, I architected core systems (AI, input, physics interactions) and oversaw a 6‑person dev team. Coming soon on Steam.",
       image: "/images/rv_icon.png",
-      gifPreview: "/gif/cc_racer.gif",
+      videoPreview: "/videos/rv_preview.mp4",
       technologies: ["Unreal Engine", "Blueprints", "Platformer"],
       status: "Coming Soon",
       links: {
@@ -24,9 +43,9 @@ export default function MarcoPortfolio() {
     },
     {
       title: "Cursed Silence: Christmas",
-      description: "A psychological horror game developed solo over the course of a year. Follow cryptic clues and uncover the protagonist’s mental unraveling in this standalone entry of the Cursed Silence series.",
+      description: "A psychological horror game developed solo over the course of a year. Follow cryptic clues and uncover the protagonist's mental unraveling in this standalone entry of the Cursed Silence series.",
       image: "/images/cs_christmas_icon.png",
-      gifPreview: "/gif/cc_christmas.gif",
+      videoPreview: "/videos/cs_christmas_preview.mp4",
       technologies: ["Unity", "C#", "Horror"],
       status: "Released",
       links: {
@@ -36,9 +55,9 @@ export default function MarcoPortfolio() {
     },
     {
       title: "Stand Up: Comedian Simulator",
-      description: "Built solo in just 10 days, this experimental simulation lets you perform at your first stand-up gig. Test your timing, read the crowd, and see if you’ve got what it takes to make them laugh.",
+      description: "Built solo in just 10 days, this experimental simulation lets you perform at your first stand-up gig. Test your timing, read the crowd, and see if you've got what it takes to make them laugh.",
       image: "/images/comedian_sim_icon.png",
-      gifPreview: "/gif/comedian_simulator.gif",
+      videoPreview: "/videos/comedian_simulator_preview.mp4",
       technologies: ["Unity", "C#", "Simulation"],
       status: "Released",
       links: {
@@ -49,68 +68,80 @@ export default function MarcoPortfolio() {
   ]
 
   const skills = [
-  {
-    name: "Unity",
-    experience: "8+ years",
-    description: "Lead developer on 12+ shipped PC and mobile titles",
-    icon: <GamepadIcon className="w-5 h-5" />,
-  },
-  {
-    name: "C#",
-    experience: "8+ years",
-    description: "Advanced patterns, tooling, and scalable architecture",
-    icon: <Code className="w-5 h-5" />,
-  },
-  {
-    name: "Game Design",
-    experience: "5+ years",
-    description: "Systems design, progression, and player psychology",
-    icon: <Palette className="w-5 h-5" />,
-  },
-  {
-    name: "Level Design",
-    experience: "1+ year",
-    description: "Engaging environments, pacing, and layout flow",
-    icon: <Zap className="w-5 h-5" />,
-  },
-  {
-    name: "UI/UX Implementation",
-    experience: "3+ years",
-    description: "Player-focused interfaces and responsive feedback",
-    icon: <Palette className="w-5 h-5" />,
-  },
-  {
-    name: "Performance Optimization",
-    experience: "3+ years",
-    description: "Mid-tier device tuning and packaging speedups",
-    icon: <Zap className="w-5 h-5" />,
-  },
-  {
-    name: "Zenject",
-    experience: "3+ years",
-    description: "Dependency injection and clean, testable codebases",
-    icon: <Code className="w-5 h-5" />,
-  },
-  {
-    name: "Team Leadership",
-    experience: "1+ year",
-    description: "Led and mentored two teams (6-person and 8-person) in programming and engineering roles",
-    icon: <GamepadIcon className="w-5 h-5" />,
-  },
-  {
-    name: "Unreal Engine",
-    experience: "1+ year",
-    description: "Blueprint scripting for gameplay and UI systems",
-    icon: <Code className="w-5 h-5" />,
-  },
-];
+    {
+      name: "Unity",
+      experience: "8+ years",
+      description: "Lead developer on 12+ shipped PC and mobile titles",
+      icon: <GamepadIcon className="w-5 h-5" />,
+    },
+    {
+      name: "C#",
+      experience: "8+ years",
+      description: "Advanced patterns, tooling, and scalable architecture",
+      icon: <Code className="w-5 h-5" />,
+    },
+    {
+      name: "Game Design",
+      experience: "5+ years",
+      description: "Systems design, progression, and player psychology",
+      icon: <Palette className="w-5 h-5" />,
+    },
+    {
+      name: "Level Design",
+      experience: "1+ year",
+      description: "Engaging environments, pacing, and layout flow",
+      icon: <Zap className="w-5 h-5" />,
+    },
+    {
+      name: "UI/UX Implementation",
+      experience: "3+ years",
+      description: "Player-focused interfaces and responsive feedback",
+      icon: <Palette className="w-5 h-5" />,
+    },
+    {
+      name: "Performance Optimization",
+      experience: "3+ years",
+      description: "Mid-tier device tuning and packaging speedups",
+      icon: <Zap className="w-5 h-5" />,
+    },
+    {
+      name: "Zenject",
+      experience: "3+ years",
+      description: "Dependency injection and clean, testable codebases",
+      icon: <Code className="w-5 h-5" />,
+    },
+    {
+      name: "Team Leadership",
+      experience: "1+ year",
+      description: "Led and mentored two teams (6-person and 8-person) in programming and engineering roles",
+      icon: <GamepadIcon className="w-5 h-5" />,
+    },
+    {
+      name: "Unreal Engine",
+      experience: "1+ year",
+      description: "Blueprint scripting for gameplay and UI systems",
+      icon: <Code className="w-5 h-5" />,
+    },
+  ];
 
   // State to track which card is being hovered
   const [hoveredCard, setHoveredCard] = useState<number | null>(null)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const videoRefs = useRef<(HTMLVideoElement | null)[]>([])
+
+  // Pause all videos when not hovered
+  useEffect(() => {
+    videoRefs.current.forEach(video => {
+      if (video && !video.paused) {
+        video.pause()
+      }
+    })
+  }, [hoveredCard])
 
   return (
     <div className="min-h-screen bg-hugo-bg">
+      <VideoPreloader />
+      
       {/* Header */}
       <header className="fixed top-0 w-full bg-hugo-darker/90 backdrop-blur-md border-b border-hugo-border z-50">
         <nav className="container mx-auto px-4 sm:px-6 py-4">
@@ -272,24 +303,33 @@ export default function MarcoPortfolio() {
               >
                 <CardHeader className="p-0">
                   <div className="relative overflow-hidden rounded-t-lg bg-hugo-bg w-full aspect-[4/3]">
-                    {/* Show GIF on hover, otherwise show static image */}
+                    {/* Show video on hover, otherwise show static image */}
                     <div className="absolute inset-0 w-full h-full">
                       {hoveredCard === index ? (
-                        // GIF preview when hovered
-                        <div className="w-full h-full relative">
+                        // Video preview when hovered
+                        <video
+                          ref={el => videoRefs.current[index] = el}
+                          autoPlay
+                          loop
+                          muted
+                          playsInline
+                          className="w-full h-full object-cover"
+                          poster={game.image}
+                        >
+                          <source src={game.videoPreview} type="video/mp4" />
+                          {/* Fallback to static image if video not supported */}
                           <Image
-                            src={game.gifPreview || "/placeholder.svg?height=300&width=400"}
-                            alt={`${game.title} preview`}
+                            src={game.image}
+                            alt={game.title}
                             fill
                             className="object-cover"
-                            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                           />
-                        </div>
+                        </video>
                       ) : (
                         // Static image and hover text when not hovered
                         <div className="w-full h-full relative">
                           <Image
-                            src={game.image || "/placeholder.svg?height=300&width=400"}
+                            src={game.image}
                             alt={game.title}
                             fill
                             className="object-cover opacity-60"
@@ -385,7 +425,7 @@ export default function MarcoPortfolio() {
             <div className="order-2 lg:order-1">
               <h2 className="text-3xl sm:text-4xl font-bold text-hugo-text mb-6 sm:mb-8 leading-tight">About Marco</h2>
               <p className="text-hugo-muted text-base sm:text-lg mb-5 sm:mb-6 leading-relaxed">
-                I’m Marco Brunetti, a Unity/C# game developer with 8+ years of experience across indie and studio projects.
+                I'm Marco Brunetti, a Unity/C# game developer with 8+ years of experience across indie and studio projects.
               </p>
               <p className="text-hugo-muted text-base sm:text-lg mb-6 sm:mb-8 leading-relaxed">
                 I currently lead an 8-person engineering team at a 50+ developer studio, delivering high-performance
@@ -401,7 +441,7 @@ export default function MarcoPortfolio() {
                 local game dev scene.
               </p>
               <p className="text-hugo-muted text-base sm:text-lg mb-6 sm:mb-8 leading-relaxed">
-                "I’ve shipped 12+ indie games, including The Cursed Silence series, praised for polished mechanics
+                "I've shipped 12+ indie games, including The Cursed Silence series, praised for polished mechanics
                 and atmosphere.
               </p>
               {/* Professional links in About section */}
@@ -487,7 +527,7 @@ export default function MarcoPortfolio() {
           </h2>
           <p className="text-hugo-muted mb-8 sm:mb-10 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
             Currently open to contract work, full-time roles, or collaborative projects.
-            Let’s build something great together.
+            Let's build something great together.
           </p>
 
           {/* Primary contact method */}
