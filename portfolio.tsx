@@ -259,11 +259,7 @@ export default function MarcoPortfolio() {
               gaming community.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center px-4">
-              <a 
-                href="https://snowhorse-entertainment.itch.io/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://snowhorse-entertainment.itch.io/" target="_blank" rel="noopener noreferrer">
                 <Button
                   size="lg"
                   className="bg-hugo-button-primary hover:bg-hugo-button-hover text-white w-full sm:w-auto py-6 text-base"
@@ -272,11 +268,7 @@ export default function MarcoPortfolio() {
                   View All My Games
                 </Button>
               </a>
-              <a 
-                href="/documents/Marco_Brunetti_Resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="/documents/Marco_Brunetti_Resume.pdf" target="_blank" rel="noopener noreferrer">
                 <Button
                   size="lg"
                   variant="outline"
@@ -362,39 +354,48 @@ export default function MarcoPortfolio() {
                     ))}
                   </div>
                   <div className="flex gap-3">
-                    <Button
-                      size="sm"
-                      variant="outline"
-                      className="border-hugo-border border-2 text-hugo-muted hover:bg-hugo-button-secondary-hover hover:text-hugo-text bg-hugo-button-secondary/20 text-xs flex-1 sm:flex-none py-2"
-                      as="a"
+                    <a
                       href={game.links.devlog}
                       target="_blank"
                       rel="noopener noreferrer"
+                      className="flex-1 sm:flex-none"
                     >
-                      Devlog
-                    </Button>
-                    {game.links.play ? (
                       <Button
                         size="sm"
-                        className="bg-hugo-button-primary hover:bg-hugo-button-hover text-white text-xs flex-1 sm:flex-none py-2"
-                        as="a"
+                        variant="outline"
+                        className="border-hugo-border border-2 text-hugo-muted hover:bg-hugo-button-secondary-hover hover:text-hugo-text bg-hugo-button-secondary/20 text-xs w-full py-2"
+                      >
+                        Devlog
+                      </Button>
+                    </a>
+                    {game.links.play ? (
+                      <a
                         href={game.links.play}
                         target="_blank"
                         rel="noopener noreferrer"
+                        className="flex-1 sm:flex-none"
                       >
-                        Play
-                      </Button>
+                        <Button
+                          size="sm"
+                          className="bg-hugo-button-primary hover:bg-hugo-button-hover text-white text-xs w-full py-2"
+                        >
+                          Play
+                        </Button>
+                      </a>
                     ) : (
-                      <Button
-                        size="sm"
-                        className="bg-hugo-button-primary hover:bg-hugo-button-hover text-white text-xs flex-1 sm:flex-none py-2"
-                        as="a"
+                      <a
                         href={game.links.download}
                         target="_blank"
                         rel="noopener noreferrer"
+                        className="flex-1 sm:flex-none"
                       >
-                        Download
-                      </Button>
+                        <Button
+                          size="sm"
+                          className="bg-hugo-button-primary hover:bg-hugo-button-hover text-white text-xs w-full py-2"
+                        >
+                          Download
+                        </Button>
+                      </a>
                     )}
                   </div>
                 </CardContent>
@@ -422,42 +423,36 @@ export default function MarcoPortfolio() {
                 design.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="border-hugo-border border-2 text-hugo-muted hover:bg-hugo-button-secondary-hover hover:text-hugo-text bg-hugo-button-secondary/20 py-2"
-                  as="a"
-                  href="https://github.com/marco-brunetti"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Github className="w-4 h-4 mr-2" />
-                  GitHub
-                </Button>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="border-hugo-border border-2 text-hugo-muted hover:bg-hugo-button-secondary-hover hover:text-hugo-text bg-hugo-button-secondary/20 py-2"
-                  as="a"
-                  href="https://www.linkedin.com/in/marco199609/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Linkedin className="w-4 h-4 mr-2" />
-                  LinkedIn
-                </Button>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="border-hugo-border border-2 text-hugo-muted hover:bg-hugo-button-secondary-hover hover:text-hugo-text bg-hugo-button-secondary/20 py-2"
-                  as="a"
-                  href="https://www.youtube.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Youtube className="w-4 h-4 mr-2" />
-                  YouTube
-                </Button>
+                <a href="https://github.com/marco-brunetti" target="_blank" rel="noopener noreferrer">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="border-hugo-border border-2 text-hugo-muted hover:bg-hugo-button-secondary-hover hover:text-hugo-text bg-hugo-button-secondary/20 py-2"
+                  >
+                    <Github className="w-4 h-4 mr-2" />
+                    GitHub
+                  </Button>
+                </a>
+                <a href="https://www.linkedin.com/in/marco199609/" target="_blank" rel="noopener noreferrer">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="border-hugo-border border-2 text-hugo-muted hover:bg-hugo-button-secondary-hover hover:text-hugo-text bg-hugo-button-secondary/20 py-2"
+                  >
+                    <Linkedin className="w-4 h-4 mr-2" />
+                    LinkedIn
+                  </Button>
+                </a>
+                <a href="https://www.youtube.com/@snowhorsegames" target="_blank" rel="noopener noreferrer">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="border-hugo-border border-2 text-hugo-muted hover:bg-hugo-button-secondary-hover hover:text-hugo-text bg-hugo-button-secondary/20 py-2"
+                  >
+                    <Youtube className="w-4 h-4 mr-2" />
+                    YouTube
+                  </Button>
+                </a>
               </div>
             </div>
             <div className="relative order-1 lg:order-2 flex justify-center">
