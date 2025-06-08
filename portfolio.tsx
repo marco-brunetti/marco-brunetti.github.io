@@ -45,7 +45,7 @@ export default function MarcoPortfolio() {
       title: "Cursed Silence: Christmas",
       description: "A psychological horror game developed solo over the course of a year. Follow cryptic clues and uncover the protagonist's mental unraveling in this standalone entry of the Cursed Silence series.",
       image: "/images/cs_christmas_icon.png",
-      videoPreview: "/videos/cs_christmas_preview.mp4",
+      videoPreview: "/videos/cs_christmas.mp4",
       technologies: ["Unity", "C#", "Horror"],
       status: "Released",
       links: {
@@ -57,7 +57,7 @@ export default function MarcoPortfolio() {
       title: "Stand Up: Comedian Simulator",
       description: "Built solo in just 10 days, this experimental simulation lets you perform at your first stand-up gig. Test your timing, read the crowd, and see if you've got what it takes to make them laugh.",
       image: "/images/comedian_sim_icon.png",
-      videoPreview: "/videos/comedian_simulator_preview.mp4",
+      videoPreview: "/videos/comedian_simulator.mp4",
       technologies: ["Unity", "C#", "Simulation"],
       status: "Released",
       links: {
