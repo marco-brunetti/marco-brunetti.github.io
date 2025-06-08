@@ -393,18 +393,21 @@ export default function MarcoPortfolio() {
               <h2 className="text-3xl sm:text-4xl font-bold text-hugo-text mb-6 sm:mb-8 leading-tight">About Marco</h2>
               <p className="text-hugo-muted text-base sm:text-lg mb-5 sm:mb-6 leading-relaxed">
                 I’m Marco Brunetti, a Unity/C# game developer with 8+ years of experience across indie and studio projects.
-
+              </p>
+              <p className="text-hugo-muted text-base sm:text-lg mb-6 sm:mb-8 leading-relaxed">
                 I currently lead an 8-person engineering team at a 50+ developer studio, delivering high-performance
                 mobile games with over 100k downloads. I also build custom C# tools to streamline workflows and
                 improve stability.
-
+              </p>
+              <p className="text-hugo-muted text-base sm:text-lg mb-6 sm:mb-8 leading-relaxed">
                 As Programming Lead on Run, Veggies!, an upcoming Steam release, I developed core systems in Unreal
                 Blueprints, mentored junior developers, and reduced build times by 87%.
               </p>
               <p className="text-hugo-muted text-base sm:text-lg mb-6 sm:mb-8 leading-relaxed">
                 I also serve as President of IGDA Paraguay, organizing workshops, meetups, and initiatives to grow the
                 local game dev scene.
-
+              </p>
+              <p className="text-hugo-muted text-base sm:text-lg mb-6 sm:mb-8 leading-relaxed">
                 My portfolio includes 12+ indie games, including The Cursed Silence series, praised for polished
                 mechanics and atmosphere.
               </p>
