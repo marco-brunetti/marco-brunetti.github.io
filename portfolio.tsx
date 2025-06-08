@@ -125,7 +125,7 @@ export default function MarcoPortfolio() {
                 LinkedIn
               </a>
               <a
-                href="#"
+                href="/documents/Marco_Brunetti_Resume.pdf"
                 className="text-hugo-muted hover:text-hugo-text transition-colors underline text-sm"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -149,7 +149,7 @@ export default function MarcoPortfolio() {
                 itch.io
               </a>
               <a
-                href="https://www.youtube.com/"
+                href="https://www.youtube.com/@snowhorsegames"
                 className="text-hugo-muted hover:text-hugo-text transition-colors underline text-sm"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -195,7 +195,7 @@ export default function MarcoPortfolio() {
                   LinkedIn
                 </a>
                 <a
-                  href="#"
+                  href="/documents/Marco_Brunetti_Resume.pdf"
                   className="text-hugo-muted hover:text-hugo-text transition-colors underline text-sm"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -222,7 +222,7 @@ export default function MarcoPortfolio() {
                   itch.io
                 </a>
                 <a
-                  href="https://www.youtube.com/"
+                  href="https://www.youtube.com/@snowhorsegames"
                   className="text-hugo-muted hover:text-hugo-text transition-colors underline text-sm"
                   target="_blank"
                   rel="noopener noreferrer"
