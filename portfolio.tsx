@@ -33,7 +33,7 @@ export default function MarcoPortfolio() {
       title: "Run, Veggies!",
       description: "A physics‑driven 3D puzzle-platformer about runaway veggies escaping a factory. As Programmer Lead, I architected core systems (AI, input, physics interactions) and oversaw a 6‑person dev team. Coming soon on Steam.",
       image: "/images/rv_icon.png",
-      videoPreview: "/videos/rv_preview.mp4",
+      videoPreview: "/videos/run_veggies.mp4",
       technologies: ["Unreal Engine", "Blueprints", "Platformer"],
       status: "Coming Soon",
       links: {
