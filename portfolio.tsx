@@ -232,10 +232,11 @@ export default function MarcoPortfolio() {
               </span>
             </h2>
             <p className="text-base sm:text-lg lg:text-xl text-hugo-muted mb-8 sm:mb-10 max-w-2xl mx-auto px-4">
-              Unity/C# developer with 8+ years of experience and 12+ indie titles shipped on PC and mobile. Currently
-              leading engineering for an upcoming Steam release and managing an 8-person team within a 50+ developer
-              studio. Expertise in performance optimization and team mentorship. Open to full-time, contract, or
-              consulting opportunities worldwide.
+              Unity/C# developer with 8+ years of experience and 12+ shipped indie games on PC and mobile.
+              Led engineering for a 6-person team on a Steam title; currently managing an 8-person team at a 50+
+              developer studio.
+              Focused on performance, mentorship, and clean, scalable code.
+              Open to full-time, contract, or consulting roles worldwide.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center px-4">
               <a href="/documents/Marco_Brunetti_Resume.pdf" target="_blank" rel="noopener noreferrer">
@@ -391,16 +392,21 @@ export default function MarcoPortfolio() {
             <div className="order-2 lg:order-1">
               <h2 className="text-3xl sm:text-4xl font-bold text-hugo-text mb-6 sm:mb-8 leading-tight">About Marco</h2>
               <p className="text-hugo-muted text-base sm:text-lg mb-5 sm:mb-6 leading-relaxed">
-                I’m Marco Brunetti, a game developer with 8+ years of experience in Unity and C#. Recently, I served as
-                Programmer Lead on Run, Veggies!, a 3D puzzle-platformer preparing for Steam release—where I designed
-                core systems, led a 5-person subteam, and maintained code quality under tight deadlines. I also manage an
-                8-person engineering division at a mid-sized studio of 50+ developers, delivering high-performance mobile
-                games with over 100k downloads.
+                I’m Marco Brunetti, a Unity/C# game developer with 8+ years of experience across indie and studio projects.
+
+                I currently lead an 8-person engineering team at a 50+ developer studio, delivering high-performance
+                mobile games with over 100k downloads. I also build custom C# tools to streamline workflows and
+                improve stability.
+
+                As Programming Lead on Run, Veggies!, an upcoming Steam release, I developed core systems in Unreal
+                Blueprints, mentored junior developers, and reduced build times by 87%.
               </p>
               <p className="text-hugo-muted text-base sm:text-lg mb-6 sm:mb-8 leading-relaxed">
-                As President of IGDA Paraguay, I organize workshops, meetups, and initiatives to support local industry
-                growth. My portfolio includes 12+ shipped indie titles, including The Cursed Silence series, praised with 4.5/5
-                reviews for mechanics and atmosphere.
+                I also serve as President of IGDA Paraguay, organizing workshops, meetups, and initiatives to grow the
+                local game dev scene.
+
+                My portfolio includes 12+ indie games, including The Cursed Silence series, praised for polished
+                mechanics and atmosphere.
               </p>
               {/* Professional links in About section */}
               <div className="flex flex-wrap gap-4">
