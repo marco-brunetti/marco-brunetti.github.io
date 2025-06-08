@@ -259,13 +259,6 @@ export default function MarcoPortfolio() {
               gaming community.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center px-4">
-              <Button
-                size="lg"
-                className="bg-hugo-button-primary hover:bg-hugo-button-hover text-white w-full sm:w-auto py-6 text-base"
-              >
-                <Play className="w-5 h-5 mr-2" />
-                View My Games
-              </Button>
               <a 
                 href="https://snowhorse-entertainment.itch.io/"
                 target="_blank"
