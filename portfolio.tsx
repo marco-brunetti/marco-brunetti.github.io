@@ -15,8 +15,8 @@ export default function MarcoPortfolio() {
     {
       title: "Cursed Silence: Christmas",
       description: "Follow mysterious clues and discover the main character's mental struggles.",
-      image: "/images/cc_christmas_icon.png",
-      gifPreview: "/gif/cs_christmas.gif",
+      image: "/images/cs_christmas_icon.png",
+      gifPreview: "/gif/cc_christmas.gif",
       technologies: ["Unity", "C#", "Horror"],
       status: "Released",
       links: {
