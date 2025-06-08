@@ -266,7 +266,6 @@ export default function MarcoPortfolio() {
               >
                 <Button
                   size="lg"
-                  variant="outline"
                   className="border-hugo-border border-2 text-hugo-muted hover:bg-hugo-button-secondary-hover hover:text-hugo-text bg-hugo-button-secondary/20 w-full sm:w-auto py-6 text-base"
                 >
                   <Download className="w-5 h-5 mr-2" />
