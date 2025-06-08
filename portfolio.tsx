@@ -15,7 +15,7 @@ export default function MarcoPortfolio() {
     {
       title: "Cursed Silence: Christmas",
       description: "Follow mysterious clues and discover the main character's mental struggles.",
-      image: "/images/cursed-silence-christmas.jpg",
+      image: "/images/cc_christmas_icon.png",
       gifPreview: "/gif/cc_christmas.gif",
       technologies: ["Unity", "C#", "Horror"],
       status: "Released",
@@ -27,7 +27,7 @@ export default function MarcoPortfolio() {
     {
       title: "Mini Tanks",
       description: "An epic survival battle between toy war tanks, with nice visuals and plenty of powerups.",
-      image: "/images/mini-tanks.jpg",
+      image: "/images/mini-tanks_icon.png",
       gifPreview: "/gif/mini_tanks.gif",
       technologies: ["Unity", "C#", "Action"],
       status: "Released",
@@ -39,7 +39,7 @@ export default function MarcoPortfolio() {
     {
       title: "Reflection from the Abyss",
       description: "Escape a mysterious room in this greek mythology inspired game.",
-      image: "/images/reflection-abyss.jpg",
+      image: "/images/reflejos_icon.png",
       gifPreview: "/gif/abismo.gif",
       technologies: ["Unity", "C#", "Puzzle"],
       status: "Released",
@@ -51,7 +51,7 @@ export default function MarcoPortfolio() {
     {
       title: "Stand Up: Comedian Simulator",
       description: "Play the role of a stand up comedian at their first gig. Discover if you got it takes to be one.",
-      image: "/images/comedian-simulator.jpg",
+      image: "/images/comedian_sim_icon.png",
       gifPreview: "/gif/comedian_simulator.gif",
       technologies: ["Unity", "C#", "Simulation"],
       status: "Released",
@@ -63,7 +63,7 @@ export default function MarcoPortfolio() {
     {
       title: "Cursed Silence",
       description: "A psychological horror experience that explores the depths of the human mind.",
-      image: "/images/cursed-silence.jpg",
+      image: "/images/cc_demo_icon.png",
       gifPreview: "/gif/cc_demo.gif",
       technologies: ["Unity", "C#", "Horror"],
       status: "Released",
@@ -75,7 +75,7 @@ export default function MarcoPortfolio() {
     {
       title: "Crosscountry Racer",
       description: "High-speed racing across diverse terrains and challenging tracks.",
-      image: "/images/crosscountry-racer.jpg",
+      image: "/images/cc_racer_icon.png",
       gifPreview: "/gif/cc_racer.gif",
       technologies: ["Unity", "C#", "Racing"],
       status: "Released",
