@@ -232,12 +232,10 @@ export default function MarcoPortfolio() {
               </span>
             </h2>
             <p className="text-base sm:text-lg lg:text-xl text-hugo-muted mb-8 sm:mb-10 max-w-2xl mx-auto px-4">
-              Game developer with 8+ years of Unity and C# experience, shipping
-              12+ titles across PC and mobile. As Programmer Lead on the upcoming
-              Steam release **Run, Veggies!**, I led core systems and mentored an
-              5-person dev team. I also lead an 8-person engineering division at
-              a 50+ member studio. As President of IGDA Paraguay, I actively mentor
-              developers and build Latin America’s game dev community.
+              Experienced Unity/C# developer with 8+ years in game development, having shipped 12+ titles across PC
+              and mobile. Currently leading engineering for the upcoming Steam release Run, Veggies! and managing an
+              8-person dev team at a 50+ member studio. Passionate about building performant game systems and
+              mentoring teams. Open to new opportunities worldwide.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center px-4">
               <a href="/documents/Marco_Brunetti_Resume.pdf" target="_blank" rel="noopener noreferrer">
@@ -490,8 +488,9 @@ export default function MarcoPortfolio() {
             Let's Work Together
           </h2>
           <p className="text-hugo-muted mb-8 sm:mb-10 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
-            I'm always interested in new opportunities and collaborations. Whether you have a project in mind or want to
-            discuss game development, feel free to reach out!
+            I specialize in Unity/C# development, technical leadership, and performance optimization, with experience shipping
+            12+ titles and leading engineering teams. Currently open to contract work, full-time roles, or collaborative projects.
+            Let’s build something great together.
           </p>
 
           {/* Primary contact method */}
