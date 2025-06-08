@@ -267,6 +267,7 @@ export default function MarcoPortfolio() {
                 View My Games
               </Button>
               <Button
+                href="/documents/Marco_Brunetti_Resume.pdf"
                 size="lg"
                 variant="outline"
                 className="border-hugo-border border-2 text-hugo-muted hover:bg-hugo-button-secondary-hover hover:text-hugo-text bg-hugo-button-secondary/20 w-full sm:w-auto py-6 text-base"
