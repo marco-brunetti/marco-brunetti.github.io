@@ -10,15 +10,15 @@ import { Mountain, Cloud, Gamepad2, Sparkles } from "lucide-react"
 export default function CrosscountryRacerPage() {
   return (
     <CaseStudyLayout
-      title="Crosscountry Racer"
-      subtitle="High-speed racing across diverse terrains and challenging tracks"
+      title="Run, Veggies!"
+      subtitle="A physics‑driven 3D puzzle-platformer about runaway veggies escaping a factory."
       gameInfo={{
-        engine: "Unity 2022.2",
+        engine: "Unreal 5.4.x",
         platform: "PC (Windows)",
-        genre: "Racing / Arcade",
-        developmentTime: "4 months",
-        status: "Released",
-        teamSize: "Solo Developer",
+        genre: "Plarformer / Puzzle",
+        developmentTime: "6 months",
+        status: "Coming Soon",
+        teamSize: "17 people",
       }}
       coverImage="/placeholder.svg?height=600&width=1200"
       techStack={[
@@ -32,8 +32,8 @@ export default function CrosscountryRacerPage() {
     >
       <SectionHeading>Challenge</SectionHeading>
       <p>
-        Create arcade racing that feels fast and exciting while maintaining control precision. Balance realistic physics
-        with fun, over-the-top racing moments across diverse environments.
+        Use each veggie’s unique abilities to solve puzzles, dodge deadly machinery,
+        and outwit the kitchen crew in this quirky, fast-paced adventure.
       </p>
 
       <ImageShowcase

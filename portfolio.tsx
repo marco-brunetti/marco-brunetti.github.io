@@ -37,7 +37,7 @@ export default function MarcoPortfolio() {
       technologies: ["Unreal Engine", "Blueprints", "Platformer"],
       status: "Coming Soon",
       links: {
-        devlog: "/case-studies/crosscountry-racer",
+        devlog: "/case-studies/run-veggies",
         download: "https://store.steampowered.com/app/3461090/Run_Veggies/",
       },
     },
