@@ -11,6 +11,18 @@ export default function MarcoPortfolio() {
   // Games data with static images and GIF previews
   const games = [
     {
+      title: "Run, Veggies!",
+      description: "Platformer puzzle game where three courageous vegetables escape a hazardous processing plant.",
+      image: "/images/rv_icon.png",
+      gifPreview: "/gif/cc_racer.gif",
+      technologies: ["Unreal Engine", "Blueprints", "Platformer"],
+      status: "Released",
+      links: {
+        devlog: "/case-studies/crosscountry-racer",
+        download: "https://store.steampowered.com/app/3461090/Run_Veggies/",
+      },
+    },
+    {
       title: "Cursed Silence: Christmas",
       description: "Follow mysterious clues and discover the main character's mental struggles.",
       image: "/images/cs_christmas_icon.png",
@@ -19,31 +31,7 @@ export default function MarcoPortfolio() {
       status: "Released",
       links: {
         devlog: "/case-studies/cursed-silence-christmas",
-        download: "https://marco-brunetti.github.io/",
-      },
-    },
-    {
-      title: "Mini Tanks",
-      description: "An epic survival battle between toy war tanks, with nice visuals and plenty of powerups.",
-      image: "/images/mini_tanks_icon.png",
-      gifPreview: "/gif/mini_tanks.gif",
-      technologies: ["Unity", "C#", "Action"],
-      status: "Released",
-      links: {
-        devlog: "/case-studies/mini-tanks",
-        play: "https://marco-brunetti.github.io/",
-      },
-    },
-    {
-      title: "Reflection from the Abyss",
-      description: "Escape a mysterious room in this greek mythology inspired game.",
-      image: "/images/reflejos_icon.png",
-      gifPreview: "/gif/abismo.gif",
-      technologies: ["Unity", "C#", "Puzzle"],
-      status: "Released",
-      links: {
-        devlog: "/case-studies/reflection-abyss",
-        download: "https://marco-brunetti.github.io/",
+        download: "https://snowhorse-entertainment.itch.io/cursed-silence-christmas",
       },
     },
     {
@@ -55,33 +43,9 @@ export default function MarcoPortfolio() {
       status: "Released",
       links: {
         devlog: "/case-studies/comedian-simulator",
-        download: "https://marco-brunetti.github.io/",
+        download: "https://snowhorse-entertainment.itch.io/comedian-simulator",
       },
-    },
-    {
-      title: "Cursed Silence",
-      description: "A psychological horror experience that explores the depths of the human mind.",
-      image: "/images/cs_demo_icon.png",
-      gifPreview: "/gif/cc_demo.gif",
-      technologies: ["Unity", "C#", "Horror"],
-      status: "Released",
-      links: {
-        devlog: "/case-studies/cursed-silence",
-        download: "https://marco-brunetti.github.io/",
-      },
-    },
-    {
-      title: "Crosscountry Racer",
-      description: "High-speed racing across diverse terrains and challenging tracks.",
-      image: "/images/cc_racer_icon.png",
-      gifPreview: "/gif/cc_racer.gif",
-      technologies: ["Unity", "C#", "Racing"],
-      status: "Released",
-      links: {
-        devlog: "/case-studies/crosscountry-racer",
-        download: "https://marco-brunetti.github.io/",
-      },
-    },
+    }
   ]
 
   const skills = [
