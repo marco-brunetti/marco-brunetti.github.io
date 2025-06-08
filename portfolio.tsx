@@ -16,7 +16,7 @@ export default function MarcoPortfolio() {
       image: "/images/rv_icon.png",
       gifPreview: "/gif/cc_racer.gif",
       technologies: ["Unreal Engine", "Blueprints", "Platformer"],
-      status: "Released",
+      status: "Coming Soon",
       links: {
         devlog: "/case-studies/crosscountry-racer",
         download: "https://store.steampowered.com/app/3461090/Run_Veggies/",
