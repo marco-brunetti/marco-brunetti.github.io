@@ -12,7 +12,7 @@ export default function MarcoPortfolio() {
   const games = [
     {
       title: "Run, Veggies!",
-      description: "A physics‑driven 3D puzzle-platformer about runaway veggies escaping a factory. As Programmer Lead, I architected core systems (AI, input, physics interactions) and oversaw a 6‑person dev team. Launching soon on Steam.",
+      description: "A physics‑driven 3D puzzle-platformer about runaway veggies escaping a factory. As Programmer Lead, I architected core systems (AI, input, physics interactions) and oversaw a 6‑person dev team. Coming soon on Steam.",
       image: "/images/rv_icon.png",
       gifPreview: "/gif/cc_racer.gif",
       technologies: ["Unreal Engine", "Blueprints", "Platformer"],
@@ -103,7 +103,7 @@ export default function MarcoPortfolio() {
     description: "Blueprint scripting for gameplay and UI systems",
     icon: <Code className="w-5 h-5" />,
   },
-]
+];
 
   // State to track which card is being hovered
   const [hoveredCard, setHoveredCard] = useState<number | null>(null)
@@ -401,8 +401,8 @@ export default function MarcoPortfolio() {
                 local game dev scene.
               </p>
               <p className="text-hugo-muted text-base sm:text-lg mb-6 sm:mb-8 leading-relaxed">
-                My portfolio includes 12+ indie games, including The Cursed Silence series, praised for polished
-                mechanics and atmosphere.
+                "I’ve shipped 12+ indie games, including The Cursed Silence series, praised for polished mechanics
+                and atmosphere.
               </p>
               {/* Professional links in About section */}
               <div className="flex flex-wrap gap-4">
