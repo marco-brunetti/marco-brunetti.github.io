@@ -16,7 +16,7 @@ export default function MarcoPortfolio() {
       title: "Cursed Silence: Christmas",
       description: "Follow mysterious clues and discover the main character's mental struggles.",
       image: "/images/cc_christmas_icon.png",
-      gifPreview: "/gif/cc_christmas.gif",
+      gifPreview: "/gif/cs_christmas.gif",
       technologies: ["Unity", "C#", "Horror"],
       status: "Released",
       links: {
@@ -27,7 +27,7 @@ export default function MarcoPortfolio() {
     {
       title: "Mini Tanks",
       description: "An epic survival battle between toy war tanks, with nice visuals and plenty of powerups.",
-      image: "/images/mini-tanks_icon.png",
+      image: "/images/mini_tanks_icon.png",
       gifPreview: "/gif/mini_tanks.gif",
       technologies: ["Unity", "C#", "Action"],
       status: "Released",
@@ -63,7 +63,7 @@ export default function MarcoPortfolio() {
     {
       title: "Cursed Silence",
       description: "A psychological horror experience that explores the depths of the human mind.",
-      image: "/images/cc_demo_icon.png",
+      image: "/images/cs_demo_icon.png",
       gifPreview: "/gif/cc_demo.gif",
       technologies: ["Unity", "C#", "Horror"],
       status: "Released",
