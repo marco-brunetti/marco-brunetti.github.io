@@ -232,10 +232,9 @@ export default function MarcoPortfolio() {
               </span>
             </h2>
             <p className="text-base sm:text-lg lg:text-xl text-hugo-muted mb-8 sm:mb-10 max-w-2xl mx-auto px-4">
-              Unity/C# developer with 8+ years of experience and 12+ shipped indie games on PC and mobile.
-              Led engineering for a 6-person team on a Steam title; currently managing an 8-person team at a 50+
-              developer studio.
-              Focused on performance, mentorship, and clean, scalable code.
+              Unity/C# developer with 8+ years of experience and 12+ shipped indie games on PC and mobile.<br />
+              Led engineering for a 6-person team on a Steam title; currently managing an 8-person team at a 50+ developer studio.<br />
+              Focused on performance, mentorship, and clean, scalable code.<br />
               Open to full-time, contract, or consulting roles worldwide.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center px-4">
