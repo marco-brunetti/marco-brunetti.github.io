@@ -266,15 +266,20 @@ export default function MarcoPortfolio() {
                 <Play className="w-5 h-5 mr-2" />
                 View My Games
               </Button>
-              <Button
+              <a 
                 href="/documents/Marco_Brunetti_Resume.pdf"
-                size="lg"
-                variant="outline"
-                className="border-hugo-border border-2 text-hugo-muted hover:bg-hugo-button-secondary-hover hover:text-hugo-text bg-hugo-button-secondary/20 w-full sm:w-auto py-6 text-base"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <Download className="w-5 h-5 mr-2" />
-                Download Resume
-              </Button>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-hugo-border border-2 text-hugo-muted hover:bg-hugo-button-secondary-hover hover:text-hugo-text bg-hugo-button-secondary/20 w-full sm:w-auto py-6 text-base"
+                >
+                  <Download className="w-5 h-5 mr-2" />
+                  Download Resume
+                </Button>
+              </a>
             </div>
           </div>
         </div>
