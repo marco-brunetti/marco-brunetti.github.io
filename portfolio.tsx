@@ -12,7 +12,7 @@ export default function MarcoPortfolio() {
   const games = [
     {
       title: "Run, Veggies!",
-      description: "A physics‑driven 3D puzzle-platformer about runaway veggies escaping a factory. As Programmer Lead, I architected core systems (AI, input, physics interactions) and oversaw a 3‑person dev team. Launching soon on Steam.",
+      description: "A physics‑driven 3D puzzle-platformer about runaway veggies escaping a factory. As Programmer Lead, I architected core systems (AI, input, physics interactions) and oversaw a 6‑person dev team. Launching soon on Steam.",
       image: "/images/rv_icon.png",
       gifPreview: "/gif/cc_racer.gif",
       technologies: ["Unreal Engine", "Blueprints", "Platformer"],
