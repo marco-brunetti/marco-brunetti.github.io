@@ -20,7 +20,7 @@ export default function MarcoPortfolio() {
       technologies: ["Unity", "C#", "Horror"],
       status: "Released",
       links: {
-        devlog: "/devlogs/cursed-silence-christmas.html",
+        devlog: "/case-studies/cursed-silence-christmas",
         download: "https://marco-brunetti.github.io/",
       },
     },
@@ -32,7 +32,7 @@ export default function MarcoPortfolio() {
       technologies: ["Unity", "C#", "Action"],
       status: "Released",
       links: {
-        devlog: "/devlogs/mini-tanks.html",
+        devlog: "/case-studies/mini-tanks",
         play: "https://marco-brunetti.github.io/",
       },
     },
@@ -44,7 +44,7 @@ export default function MarcoPortfolio() {
       technologies: ["Unity", "C#", "Puzzle"],
       status: "Released",
       links: {
-        devlog: "/devlogs/reflection-abyss.html",
+        devlog: "/case-studies/reflection-abyss",
         download: "https://marco-brunetti.github.io/",
       },
     },
@@ -56,7 +56,7 @@ export default function MarcoPortfolio() {
       technologies: ["Unity", "C#", "Simulation"],
       status: "Released",
       links: {
-        devlog: "/devlogs/comedian-simulator.html",
+        devlog: "/case-studies/comedian-simulator",
         download: "https://marco-brunetti.github.io/",
       },
     },
@@ -68,7 +68,7 @@ export default function MarcoPortfolio() {
       technologies: ["Unity", "C#", "Horror"],
       status: "Released",
       links: {
-        devlog: "/devlogs/cursed-silence.html",
+        devlog: "/case-studies/cursed-silence",
         download: "https://marco-brunetti.github.io/",
       },
     },
@@ -80,7 +80,7 @@ export default function MarcoPortfolio() {
       technologies: ["Unity", "C#", "Racing"],
       status: "Released",
       links: {
-        devlog: "/devlogs/crosscountry-racer.html",
+        devlog: "/case-studies/crosscountry-racer",
         download: "https://marco-brunetti.github.io/",
       },
     },
@@ -365,7 +365,7 @@ export default function MarcoPortfolio() {
                         variant="outline"
                         className="border-hugo-border border-2 text-hugo-muted hover:bg-hugo-button-secondary-hover hover:text-hugo-text bg-hugo-button-secondary/20 text-xs w-full py-2"
                       >
-                        Devlog
+                        Case Study
                       </Button>
                     </a>
                     {game.links.play ? (
