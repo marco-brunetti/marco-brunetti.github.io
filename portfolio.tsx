@@ -4,8 +4,6 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
 import { Github, Linkedin, Mail, Play, Download, GamepadIcon, Code, Palette, Zap, Youtube, MapPin } from "lucide-react"
 import Image from "next/image"
 
@@ -164,8 +162,16 @@ export default function MarcoPortfolio() {
               <p className="text-hugo-muted text-xs sm:text-sm">Game Developer Portfolio</p>
             </div>
 
-            {/* Desktop Navigation */}
+            {/* Desktop Navigation - Strategic recruiter links */}
             <div className="hidden lg:flex space-x-6">
+              <a
+                href="/documents/Marco_Brunetti_Resume.pdf"
+                className="text-hugo-muted hover:text-hugo-text transition-colors underline text-sm font-medium"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Resume
+              </a>
               <a
                 href="https://www.linkedin.com/in/marco199609/"
                 className="text-hugo-muted hover:text-hugo-text transition-colors underline text-sm"
@@ -175,36 +181,12 @@ export default function MarcoPortfolio() {
                 LinkedIn
               </a>
               <a
-                href="/documents/Marco_Brunetti_Resume.pdf"
-                className="text-hugo-muted hover:text-hugo-text transition-colors underline text-sm"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Resume
-              </a>
-              <a
                 href="https://github.com/marco-brunetti"
                 className="text-hugo-muted hover:text-hugo-text transition-colors underline text-sm"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Github
-              </a>
-              <a
-                href="https://snowhorse-entertainment.itch.io/"
-                className="text-hugo-muted hover:text-hugo-text transition-colors underline text-sm"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                itch.io
-              </a>
-              <a
-                href="https://www.youtube.com/@snowhorsegames"
-                className="text-hugo-muted hover:text-hugo-text transition-colors underline text-sm"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                YouTube
+                GitHub
               </a>
               <a href="#contact" className="text-hugo-muted hover:text-hugo-text transition-colors underline text-sm">
                 Contact
@@ -236,6 +218,15 @@ export default function MarcoPortfolio() {
             <div className="lg:hidden mt-4 pb-4 border-t border-hugo-border">
               <div className="flex flex-col space-y-3 pt-4">
                 <a
+                  href="/documents/Marco_Brunetti_Resume.pdf"
+                  className="text-hugo-muted hover:text-hugo-text transition-colors underline text-sm font-medium"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Resume
+                </a>
+                <a
                   href="https://www.linkedin.com/in/marco199609/"
                   className="text-hugo-muted hover:text-hugo-text transition-colors underline text-sm"
                   target="_blank"
@@ -245,40 +236,13 @@ export default function MarcoPortfolio() {
                   LinkedIn
                 </a>
                 <a
-                  href="/documents/Marco_Brunetti_Resume.pdf"
-                  className="text-hugo-muted hover:text-hugo-text transition-colors underline text-sm"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Resume
-                </a>
-                <a
                   href="https://github.com/marco-brunetti"
                   className="text-hugo-muted hover:text-hugo-text transition-colors underline text-sm"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  Github
-                </a>
-                <a
-                  href="https://snowhorse-entertainment.itch.io/"
-                  className="text-hugo-muted hover:text-hugo-text transition-colors underline text-sm"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  itch.io
-                </a>
-                <a
-                  href="https://www.youtube.com/@snowhorsegames"
-                  className="text-hugo-muted hover:text-hugo-text transition-colors underline text-sm"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  YouTube
+                  GitHub
                 </a>
                 <a
                   href="#contact"
@@ -309,23 +273,23 @@ export default function MarcoPortfolio() {
               gaming community.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center px-4">
-              <a href="https://snowhorse-entertainment.itch.io/" target="_blank" rel="noopener noreferrer">
+              <a href="/documents/Marco_Brunetti_Resume.pdf" target="_blank" rel="noopener noreferrer">
                 <Button
                   size="lg"
                   className="bg-hugo-button-primary hover:bg-hugo-button-hover text-white w-full sm:w-auto py-6 text-base"
                 >
-                  <Play className="w-5 h-5 mr-2" />
-                  View All My Games
+                  <Download className="w-5 h-5 mr-2" />
+                  Download Resume
                 </Button>
               </a>
-              <a href="/documents/Marco_Brunetti_Resume.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="https://snowhorse-entertainment.itch.io/" target="_blank" rel="noopener noreferrer">
                 <Button
                   size="lg"
                   variant="outline"
                   className="border-hugo-border border-2 text-hugo-muted hover:bg-hugo-button-secondary-hover hover:text-hugo-text bg-hugo-button-secondary/20 w-full sm:w-auto py-6 text-base"
                 >
-                  <Download className="w-5 h-5 mr-2" />
-                  Download Resume
+                  <Play className="w-5 h-5 mr-2" />
+                  View My Games
                 </Button>
               </a>
             </div>
@@ -472,6 +436,7 @@ export default function MarcoPortfolio() {
                 titles, including The Cursed Silence series, which earned 4.5/5 ratings for polished mechanics and
                 design.
               </p>
+              {/* Professional links in About section */}
               <div className="flex flex-wrap gap-4">
                 <a href="https://github.com/marco-brunetti" target="_blank" rel="noopener noreferrer">
                   <Button
@@ -546,69 +511,66 @@ export default function MarcoPortfolio() {
         </div>
       </section>
 
-      {/* Contact Section */}
+      {/* Contact Section - Simplified */}
       <section id="contact" className="py-16 sm:py-20 px-4 sm:px-6 bg-hugo-darker">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl sm:text-4xl font-bold text-hugo-text text-center mb-10 sm:mb-14 leading-tight">
-            Get In Touch
+        <div className="container mx-auto max-w-3xl text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold text-hugo-text mb-6 sm:mb-8 leading-tight">
+            Let's Work Together
           </h2>
-          <div className="grid lg:grid-cols-2 gap-10 sm:gap-14">
-            <div>
-              <h3 className="text-xl sm:text-2xl font-semibold text-hugo-text mb-5 sm:mb-6 leading-snug">
-                Let's Work Together
-              </h3>
-              <p className="text-hugo-muted mb-6 sm:mb-8 text-sm sm:text-base leading-relaxed">
-                I'm always interested in new opportunities and collaborations. Whether you have a project in mind or
-                want to discuss game development, feel free to reach out!
-              </p>
-              <div className="space-y-4 sm:space-y-5">
-                <div className="flex items-center text-hugo-muted text-sm sm:text-base">
-                  <Mail className="w-5 h-5 mr-3 text-hugo-accent flex-shrink-0" />
-                  <span className="break-all">marcobrunetti.dev@gmail.com</span>
-                </div>
-                <div className="flex items-center text-hugo-muted text-sm sm:text-base">
-                  <Github className="w-5 h-5 mr-3 text-hugo-accent flex-shrink-0" />
-                  <span className="break-all">github.com/marco-brunetti</span>
-                </div>
-                <div className="flex items-center text-hugo-muted text-sm sm:text-base">
-                  <Linkedin className="w-5 h-5 mr-3 text-hugo-accent flex-shrink-0" />
-                  <span className="break-all">linkedin.com/in/marco199609</span>
-                </div>
-                <div className="flex items-center text-hugo-muted text-sm sm:text-base">
-                  <MapPin className="w-5 h-5 mr-3 text-hugo-accent flex-shrink-0" />
-                  <span>Asunción, Paraguay</span>
-                </div>
-              </div>
+          <p className="text-hugo-muted mb-8 sm:mb-10 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
+            I'm always interested in new opportunities and collaborations. Whether you have a project in mind or want to
+            discuss game development, feel free to reach out!
+          </p>
+
+          {/* Primary contact method */}
+          <div className="mb-8">
+            <a href="mailto:marcobrunetti.dev@gmail.com?subject=Portfolio Contact">
+              <Button className="bg-hugo-button-primary hover:bg-hugo-button-hover text-white text-base sm:text-lg py-6 px-8">
+                <Mail className="w-5 h-5 mr-2" />
+                Send Me an Email
+              </Button>
+            </a>
+          </div>
+
+          {/* Contact info */}
+          <div className="space-y-4 mb-8">
+            <div className="flex items-center justify-center text-hugo-muted text-sm sm:text-base">
+              <Mail className="w-5 h-5 mr-3 text-hugo-accent flex-shrink-0" />
+              <a href="mailto:marcobrunetti.dev@gmail.com" className="hover:text-hugo-accent transition-colors">
+                marcobrunetti.dev@gmail.com
+              </a>
             </div>
-            <Card className="bg-hugo-lighter border-hugo-border border-2">
-              <CardContent className="p-5 sm:p-6">
-                <form className="space-y-5">
-                  <div>
-                    <Input
-                      placeholder="Your Name"
-                      className="bg-hugo-button-secondary border-hugo-border border-2 text-hugo-text placeholder:text-hugo-muted focus:border-hugo-accent text-sm sm:text-base py-6"
-                    />
-                  </div>
-                  <div>
-                    <Input
-                      type="email"
-                      placeholder="Your Email"
-                      className="bg-hugo-button-secondary border-hugo-border border-2 text-hugo-text placeholder:text-hugo-muted focus:border-hugo-accent text-sm sm:text-base py-6"
-                    />
-                  </div>
-                  <div>
-                    <Textarea
-                      placeholder="Your Message"
-                      rows={4}
-                      className="bg-hugo-button-secondary border-hugo-border border-2 text-hugo-text placeholder:text-hugo-muted focus:border-hugo-accent text-sm sm:text-base resize-none py-3"
-                    />
-                  </div>
-                  <Button className="w-full bg-hugo-button-primary hover:bg-hugo-button-hover text-white text-sm sm:text-base py-6">
-                    Send Message
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
+            <div className="flex items-center justify-center text-hugo-muted text-sm sm:text-base">
+              <MapPin className="w-5 h-5 mr-3 text-hugo-accent flex-shrink-0" />
+              <span>Asunción, Paraguay</span>
+            </div>
+          </div>
+
+          {/* Secondary links for games/community */}
+          <div className="pt-6 border-t border-hugo-border">
+            <p className="text-hugo-muted text-sm mb-4">Check out my games and community work</p>
+            <div className="flex flex-wrap gap-4 justify-center">
+              <a href="https://snowhorse-entertainment.itch.io/" target="_blank" rel="noopener noreferrer">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="border-hugo-border border-2 text-hugo-muted hover:bg-hugo-button-secondary-hover hover:text-hugo-text bg-hugo-button-secondary/20 py-2"
+                >
+                  <GamepadIcon className="w-4 h-4 mr-2" />
+                  itch.io
+                </Button>
+              </a>
+              <a href="https://www.youtube.com/@snowhorsegames" target="_blank" rel="noopener noreferrer">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="border-hugo-border border-2 text-hugo-muted hover:bg-hugo-button-secondary-hover hover:text-hugo-text bg-hugo-button-secondary/20 py-2"
+                >
+                  <Youtube className="w-4 h-4 mr-2" />
+                  YouTube
+                </Button>
+              </a>
+            </div>
           </div>
         </div>
       </section>
