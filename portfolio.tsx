@@ -12,7 +12,7 @@ export default function MarcoPortfolio() {
   const games = [
     {
       title: "Run, Veggies!",
-      description: "Platformer puzzle game where three courageous vegetables escape a hazardous processing plant.",
+      description: "A physics‑driven 3D puzzle-platformer about runaway veggies escaping a factory. As Programmer Lead, I architected core systems (AI, input, physics interactions) and oversaw a 3‑person dev team. Launching soon on Steam.",
       image: "/images/rv_icon.png",
       gifPreview: "/gif/cc_racer.gif",
       technologies: ["Unreal Engine", "Blueprints", "Platformer"],
@@ -24,7 +24,7 @@ export default function MarcoPortfolio() {
     },
     {
       title: "Cursed Silence: Christmas",
-      description: "Follow mysterious clues and discover the main character's mental struggles.",
+      description: "A psychological horror game developed solo over the course of a year. Follow cryptic clues and uncover the protagonist’s mental unraveling in this standalone entry of the Cursed Silence series.",
       image: "/images/cs_christmas_icon.png",
       gifPreview: "/gif/cc_christmas.gif",
       technologies: ["Unity", "C#", "Horror"],
@@ -36,7 +36,7 @@ export default function MarcoPortfolio() {
     },
     {
       title: "Stand Up: Comedian Simulator",
-      description: "Play the role of a stand up comedian at their first gig. Discover if you got it takes to be one.",
+      description: "Built solo in just 10 days, this experimental simulation lets you perform at your first stand-up gig. Test your timing, read the crowd, and see if you’ve got what it takes to make them laugh.",
       image: "/images/comedian_sim_icon.png",
       gifPreview: "/gif/comedian_simulator.gif",
       technologies: ["Unity", "C#", "Simulation"],
@@ -232,9 +232,12 @@ export default function MarcoPortfolio() {
               </span>
             </h2>
             <p className="text-base sm:text-lg lg:text-xl text-hugo-muted mb-8 sm:mb-10 max-w-2xl mx-auto px-4">
-              8+ years of Unity and C# expertise, leading teams and shipping 12+ indie titles. Currently Team Lead at
-              Posibillian Tech and President of IGDA Paraguay, passionate about mentoring developers and growing the
-              gaming community.
+              Game developer with 8+ years of Unity and C# experience, shipping
+              12+ titles across PC and mobile. As Programmer Lead on the upcoming
+              Steam release **Run, Veggies!**, I led core systems and mentored an
+              5-person dev team. I also lead an 8-person engineering division at
+              a 50+ member studio. As President of IGDA Paraguay, I actively mentor
+              developers and build Latin America’s game dev community.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center px-4">
               <a href="/documents/Marco_Brunetti_Resume.pdf" target="_blank" rel="noopener noreferrer">
@@ -390,15 +393,20 @@ export default function MarcoPortfolio() {
             <div className="order-2 lg:order-1">
               <h2 className="text-3xl sm:text-4xl font-bold text-hugo-text mb-6 sm:mb-8 leading-tight">About Marco</h2>
               <p className="text-hugo-muted text-base sm:text-lg mb-5 sm:mb-6 leading-relaxed">
-                I'm Marco Brunetti, a seasoned game developer with 8+ years of experience specializing in Unity and C#
-                development. Currently serving as Team Lead at Posibillian Tech, where I lead a team of 8 engineers
-                developing top-performing mobile games with 100k+ downloads.
+                I’m Marco Brunetti, a game developer with 8+ years building
+                games in Unity and C#. I recently served as Programmer Lead
+                on **Run, Veggies!**, a 3D puzzle‑platformer preparing for
+                Steam release—where I designed core systems, guided a 5‑person
+                subteam, and ensured code quality under tight deadlines.
+                I also lead an 8‑person engineering division at a mid‑sized studio
+                of over 50 developers, delivering high‑performance mobile games with
+                100k+ downloads.
               </p>
               <p className="text-hugo-muted text-base sm:text-lg mb-6 sm:mb-8 leading-relaxed">
-                As President of IGDA Paraguay, I'm passionate about fostering the local game development community
-                through workshops, meetups, and advocacy for industry growth. My portfolio spans 12+ shipped indie
-                titles, including The Cursed Silence series, which earned 4.5/5 ratings for polished mechanics and
-                design.
+                As President of IGDA Paraguay, I organize workshops, meetups, and
+                initiatives to support the growth of the local industry. My portfolio
+                includes 12+ shipped indie titles—such as *The Cursed Silence* series,
+                which earned 4.5/5 reviews for mechanics and atmosphere.
               </p>
               {/* Professional links in About section */}
               <div className="flex flex-wrap gap-4">
