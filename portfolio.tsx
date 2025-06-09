@@ -177,7 +177,7 @@ export default function MarcoPortfolio() {
               >
                 GitHub
               </a>
-              <a href="#contact" className="text -hugo-muted hover:text-hugo-text transition-colors underline text-sm">
+              <a href="#contact" className="text-hugo-muted hover:text-hugo-text transition-colors underline text-sm">
                 Contact
               </a>
             </div>
