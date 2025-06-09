@@ -532,13 +532,18 @@ export default function MarcoPortfolio() {
 
           {/* Primary contact method */}
           <div className="mb-8">
-            <a href="mailto:marcobrunetti.dev@gmail.com?subject=Portfolio Contact">
+            <a
+              href="mailto:marcobrunetti.dev@gmail.com?subject=Portfolio%20Contact"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button className="bg-hugo-button-primary hover:bg-hugo-button-hover text-white text-base sm:text-lg py-6 px-8">
                 <Mail className="w-5 h-5 mr-2" />
                 Send Me an Email
               </Button>
             </a>
           </div>
+
 
           {/* Contact info */}
           <div className="space-y-4 mb-8">
