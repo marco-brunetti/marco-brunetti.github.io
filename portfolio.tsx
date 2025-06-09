@@ -216,7 +216,7 @@ export default function MarcoPortfolio() {
                   Resume
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/marco199609/"
+                  href="https://www.linkedin.com/in/marcobru"
                   className="text-hugo-muted hover:text-hugo-text transition-colors underline text-sm"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -456,7 +456,7 @@ export default function MarcoPortfolio() {
                     GitHub
                   </Button>
                 </a>
-                <a href="https://www.linkedin.com/in/marco199609/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/marcobru" target="_blank" rel="noopener noreferrer">
                   <Button
                     variant="outline"
                     size="sm"
