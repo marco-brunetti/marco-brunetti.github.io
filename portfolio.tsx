@@ -177,7 +177,7 @@ export default function MarcoPortfolio() {
               >
                 GitHub
               </a>
-              <a href="#contact" className="text-hugo-muted hover:text-hugo-text transition-colors underline text-sm">
+              <a href="#contact" className="text -hugo-muted hover:text-hugo-text transition-colors underline text-sm">
                 Contact
               </a>
             </div>
@@ -480,7 +480,7 @@ export default function MarcoPortfolio() {
             </div>
             <div className="relative order-1 lg:order-2 flex justify-center">
               <Image
-                src="/images/profile.jpg"
+                src="/images/profile.png"
                 alt="Marco Brunetti"
                 width={300}
                 height={300}
