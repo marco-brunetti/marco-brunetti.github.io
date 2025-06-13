@@ -93,8 +93,12 @@ body {
   }
 }
 
-@layer base {
-  body::before, body::after {
-    content: none !important;
-  }
+html > div:first-child,
+body::before, 
+body::after,
+body > div[style*="left: 0"],
+div[class*="border-l"] {
+  border-left: none !important;
+  background: none !important;
+  display: none !important;
 }
