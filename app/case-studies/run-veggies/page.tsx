@@ -37,7 +37,7 @@ export default function CrosscountryRacerPage() {
       </p>
 
       <ImageShowcase
-        src="/placeholder.svg?height=400&width=600"
+        src="/images/run_veggies/showcase.png?height=400&width=600"
         alt="Desert racing track"
         caption="Dynamic weather and terrain-specific handling create varied challenges"
       />
