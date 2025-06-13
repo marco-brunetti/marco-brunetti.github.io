@@ -20,7 +20,7 @@ export default function ComedianSimulatorPage() {
         status: "Released",
         teamSize: "Solo Developer",
       }}
-      coverImage="/images/comedian_sim_cover.png?height=600&width=1200"
+      coverImage="/placeholder.svg?height=600&width=1200"
       techStack={[
         { name: "Unity 2022.3" },
         { name: "C#" },
