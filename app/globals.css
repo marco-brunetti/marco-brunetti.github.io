@@ -92,13 +92,3 @@ body {
     @apply bg-background text-foreground;
   }
 }
-
-html > div:first-child,
-body::before, 
-body::after,
-body > div[style*="left: 0"],
-div[class*="border-l"] {
-  border-left: none !important;
-  background: none !important;
-  display: none !important;
-}
