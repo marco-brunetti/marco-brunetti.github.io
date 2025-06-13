@@ -37,7 +37,7 @@ export default function CursedSilenceChristmasPage() {
       </p>
 
       <ImageShowcase
-        src="/placeholder.svg?height=400&width=600"
+        src="/images/cursed_silence/showcase.png?height=400&width=600"
         alt="Cursed Silence Christmas gameplay"
         caption="Distorted Christmas decorations create an unsettling atmosphere"
       />
