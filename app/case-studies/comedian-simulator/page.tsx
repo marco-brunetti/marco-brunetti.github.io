@@ -9,7 +9,7 @@ import { Users, Clock, Zap, MessageSquare } from "lucide-react"
 
 export default function ComedianSimulatorPage() {
   return (
-    <CaseStudyLayout
+    <CaseStudyLayout>
       title="Stand Up: Comedian Simulator"
       subtitle="Experience your first comedy gig - do you have what it takes?"
       gameInfo={{
@@ -20,11 +20,11 @@ export default function ComedianSimulatorPage() {
         status: "Released",
         teamSize: "Solo Developer",
       }}
-      coverImage="/placeholder.svg?height=600&width=1200"
+      coverImage="/images/comedian_sim_cover.png?height=600&width=1200"
       techStack={[
         { name: "Unity 2022.3" },
         { name: "C#" },
-        { name: "Events"}
+        { name: "Events"},
         { name: "Audio System" },
         { name: "Animation System" },
         { name: "UI Toolkit" },
