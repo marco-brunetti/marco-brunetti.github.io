@@ -20,7 +20,7 @@ export default function CursedSilenceChristmasPage() {
         status: "Released",
         teamSize: "Solo Developer",
       }}
-      coverImage="/placeholder.svg?height=600&width=1200"
+      coverImage="/images/cursed_silence/cover.png?height=600&width=1200"
       techStack={[
         { name: "Unity 2022.3" },
         { name: "C#" },

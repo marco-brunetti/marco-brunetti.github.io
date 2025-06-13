@@ -44,7 +44,7 @@ export default function MarcoPortfolio() {
     {
       title: "Cursed Silence: Christmas",
       description: "A psychological horror game developed solo over the course of a year. Follow cryptic clues and uncover the protagonist's mental unraveling in this standalone entry of the Cursed Silence series.",
-      image: "/images/cs_christmas_icon.png",
+      image: "/images/cursed_silence/icon.png",
       videoPreview: "/videos/cs_christmas.mp4",
       technologies: ["Unity", "C#", "Horror"],
       status: "Released",
