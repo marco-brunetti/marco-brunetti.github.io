@@ -369,7 +369,6 @@ export default function MarcoPortfolio() {
                   <div className="flex gap-3">
                     <a
                       href={game.links.devlog}
-                      target="_blank"
                       rel="noopener noreferrer"
                       className="flex-1 sm:flex-none"
                     >
