@@ -9,7 +9,7 @@ import { Users, Clock, Zap, MessageSquare } from "lucide-react"
 
 export default function ComedianSimulatorPage() {
   return (
-    <CaseStudyLayout>
+    <CaseStudyLayout
       title="Stand Up: Comedian Simulator"
       subtitle="Experience your first comedy gig - do you have what it takes?"
       gameInfo={{
