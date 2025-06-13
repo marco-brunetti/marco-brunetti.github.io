@@ -32,7 +32,7 @@ export default function MarcoPortfolio() {
     {
       title: "Run, Veggies!",
       description: "A physics‑driven 3D puzzle-platformer about runaway veggies escaping a factory. As Programmer Lead, I architected core systems (AI, input, physics interactions) and oversaw a 6‑person dev team. Coming soon on Steam.",
-      image: "/images/rv_icon.png",
+      image: "/images/run_veggies/icon.png",
       videoPreview: "/videos/run_veggies.mp4",
       technologies: ["Unreal Engine", "Blueprints", "Platformer"],
       status: "Coming Soon",
@@ -56,7 +56,7 @@ export default function MarcoPortfolio() {
     {
       title: "Stand Up: Comedian Simulator",
       description: "Built solo in just 10 days, this experimental simulation lets you perform at your first stand-up gig. Test your timing, read the crowd, and see if you've got what it takes to make them laugh.",
-      image: "/images/comedian_sim_icon.png",
+      image: "/images/comedian_simulator/icon.png",
       videoPreview: "/videos/comedian_simulator.mp4",
       technologies: ["Unity", "C#", "Simulation"],
       status: "Released",

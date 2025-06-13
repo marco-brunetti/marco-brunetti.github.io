@@ -20,7 +20,7 @@ export default function CrosscountryRacerPage() {
         status: "Coming Soon",
         teamSize: "17 people",
       }}
-      coverImage="/placeholder.svg?height=600&width=1200"
+      coverImage="/images/run_veggies/cover.png?height=600&width=1200"
       techStack={[
         { name: "Unity 2022.2" },
         { name: "C#" },

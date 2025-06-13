@@ -20,7 +20,7 @@ export default function ComedianSimulatorPage() {
         status: "Released",
         teamSize: "Solo Developer",
       }}
-      coverImage="/images/comedian_sim_cover.png?height=600&width=1200"
+      coverImage="/images/comedian_simulator/cover.png?height=600&width=1200"
       techStack={[
         { name: "Unity 2022.3" },
         { name: "C#" },
@@ -36,7 +36,7 @@ export default function ComedianSimulatorPage() {
       </p>
 
       <ImageShowcase
-        src="/images/comedian_sim_showcase.png?height=400&width=600"
+        src="/images/comedian_simulator/showcase.png?height=400&width=600"
         alt="Comedy club stage"
         caption="Dynamic crowd responds realistically to different humor types"
       />
