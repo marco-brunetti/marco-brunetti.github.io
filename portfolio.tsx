@@ -15,7 +15,7 @@ function VideoPreloader() {
       "/videos/cs_christmas_preview.mp4",
       "/videos/comedian_simulator_preview.mp4"
     ];
-    
+
     videos.forEach(src => {
       const video = document.createElement('video');
       video.src = src;
@@ -141,7 +141,7 @@ export default function MarcoPortfolio() {
   return (
     <div className="min-h-screen bg-hugo-bg">
       <VideoPreloader />
-      
+
       {/* Header */}
       <header className="fixed top-0 w-full bg-hugo-darker/90 backdrop-blur-md border-b border-hugo-border z-50">
         <nav className="container mx-auto px-4 sm:px-6 py-4">
@@ -295,126 +295,131 @@ export default function MarcoPortfolio() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 justify-items-center">
             {games.map((game, index) => (
-              <Card
+              <a
                 key={index}
-                className="bg-hugo-lighter border-hugo-border border-2 hover:border-hugo-accent/60 transition-all duration-300 hover:transform hover:scale-105 w-full max-w-sm"
-                onMouseEnter={() => setHoveredCard(index)}
-                onMouseLeave={() => setHoveredCard(null)}
                 href={game.links.devlog}
                 target="_blank"
                 rel="noopener noreferrer"
+                className="w-full max-w-sm transform transition-all duration-300 hover:scale-105"
               >
-                <CardHeader className="p-0">
-                  <div className="relative overflow-hidden rounded-t-lg bg-hugo-bg w-full aspect-[4/3]">
-                    {/* Show video on hover, otherwise show static image */}
-                    <div className="absolute inset-0 w-full h-full">
-                      {hoveredCard === index ? (
-                        // Video preview when hovered
-                        <video
-                          ref={el => videoRefs.current[index] = el}
-                          autoPlay
-                          loop
-                          muted
-                          playsInline
-                          className="w-full h-full object-cover"
-                          poster={game.image}
-                        >
-                          <source src={game.videoPreview} type="video/mp4" />
-                          {/* Fallback to static image if video not supported */}
-                          <Image
-                            src={game.image}
-                            alt={game.title}
-                            fill
-                            className="object-cover"
-                          />
-                        </video>
-                      ) : (
-                        // Static image and hover text when not hovered
-                        <div className="w-full h-full relative">
-                          <Image
-                            src={game.image}
-                            alt={game.title}
-                            fill
-                            className="object-cover opacity-60"
-                            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                          />
-                          <div className="absolute inset-0 flex items-center justify-center">
-                            <div className="text-hugo-text font-semibold text-sm sm:text-base">Hover to preview</div>
+                <Card
+                  key={index}
+                  className="bg-hugo-lighter border-hugo-border border-2 hover:border-hugo-accent/60 transition-all duration-300 hover:transform hover:scale-105 w-full max-w-sm"
+                  onMouseEnter={() => setHoveredCard(index)}
+                  onMouseLeave={() => setHoveredCard(null)}
+                >
+                  <CardHeader className="p-0">
+                    <div className="relative overflow-hidden rounded-t-lg bg-hugo-bg w-full aspect-[4/3]">
+                      {/* Show video on hover, otherwise show static image */}
+                      <div className="absolute inset-0 w-full h-full">
+                        {hoveredCard === index ? (
+                          // Video preview when hovered
+                          <video
+                            ref={el => videoRefs.current[index] = el}
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            className="w-full h-full object-cover"
+                            poster={game.image}
+                          >
+                            <source src={game.videoPreview} type="video/mp4" />
+                            {/* Fallback to static image if video not supported */}
+                            <Image
+                              src={game.image}
+                              alt={game.title}
+                              fill
+                              className="object-cover"
+                            />
+                          </video>
+                        ) : (
+                          // Static image and hover text when not hovered
+                          <div className="w-full h-full relative">
+                            <Image
+                              src={game.image}
+                              alt={game.title}
+                              fill
+                              className="object-cover opacity-60"
+                              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                            />
+                            <div className="absolute inset-0 flex items-center justify-center">
+                              <div className="text-hugo-text font-semibold text-sm sm:text-base">Hover to preview</div>
+                            </div>
                           </div>
-                        </div>
+                        )}
+                      </div>
+                      <div className="absolute top-3 sm:top-4 right-3 sm:right-4 z-10">
+                        <Badge variant="secondary" className="bg-hugo-button-primary text-white font-medium text-xs">
+                          {game.status}
+                        </Badge>
+                      </div>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="p-5 sm:p-6">
+                    <CardTitle className="text-hugo-text mb-3 sm:mb-4 text-base sm:text-lg leading-snug">
+                      {game.title}
+                    </CardTitle>
+                    <CardDescription className="text-hugo-muted mb-4 sm:mb-5 text-xs sm:text-sm leading-relaxed">
+                      {game.description}
+                    </CardDescription>
+                    <div className="flex flex-wrap gap-2 mb-4 sm:mb-5">
+                      {game.technologies.map((tech, techIndex) => (
+                        <Badge
+                          key={techIndex}
+                          variant="outline"
+                          className="border-hugo-border border-2 text-hugo-muted text-xs py-1"
+                        >
+                          {tech}
+                        </Badge>
+                      ))}
+                    </div>
+                    <div className="flex gap-3">
+                      <a
+                        href={game.links.devlog}
+                        rel="noopener noreferrer"
+                        className="flex-1 sm:flex-none"
+                      >
+                        <Button
+                          size="sm"
+                          variant="outline"
+                          className="border-hugo-border border-2 text-hugo-muted hover:bg-hugo-button-secondary-hover hover:text-hugo-text bg-hugo-button-secondary/20 text-xs w-full py-2"
+                        >
+                          Case Study
+                        </Button>
+                      </a>
+                      {game.links.play ? (
+                        <a
+                          href={game.links.play}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex-1 sm:flex-none"
+                        >
+                          <Button
+                            size="sm"
+                            className="bg-hugo-button-primary hover:bg-hugo-button-hover text-white text-xs w-full py-2"
+                          >
+                            Play
+                          </Button>
+                        </a>
+                      ) : (
+                        <a
+                          href={game.links.download}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex-1 sm:flex-none"
+                        >
+                          <Button
+                            size="sm"
+                            className="bg-hugo-button-primary hover:bg-hugo-button-hover text-white text-xs w-full py-2"
+                          >
+                            Download
+                          </Button>
+                        </a>
                       )}
                     </div>
-                    <div className="absolute top-3 sm:top-4 right-3 sm:right-4 z-10">
-                      <Badge variant="secondary" className="bg-hugo-button-primary text-white font-medium text-xs">
-                        {game.status}
-                      </Badge>
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent className="p-5 sm:p-6">
-                  <CardTitle className="text-hugo-text mb-3 sm:mb-4 text-base sm:text-lg leading-snug">
-                    {game.title}
-                  </CardTitle>
-                  <CardDescription className="text-hugo-muted mb-4 sm:mb-5 text-xs sm:text-sm leading-relaxed">
-                    {game.description}
-                  </CardDescription>
-                  <div className="flex flex-wrap gap-2 mb-4 sm:mb-5">
-                    {game.technologies.map((tech, techIndex) => (
-                      <Badge
-                        key={techIndex}
-                        variant="outline"
-                        className="border-hugo-border border-2 text-hugo-muted text-xs py-1"
-                      >
-                        {tech}
-                      </Badge>
-                    ))}
-                  </div>
-                  <div className="flex gap-3">
-                    <a
-                      href={game.links.devlog}
-                      rel="noopener noreferrer"
-                      className="flex-1 sm:flex-none"
-                    >
-                      <Button
-                        size="sm"
-                        variant="outline"
-                        className="border-hugo-border border-2 text-hugo-muted hover:bg-hugo-button-secondary-hover hover:text-hugo-text bg-hugo-button-secondary/20 text-xs w-full py-2"
-                      >
-                        Case Study
-                      </Button>
-                    </a>
-                    {game.links.play ? (
-                      <a
-                        href={game.links.play}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex-1 sm:flex-none"
-                      >
-                        <Button
-                          size="sm"
-                          className="bg-hugo-button-primary hover:bg-hugo-button-hover text-white text-xs w-full py-2"
-                        >
-                          Play
-                        </Button>
-                      </a>
-                    ) : (
-                      <a
-                        href={game.links.download}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex-1 sm:flex-none"
-                      >
-                        <Button
-                          size="sm"
-                          className="bg-hugo-button-primary hover:bg-hugo-button-hover text-white text-xs w-full py-2"
-                        >
-                          Download
-                        </Button>
-                      </a>
-                    )}
-                  </div>
-                </CardContent>
-              </Card>
+                  </CardContent>
+                </Card>
+              </a>
             ))}
           </div>
         </div>
