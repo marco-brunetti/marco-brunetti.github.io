@@ -299,7 +299,6 @@ export default function MarcoPortfolio() {
               <a
                   key={index}
                   href={game.links.devlog}
-                  target="_blank"
                   rel="noopener noreferrer"
                   className="w-full max-w-sm transform transition-all duration-300 sm:hover:scale-105"
                 >
