@@ -341,9 +341,6 @@ export default function MarcoPortfolio() {
                               <div className="hidden sm:block text-hugo-text font-semibold text-sm sm:text-base">
                                 Hover to preview
                               </div>
-                              <div className="sm:hidden text-hugo-text font-semibold text-sm">
-                                Tap to view
-                              </div>
                             </div>
                           </div>
                         )}
