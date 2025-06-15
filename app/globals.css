@@ -94,5 +94,5 @@ body {
 }
 
 html {
-  scroll-padding-top: 6rem; /* or whatever your header height is (usually 64px = 4rem) */
+  scroll-padding-top: 3rem; /* or whatever your header height is (usually 64px = 4rem) */
 }
