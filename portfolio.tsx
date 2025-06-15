@@ -342,7 +342,7 @@ export default function MarcoPortfolio() {
                               className="object-cover opacity-60"
                               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                             />
-                            <div className="absolute inset-0 flex items-center justify-center">
+                            <div className="absolute inset-0 hidden sm:flex items-center justify-center">
                               <div className="text-hugo-text font-semibold text-sm sm:text-base">Hover to preview</div>
                             </div>
                           </div>
