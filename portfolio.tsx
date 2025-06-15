@@ -130,13 +130,14 @@ export default function MarcoPortfolio() {
   const videoRefs = useRef<(HTMLVideoElement | null)[]>([])
 
   // Pause all videos when not hovered
-  useEffect(() => {
-    videoRefs.current.forEach(video => {
-      if (video && !video.paused) {
-        video.pause()
-      }
-    })
-  }, [hoveredCard])
+    const [isDesktop, setIsDesktop] = useState(false);
+
+    useEffect(() => {
+      const checkDesktop = () => setIsDesktop(window.innerWidth >= 640);
+      checkDesktop();
+      window.addEventListener("resize", checkDesktop);
+      return () => window.removeEventListener("resize", checkDesktop);
+    }, []);
 
   return (
     <div className="min-h-screen bg-hugo-bg">
@@ -296,15 +297,14 @@ export default function MarcoPortfolio() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 justify-items-center">
             {games.map((game, index) => (
               <a
-                key={index}
-                href={game.links.devlog}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full max-w-sm transform transition-all duration-300 hover:scale-105"
-              >
-                <Card
                   key={index}
-                  className="bg-hugo-lighter border-hugo-border border-2 hover:border-hugo-accent/60 transition-all duration-300 hover:transform hover:scale-105 w-full max-w-sm"
+                  href={game.links.devlog}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full max-w-sm transform transition-all duration-300 sm:hover:scale-105"
+                >
+                <Card
+                  className="bg-hugo-lighter border-hugo-border border-2 hover:border-hugo-accent/60 transition-all duration-300 w-full max-w-sm"
                   onMouseEnter={() => setHoveredCard(index)}
                   onMouseLeave={() => setHoveredCard(null)}
                 >
