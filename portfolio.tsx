@@ -508,7 +508,7 @@ export default function MarcoPortfolio() {
             {skills.map((skill, index) => (
               <Card
                 key={index}
-                className="bg-hugo-lighter border-hugo-border border-2 hover:border-hugo-accent/60 transition-all duration-300"
+                className="bg-hugo-lighter border-hugo-border border-2 transition-all duration-300 sm:hover:scale-105 w-full max-w-sm"
               >
                 <CardContent className="p-5 sm:p-6">
                   <div className="flex items-center mb-3">
