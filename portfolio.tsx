@@ -272,7 +272,7 @@ export default function MarcoPortfolio() {
                   Download Resume
                 </Button>
               </a>
-              <a href="https://snowhorse-entertainment.itch.io/" target="_blank" rel="noopener noreferrer">
+              <a href="#games">
                 <Button
                   size="lg"
                   variant="outline"
