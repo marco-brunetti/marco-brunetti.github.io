@@ -311,8 +311,7 @@ export default function MarcoPortfolio() {
                     <div className="relative overflow-hidden rounded-t-lg bg-hugo-bg w-full aspect-[4/3]">
                       {/* Show video on hover, otherwise show static image */}
                       <div className="absolute inset-0 w-full h-full">
-                        {hoveredCard === index ? (
-                          // Video preview when hovered
+                        {isDesktop && hoveredCard === index ? (
                           <video
                             ref={el => videoRefs.current[index] = el}
                             autoPlay
@@ -323,7 +322,6 @@ export default function MarcoPortfolio() {
                             poster={game.image}
                           >
                             <source src={game.videoPreview} type="video/mp4" />
-                            {/* Fallback to static image if video not supported */}
                             <Image
                               src={game.image}
                               alt={game.title}
@@ -332,17 +330,20 @@ export default function MarcoPortfolio() {
                             />
                           </video>
                         ) : (
-                          // Static image and hover text when not hovered
                           <div className="w-full h-full relative">
                             <Image
                               src={game.image}
                               alt={game.title}
                               fill
                               className="object-cover opacity-60"
-                              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                             />
-                            <div className="absolute inset-0 hidden sm:flex items-center justify-center">
-                              <div className="text-hugo-text font-semibold text-sm sm:text-base">Hover to preview</div>
+                            <div className="absolute inset-0 flex items-center justify-center">
+                              <div className="hidden sm:block text-hugo-text font-semibold text-sm sm:text-base">
+                                Hover to preview
+                              </div>
+                              <div className="sm:hidden text-hugo-text font-semibold text-sm">
+                                Tap to view
+                              </div>
                             </div>
                           </div>
                         )}
