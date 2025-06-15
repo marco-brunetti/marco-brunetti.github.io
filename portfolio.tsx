@@ -300,10 +300,9 @@ export default function MarcoPortfolio() {
                 className="bg-hugo-lighter border-hugo-border border-2 hover:border-hugo-accent/60 transition-all duration-300 hover:transform hover:scale-105 w-full max-w-sm"
                 onMouseEnter={() => setHoveredCard(index)}
                 onMouseLeave={() => setHoveredCard(null)}
-                href={game.links.play}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex-1 sm:flex-none"
+                href={game.links.devlog}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <CardHeader className="p-0">
                   <div className="relative overflow-hidden rounded-t-lg bg-hugo-bg w-full aspect-[4/3]">
