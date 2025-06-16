@@ -95,5 +95,4 @@ body {
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 5rem; /* or whatever your header height is (usually 64px = 4rem) */
 }
