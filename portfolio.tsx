@@ -139,6 +139,30 @@ export default function MarcoPortfolio() {
       return () => window.removeEventListener("resize", checkDesktop);
     }, []);
 
+    useEffect(() => {
+      const handleAnchorClick = (e: Event) => {
+        const target = e.target as HTMLAnchorElement;
+        if (target.tagName === "A" && target.hash.startsWith("#")) {
+          const section = document.querySelector(target.hash);
+          if (section) {
+            e.preventDefault();
+            const offsetMap: Record<string, number> = {
+              "#contact": 120,
+              "#about": 80,
+              "#games": 100,
+            };
+            const offset = offsetMap[target.hash] || 80;
+
+            const top = section.getBoundingClientRect().top + window.scrollY - offset;
+            window.scrollTo({ top, behavior: "smooth" });
+          }
+        }
+      };
+
+      document.addEventListener("click", handleAnchorClick);
+      return () => document.removeEventListener("click", handleAnchorClick);
+    }, []);
+
   return (
     <div className="min-h-screen bg-hugo-bg">
       <VideoPreloader />
