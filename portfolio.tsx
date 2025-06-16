@@ -149,7 +149,7 @@ export default function MarcoPortfolio() {
             const offsetMap: Record<string, number> = {
               "#contact": 120,
               "#about": 80,
-              "#games": 100,
+              "#games": 300,
             };
             const offset = offsetMap[target.hash] || 80;
 
