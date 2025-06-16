@@ -151,7 +151,7 @@ export default function MarcoPortfolio() {
             e.preventDefault()
             const offsetMap: Record<string, number> = {
               "#contact": 120,
-              "#about": 120,
+              "#about": 150,
               "#games": 80, // should now work
             }
             const offset = offsetMap[hash] ?? 80
