@@ -141,27 +141,30 @@ export default function MarcoPortfolio() {
 
     useEffect(() => {
       const handleAnchorClick = (e: Event) => {
-        const target = e.target as HTMLAnchorElement;
-        if (target.tagName === "A" && target.hash.startsWith("#")) {
-          const section = document.querySelector(target.hash);
+        const target = (e.target as HTMLElement).closest("a")
+        if (!target) return;
+
+        const hash = target.getAttribute("href")
+        if (hash && hash.startsWith("#")) {
+          const section = document.querySelector(hash)
           if (section) {
-            e.preventDefault();
+            e.preventDefault()
             const offsetMap: Record<string, number> = {
               "#contact": 120,
               "#about": 80,
-              "#games": 300,
-            };
-            const offset = offsetMap[target.hash] || 80;
+              "#games": 300, // should now work
+            }
+            const offset = offsetMap[hash] ?? 80
 
-            const top = section.getBoundingClientRect().top + window.scrollY - offset;
-            window.scrollTo({ top, behavior: "smooth" });
+            const top = section.getBoundingClientRect().top + window.scrollY - offset
+            window.scrollTo({ top, behavior: "smooth" })
           }
         }
-      };
+      }
 
-      document.addEventListener("click", handleAnchorClick);
-      return () => document.removeEventListener("click", handleAnchorClick);
-    }, []);
+      document.addEventListener("click", handleAnchorClick)
+      return () => document.removeEventListener("click", handleAnchorClick)
+    }, [])
 
   return (
     <div className="min-h-screen bg-hugo-bg">
