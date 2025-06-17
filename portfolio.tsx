@@ -151,9 +151,9 @@ export default function MarcoPortfolio() {
             e.preventDefault()
             const offsetMap: Record<string, number> = {
               "#contact": 120,
-              "#skills": 150,
-              "#about": 140,
-              "#games": 90,
+              "#skills": 85,
+              "#about": 85,
+              "#games": 85,
             }
             const offset = offsetMap[hash] ?? 80
 
@@ -198,22 +198,14 @@ export default function MarcoPortfolio() {
               >
                 LinkedIn
               </a>
-              <a
-                href="https://github.com/marco-brunetti"
-                className="text-hugo-muted hover:text-hugo-text transition-colors underline text-sm"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </a>
               <a href="#games" className="text-hugo-muted hover:text-hugo-text transition-colors underline text-sm">
                 Games
               </a>
-              <a href="#about" className="text-hugo-muted hover:text-hugo-text transition-colors underline text-sm">
-                About
-              </a>
               <a href="#skills" className="text-hugo-muted hover:text-hugo-text transition-colors underline text-sm">
                 Skills
+              </a>
+              <a href="#about" className="text-hugo-muted hover:text-hugo-text transition-colors underline text-sm">
+                About
               </a>
               <a href="#contact" className="text-hugo-muted hover:text-hugo-text transition-colors underline text-sm">
                 Contact
@@ -285,7 +277,7 @@ export default function MarcoPortfolio() {
       </header>
 
       {/* Hero Section */}
-      <section id="home" className="pt-28 sm:pt-36 pb-12 sm:pb-16 px-4 sm:px-6">
+      <section id="home" className="pt-28 sm:pt-36 pb-12 sm:pb-16 px-4 sm:px-6 bg-hugo-darker">
         <div className="container mx-auto text-center">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-hugo-text mb-6 sm:mb-8 leading-tight">
@@ -326,7 +318,7 @@ export default function MarcoPortfolio() {
       </section>
 
       {/* Metrics Section - Add below Hero */}
-       <section className="py-8 px-4 sm:px-6 -mt-2"> {/* Reduced padding and negative margin */}
+       <section className="py-8 px-4 sm:px-6 -mt-2 bg-hugo-darker"> {/* Reduced padding and negative margin */}
         <div className="container mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold text-hugo-text text-center mb-6 sm:mb-8 leading-tight"> {/* Reduced bottom margin */}
             Key Metrics
@@ -519,8 +511,40 @@ export default function MarcoPortfolio() {
         </div>
       </section>
 
+      {/* Skills Section */}
+      <section id="skills" className="py-16 sm:py-20 px-4 sm:px-6 bg-hugo-darker">
+        <div className="container mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold text-hugo-text text-center mb-10 sm:mb-14 leading-tight">
+            Skills & Technologies
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 justify-items-center">
+            {skills.map((skill, index) => (
+              <Card
+                key={index}
+                className="bg-hugo-lighter border-hugo-border border-2 transition-all duration-300 sm:hover:scale-105 w-full max-w-sm h-full flex flex-col" // Added h-full and flex-col
+              >
+                <CardContent className="p-5 sm:p-6 flex flex-col h-full">
+                  <div className="flex items-center mb-3">
+                    <div className="text-hugo-accent mr-3">{skill.icon}</div>
+                    <h3 className="text-hugo-text font-semibold text-sm sm:text-base flex-grow">
+                      {skill.name}
+                    </h3>
+                    <span className="text-hugo-accent font-medium text-xs sm:text-sm ml-auto">
+                      {skill.experience}
+                    </span>
+                  </div>
+                  <p className="text-hugo-muted text-xs sm:text-sm leading-relaxed mt-auto">
+                    {skill.description}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* About Section */}
-      <section id="about" className="py-16 sm:py-20 px-4 sm:px-6 bg-hugo-darker">
+      <section id="about" className="py-16 sm:py-20 px-4 sm:px-6">
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-10 sm:gap-14 items-center">
             {/* Text content - added text-center lg:text-left */}
@@ -594,38 +618,6 @@ export default function MarcoPortfolio() {
                 className="rounded-lg border-2 border-hugo-border w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 object-cover"
               />
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Skills Section */}
-      <section id="skills" className="py-16 sm:py-20 px-4 sm:px-6">
-        <div className="container mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold text-hugo-text text-center mb-10 sm:mb-14 leading-tight">
-            Skills & Technologies
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 justify-items-center">
-            {skills.map((skill, index) => (
-              <Card
-                key={index}
-                className="bg-hugo-lighter border-hugo-border border-2 transition-all duration-300 sm:hover:scale-105 w-full max-w-sm h-full flex flex-col" // Added h-full and flex-col
-              >
-                <CardContent className="p-5 sm:p-6 flex flex-col h-full">
-                  <div className="flex items-center mb-3">
-                    <div className="text-hugo-accent mr-3">{skill.icon}</div>
-                    <h3 className="text-hugo-text font-semibold text-sm sm:text-base flex-grow">
-                      {skill.name}
-                    </h3>
-                    <span className="text-hugo-accent font-medium text-xs sm:text-sm ml-auto">
-                      {skill.experience}
-                    </span>
-                  </div>
-                  <p className="text-hugo-muted text-xs sm:text-sm leading-relaxed mt-auto">
-                    {skill.description}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
           </div>
         </div>
       </section>
