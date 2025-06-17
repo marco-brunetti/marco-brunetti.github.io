@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Github, Linkedin, Mail, Play, Download, GamepadIcon, Code, Palette, Zap, Youtube, MapPin } from "lucide-react"
+import { Calendar, Gamepad2, DownloadCloud,Github, Linkedin, Mail, Play, Download, GamepadIcon, Code, Palette, Zap, Youtube, MapPin } from "lucide-react"
 import Image from "next/image"
 
 // Preloader component to cache videos
@@ -31,7 +31,7 @@ export default function MarcoPortfolio() {
   const games = [
     {
       title: "Run, Veggies!",
-      description: "A physics‑driven 3D puzzle-platformer about runaway veggies escaping a factory. As Programmer Lead, I architected core systems (AI, input, physics interactions) and oversaw a 6‑person dev team. Coming soon on Steam.",
+      description: "A physics‑driven 3D puzzle-platformer about runaway veggies escaping a factory. As Programmer Lead, I architected core systems (AI, input, physics interactions) and oversaw a 6‑person dev team.",
       image: "/images/run_veggies/icon.png",
       videoPreview: "/videos/run_veggies.mp4",
       technologies: ["Unreal Engine", "Blueprints", "Platformer"],
@@ -151,8 +151,9 @@ export default function MarcoPortfolio() {
             e.preventDefault()
             const offsetMap: Record<string, number> = {
               "#contact": 120,
-              "#about": 150,
-              "#games": 80, // should now work
+              "#skills": 150,
+              "#about": 140,
+              "#games": 90,
             }
             const offset = offsetMap[hash] ?? 80
 
@@ -205,8 +206,14 @@ export default function MarcoPortfolio() {
               >
                 GitHub
               </a>
+              <a href="#games" className="text-hugo-muted hover:text-hugo-text transition-colors underline text-sm">
+                Games
+              </a>
               <a href="#about" className="text-hugo-muted hover:text-hugo-text transition-colors underline text-sm">
                 About
+              </a>
+              <a href="#skills" className="text-hugo-muted hover:text-hugo-text transition-colors underline text-sm">
+                Skills
               </a>
               <a href="#contact" className="text-hugo-muted hover:text-hugo-text transition-colors underline text-sm">
                 Contact
@@ -318,6 +325,66 @@ export default function MarcoPortfolio() {
         </div>
       </section>
 
+      {/* Metrics Section - Add below Hero */}
+       <section className="py-8 px-4 sm:px-6 -mt-2"> {/* Reduced padding and negative margin */}
+        <div className="container mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold text-hugo-text text-center mb-6 sm:mb-8 leading-tight"> {/* Reduced bottom margin */}
+            Key Metrics
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 justify-items-center"> {/* Tighter gaps */}
+            {[
+              {
+                name: "Years Experience",
+                value: "8+",
+                icon: <Calendar className="w-4 h-4 text-hugo-accent" />, // Slightly smaller icons
+                description: "Professional game development"
+              },
+              {
+                name: "Shipped Titles",
+                value: "12+",
+                icon: <Gamepad2 className="w-5 h-5 text-hugo-accent" />,
+                description: "Across PC and mobile platforms"
+              },
+              {
+                name: "Total Downloads",
+                value: "100K+",
+                icon: <DownloadCloud className="w-5 h-5 text-hugo-accent" />,
+                description: "Across all published games"
+              },
+              {
+                name: "Build Optimization",
+                value: "87%",
+                icon: <Zap className="w-5 h-5 text-hugo-accent" />,
+                description: "Reduced pipeline times"
+              }
+            ].map((metric, index) => (
+                <Card
+                  key={index}
+                  className="bg-hugo-lighter border-hugo-border border-2 transition-all duration-300 sm:hover:scale-105 w-full max-w-sm"
+                >
+                  <CardContent className="p-4 sm:p-5"> {/* Reduced padding */}
+                    <div className="flex items-center mb-2"> {/* Reduced margin */}
+                      <div className="text-hugo-accent mr-2">{metric.icon}</div> {/* Tighter icon spacing */}
+                      <h3 className="text-hugo-text font-semibold text-sm">
+                        {metric.name}
+                      </h3>
+                    </div>
+                    <div className="mb-1"> {/* Reduced margin */}
+                      <span className="text-hugo-accent font-medium text-lg sm:text-xl"> {/* Slightly smaller text */}
+                        {metric.value}
+                      </span>
+                    </div>
+                    <p className="text-hugo-muted text-xs leading-relaxed">
+                      {metric.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+      
+
       {/* Games Portfolio */}
       <section id="games" className="py-16 sm:py-20 px-4 sm:px-6">
         <div className="container mx-auto">
@@ -327,13 +394,13 @@ export default function MarcoPortfolio() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 justify-items-center">
             {games.map((game, index) => (
               <a
-                  key={index}
-                  href={game.links.devlog}
-                  rel="noopener noreferrer"
-                  className="w-full max-w-sm transform transition-all duration-300 sm:hover:scale-105"
-                >
+                key={index}
+                href={game.links.devlog}
+                rel="noopener noreferrer"
+                className="w-full max-w-sm transform transition-all duration-300 sm:hover:scale-105"
+              >
                 <Card
-                  className="bg-hugo-lighter border-hugo-border border-2 hover:border-hugo-accent/60 transition-all duration-300 w-full max-w-sm"
+                  className="bg-hugo-lighter border-hugo-border border-2 hover:border-hugo-accent/60 transition-all duration-300 w-full max-w-sm flex flex-col h-full"
                   onMouseEnter={() => setHoveredCard(index)}
                   onMouseLeave={() => setHoveredCard(null)}
                 >
@@ -382,11 +449,11 @@ export default function MarcoPortfolio() {
                       </div>
                     </div>
                   </CardHeader>
-                  <CardContent className="p-5 sm:p-6">
+                  <CardContent className="p-5 sm:p-6 flex flex-col h-full">
                     <CardTitle className="text-hugo-text mb-3 sm:mb-4 text-base sm:text-lg leading-snug">
                       {game.title}
                     </CardTitle>
-                    <CardDescription className="text-hugo-muted mb-4 sm:mb-5 text-xs sm:text-sm leading-relaxed">
+                    <CardDescription className="text-hugo-muted mb-4 sm:mb-5 text-xs sm:text-sm leading-relaxed flex-grow">
                       {game.description}
                     </CardDescription>
                     <div className="flex flex-wrap gap-2 mb-4 sm:mb-5">
@@ -400,7 +467,7 @@ export default function MarcoPortfolio() {
                         </Badge>
                       ))}
                     </div>
-                    <div className="flex gap-3">
+                    <div className="flex gap-3 mt-auto">
                       <a
                         href={game.links.devlog}
                         rel="noopener noreferrer"
@@ -456,30 +523,34 @@ export default function MarcoPortfolio() {
       <section id="about" className="py-16 sm:py-20 px-4 sm:px-6 bg-hugo-darker">
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-10 sm:gap-14 items-center">
-            <div className="order-2 lg:order-1">
+            {/* Text content - added text-center lg:text-left */}
+            <div className="order-2 lg:order-1 text-center lg:text-left">
               <h2 className="text-3xl sm:text-4xl font-bold text-hugo-text mb-6 sm:mb-8 leading-tight">About Marco</h2>
-              <p className="text-hugo-muted text-base sm:text-lg mb-5 sm:mb-6 leading-relaxed">
-                I'm Marco Brunetti, a Unity/C# game developer with 8+ years of experience across indie and studio projects.
-              </p>
-              <p className="text-hugo-muted text-base sm:text-lg mb-6 sm:mb-8 leading-relaxed">
-                I currently lead an 8-person engineering team at a 50+ developer studio, delivering high-performance
-                mobile games with over 100k downloads. I also build custom C# tools to streamline workflows and
-                improve stability.
-              </p>
-              <p className="text-hugo-muted text-base sm:text-lg mb-6 sm:mb-8 leading-relaxed">
-                As Programming Lead on Run, Veggies!, an upcoming Steam release, I developed core systems in Unreal
-                Blueprints, mentored junior developers, and reduced build times by 87%.
-              </p>
-              <p className="text-hugo-muted text-base sm:text-lg mb-6 sm:mb-8 leading-relaxed">
-                I also serve as President of IGDA Paraguay, organizing workshops, meetups, and initiatives to grow the
-                local game dev scene.
-              </p>
-              <p className="text-hugo-muted text-base sm:text-lg mb-6 sm:mb-8 leading-relaxed">
-                "I've shipped 12+ indie games, including The Cursed Silence series, praised for polished mechanics
-                and atmosphere.
-              </p>
-              {/* Professional links in About section */}
-              <div className="flex flex-wrap gap-4">
+              <div className="space-y-5 sm:space-y-6">
+                <p className="text-hugo-muted text-base sm:text-lg leading-relaxed">
+                  I'm Marco Brunetti, a Unity/C# game developer with 8+ years of experience across indie and studio projects.
+                </p>
+                <p className="text-hugo-muted text-base sm:text-lg leading-relaxed">
+                  I currently lead an 8-person engineering team at a 50+ developer studio, delivering high-performance
+                  mobile games with over 100k downloads. I also build custom C# tools to streamline workflows and
+                  improve stability.
+                </p>
+                <p className="text-hugo-muted text-base sm:text-lg leading-relaxed">
+                  As Programming Lead on Run, Veggies!, an upcoming Steam release, I developed core systems in Unreal
+                  Blueprints, mentored junior developers, and reduced build times by 87%.
+                </p>
+                <p className="text-hugo-muted text-base sm:text-lg leading-relaxed">
+                  I also serve as President of IGDA Paraguay, organizing workshops, meetups, and initiatives to grow the
+                  local game dev scene.
+                </p>
+                <p className="text-hugo-muted text-base sm:text-lg leading-relaxed">
+                  "I've shipped 12+ indie games, including The Cursed Silence series, praised for polished mechanics
+                  and atmosphere.
+                </p>
+              </div>
+              
+              {/* Professional links - added justify-center lg:justify-start */}
+              <div className="flex flex-wrap gap-4 justify-center lg:justify-start mt-6 sm:mt-8">
                 <a href="https://github.com/marco-brunetti" target="_blank" rel="noopener noreferrer">
                   <Button
                     variant="outline"
@@ -512,6 +583,8 @@ export default function MarcoPortfolio() {
                 </a>
               </div>
             </div>
+            
+            {/* Image - unchanged */}
             <div className="relative order-1 lg:order-2 flex justify-center">
               <Image
                 src="/images/profile.png"
@@ -531,21 +604,25 @@ export default function MarcoPortfolio() {
           <h2 className="text-3xl sm:text-4xl font-bold text-hugo-text text-center mb-10 sm:mb-14 leading-tight">
             Skills & Technologies
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 justify-items-center">
             {skills.map((skill, index) => (
               <Card
                 key={index}
-                className="bg-hugo-lighter border-hugo-border border-2 transition-all duration-300 sm:hover:scale-105 w-full max-w-sm"
+                className="bg-hugo-lighter border-hugo-border border-2 transition-all duration-300 sm:hover:scale-105 w-full max-w-sm h-full flex flex-col" // Added h-full and flex-col
               >
-                <CardContent className="p-5 sm:p-6">
+                <CardContent className="p-5 sm:p-6 flex flex-col h-full">
                   <div className="flex items-center mb-3">
                     <div className="text-hugo-accent mr-3">{skill.icon}</div>
-                    <h3 className="text-hugo-text font-semibold text-sm sm:text-base">{skill.name}</h3>
+                    <h3 className="text-hugo-text font-semibold text-sm sm:text-base flex-grow">
+                      {skill.name}
+                    </h3>
+                    <span className="text-hugo-accent font-medium text-xs sm:text-sm ml-auto">
+                      {skill.experience}
+                    </span>
                   </div>
-                  <div className="mb-2">
-                    <span className="text-hugo-accent font-medium text-xs sm:text-sm">{skill.experience}</span>
-                  </div>
-                  <p className="text-hugo-muted text-xs sm:text-sm leading-relaxed">{skill.description}</p>
+                  <p className="text-hugo-muted text-xs sm:text-sm leading-relaxed mt-auto">
+                    {skill.description}
+                  </p>
                 </CardContent>
               </Card>
             ))}
